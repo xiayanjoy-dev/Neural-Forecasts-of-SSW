@@ -1,0 +1,3092 @@
+{
+  "protocol": {
+    "name": "v52_paired21_seed42_rolling_evaluation",
+    "seed": 42,
+    "fixed_train_epochs": 21,
+    "fixed_alarm_threshold": 0.2,
+    "alignment_keys": [
+      "forecast_origin",
+      "start",
+      "winter",
+      "target_class"
+    ],
+    "outer_test_selection": "forbidden",
+    "bootstrap": "1000 paired winter-cluster resamples"
+  },
+  "alignment": {
+    "status": "PASS",
+    "n_samples": 1918
+  },
+  "fold_results": {
+    "scratch": {
+      "A": {
+        "fold": "A",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_scratch_foldA_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 374,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.5284148218037088,
+            "auc_roc": 0.9009689922480619,
+            "brier": 0.07468699663877487,
+            "brier_skill_score": -0.012298288938495494,
+            "prevalence": 0.08021390374331551,
+            "fixed_threshold_metrics": {
+              "POD": 0.03333333332222222,
+              "FAR": 0.0,
+              "CSI": 0.03333333332222222,
+              "ACC": 0.9224598930234637,
+              "TP": 1,
+              "FP": 0,
+              "FN": 29,
+              "TN": 344
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 1,
+              "event_pod": 0.16666666666666666,
+              "mean_first_alarm_lead_days": 1.0,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 0,
+                "2002": 0,
+                "2003": 0,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 0,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.6124534889543756,
+            "auc_roc": 0.8576433121019108,
+            "brier": 0.14535178244113922,
+            "brier_skill_score": -0.07915211893507368,
+            "prevalence": 0.16042780748663102,
+            "fixed_threshold_metrics": {
+              "POD": 0.01666666666388889,
+              "FAR": 0.0,
+              "CSI": 0.01666666666388889,
+              "ACC": 0.8422459892822929,
+              "TP": 1,
+              "FP": 0,
+              "FN": 59,
+              "TN": 314
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 1,
+              "event_pod": 0.16666666666666666,
+              "mean_first_alarm_lead_days": 1.0,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 0,
+                "2002": 0,
+                "2003": 0,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 0,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.6728424647955006,
+            "auc_roc": 0.8279124778237729,
+            "brier": 0.20875295996665955,
+            "brier_skill_score": -0.15117402043352945,
+            "prevalence": 0.23796791443850268,
+            "fixed_threshold_metrics": {
+              "POD": 0.04494382021966924,
+              "FAR": 0.0,
+              "CSI": 0.04494382021966924,
+              "ACC": 0.7727272727066116,
+              "TP": 4,
+              "FP": 0,
+              "FN": 85,
+              "TN": 285
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 2,
+              "event_pod": 0.3333333333333333,
+              "mean_first_alarm_lead_days": 2.0,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 0,
+                "2002": 0,
+                "2003": 0,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 0,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 14
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 15
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.537807822227478,
+        "vortex_aux_correlation": 0.7112468175068799,
+        "vortex_change_aux_rmse": 0.32805296778678894,
+        "vortex_change_aux_correlation": 0.33025821749988515
+      },
+      "B": {
+        "fold": "B",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_scratch_foldB_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 484,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.51700882701811,
+            "auc_roc": 0.8901982378854626,
+            "brier": 0.04575182497501373,
+            "brier_skill_score": 0.21309548374839815,
+            "prevalence": 0.06198347107438017,
+            "fixed_threshold_metrics": {
+              "POD": 0.4333333331888889,
+              "FAR": 0.5357142855229592,
+              "CSI": 0.2888888888246913,
+              "ACC": 0.933884297501366,
+              "TP": 13,
+              "FP": 15,
+              "FN": 17,
+              "TN": 439
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 3,
+              "event_pod": 0.5,
+              "mean_first_alarm_lead_days": 4.333333333333333,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 0,
+                "2007": 0,
+                "2008": 1,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 4,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.46701809566008834,
+            "auc_roc": 0.8241745283018868,
+            "brier": 0.09907636046409607,
+            "brier_skill_score": 0.08768742543721342,
+            "prevalence": 0.12396694214876033,
+            "fixed_threshold_metrics": {
+              "POD": 0.34999999994166664,
+              "FAR": 0.5714285713119533,
+              "CSI": 0.2386363636092459,
+              "ACC": 0.8615702479160833,
+              "TP": 21,
+              "FP": 28,
+              "FN": 39,
+              "TN": 396
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 4,
+              "event_pod": 0.6666666666666666,
+              "mean_first_alarm_lead_days": 5.75,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 1,
+                "2007": 0,
+                "2008": 3,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 7,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 8.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 10.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.5426375790549456,
+            "auc_roc": 0.7941058310376492,
+            "brier": 0.12811435759067535,
+            "brier_skill_score": 0.13878681841823792,
+            "prevalence": 0.18181818181818182,
+            "fixed_threshold_metrics": {
+              "POD": 0.4204545454067666,
+              "FAR": 0.3728813558690032,
+              "CSI": 0.3363636363330579,
+              "ACC": 0.8491735537014633,
+              "TP": 37,
+              "FP": 22,
+              "FN": 51,
+              "TN": 374
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 5,
+              "event_pod": 0.8333333333333334,
+              "mean_first_alarm_lead_days": 9.6,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 0,
+                "2007": 1,
+                "2008": 1,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 5,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 13.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 13
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.5145391225814819,
+        "vortex_aux_correlation": 0.8300448440741419,
+        "vortex_change_aux_rmse": 0.39243948459625244,
+        "vortex_change_aux_correlation": 0.4564492237490863
+      },
+      "C": {
+        "fold": "C",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_scratch_foldC_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 1060,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.2855035126298184,
+            "auc_roc": 0.9149038461538461,
+            "brier": 0.022226160392165184,
+            "brier_skill_score": -0.20064008733830763,
+            "prevalence": 0.018867924528301886,
+            "fixed_threshold_metrics": {
+              "POD": 0.3999999998,
+              "FAR": 0.7777777775617284,
+              "CSI": 0.16666666663194443,
+              "ACC": 0.9622641509343184,
+              "TP": 8,
+              "FP": 28,
+              "FN": 12,
+              "TN": 1012
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 3,
+              "event_pod": 0.75,
+              "mean_first_alarm_lead_days": 2.6666666666666665,
+              "false_alarm_episodes_by_winter": {
+                "2011": 0,
+                "2012": 2,
+                "2013": 0,
+                "2014": 2,
+                "2015": 1,
+                "2016": 1,
+                "2017": 3,
+                "2018": 0,
+                "2019": 1,
+                "2020": 0,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 10,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.22887060821760533,
+            "auc_roc": 0.8417279411764707,
+            "brier": 0.048837143927812576,
+            "brier_skill_score": -0.3449366401296621,
+            "prevalence": 0.03773584905660377,
+            "fixed_threshold_metrics": {
+              "POD": 0.299999999925,
+              "FAR": 0.8356164382416964,
+              "CSI": 0.11881188117635527,
+              "ACC": 0.9160377358404148,
+              "TP": 12,
+              "FP": 61,
+              "FN": 28,
+              "TN": 959
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 4,
+              "event_pod": 1.0,
+              "mean_first_alarm_lead_days": 3.75,
+              "false_alarm_episodes_by_winter": {
+                "2011": 1,
+                "2012": 3,
+                "2013": 1,
+                "2014": 3,
+                "2015": 1,
+                "2016": 2,
+                "2017": 3,
+                "2018": 0,
+                "2019": 1,
+                "2020": 0,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 15,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 6.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.2704553841843851,
+            "auc_roc": 0.82005,
+            "brier": 0.06280724704265594,
+            "brier_skill_score": -0.17617037961880366,
+            "prevalence": 0.05660377358490566,
+            "fixed_threshold_metrics": {
+              "POD": 0.449999999925,
+              "FAR": 0.75892857136081,
+              "CSI": 0.18620689653888228,
+              "ACC": 0.8886792452746352,
+              "TP": 27,
+              "FP": 85,
+              "FN": 33,
+              "TN": 915
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 4,
+              "event_pod": 1.0,
+              "mean_first_alarm_lead_days": 9.25,
+              "false_alarm_episodes_by_winter": {
+                "2011": 1,
+                "2012": 4,
+                "2013": 0,
+                "2014": 3,
+                "2015": 1,
+                "2016": 2,
+                "2017": 3,
+                "2018": 1,
+                "2019": 0,
+                "2020": 1,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 16,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 14.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": true,
+                  "first_alarm_lead_days": 6.0,
+                  "n_eligible_initializations": 15
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.48152026534080505,
+        "vortex_aux_correlation": 0.8152059484228054,
+        "vortex_change_aux_rmse": 0.3834529221057892,
+        "vortex_change_aux_correlation": 0.3226078831157182
+      }
+    },
+    "v51a": {
+      "A": {
+        "fold": "A",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_v51a_foldA_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 374,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.4252476619829074,
+            "auc_roc": 0.8799418604651162,
+            "brier": 0.07428370416164398,
+            "brier_skill_score": -0.006832112724235895,
+            "prevalence": 0.08021390374331551,
+            "fixed_threshold_metrics": {
+              "POD": 0.13333333328888888,
+              "FAR": 0.6363636357851239,
+              "CSI": 0.1081081080788897,
+              "ACC": 0.9117647058579742,
+              "TP": 4,
+              "FP": 7,
+              "FN": 26,
+              "TN": 337
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 1,
+              "event_pod": 0.16666666666666666,
+              "mean_first_alarm_lead_days": 4.0,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 1,
+                "2002": 1,
+                "2003": 0,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 2,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.6843701273053716,
+            "auc_roc": 0.8562632696390657,
+            "brier": 0.12739746272563934,
+            "brier_skill_score": 0.05414822206945191,
+            "prevalence": 0.16042780748663102,
+            "fixed_threshold_metrics": {
+              "POD": 0.21666666663055556,
+              "FAR": 0.13333333324444444,
+              "CSI": 0.20967741932101977,
+              "ACC": 0.8689839571960164,
+              "TP": 13,
+              "FP": 2,
+              "FN": 47,
+              "TN": 312
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 3,
+              "event_pod": 0.5,
+              "mean_first_alarm_lead_days": 7.0,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 1,
+                "2002": 0,
+                "2003": 1,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 2,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": true,
+                  "first_alarm_lead_days": 10.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": true,
+                  "first_alarm_lead_days": 7.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.6886799969838737,
+            "auc_roc": 0.8134240094618569,
+            "brier": 0.19327035546302795,
+            "brier_skill_score": -0.06579476604559442,
+            "prevalence": 0.23796791443850268,
+            "fixed_threshold_metrics": {
+              "POD": 0.16853932582375963,
+              "FAR": 0.0624999999609375,
+              "CSI": 0.16666666664814817,
+              "ACC": 0.7994652406203351,
+              "TP": 15,
+              "FP": 1,
+              "FN": 74,
+              "TN": 284
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2000": 0.2,
+                "2001": 0.2,
+                "2002": 0.2,
+                "2003": 0.2,
+                "2004": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 3,
+              "event_pod": 0.5,
+              "mean_first_alarm_lead_days": 7.333333333333333,
+              "false_alarm_episodes_by_winter": {
+                "2000": 0,
+                "2001": 0,
+                "2002": 0,
+                "2003": 1,
+                "2004": 0
+              },
+              "false_alarm_episodes_total": 1,
+              "events": [
+                {
+                  "onset_step": 15784,
+                  "winter": 2000,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 16360,
+                  "winter": 2001,
+                  "hit": true,
+                  "first_alarm_lead_days": 11.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 16912,
+                  "winter": 2002,
+                  "hit": true,
+                  "first_alarm_lead_days": 7.0,
+                  "n_eligible_initializations": 14
+                },
+                {
+                  "onset_step": 17108,
+                  "winter": 2002,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 17712,
+                  "winter": 2003,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 18384,
+                  "winter": 2004,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 15
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.35708698630332947,
+        "vortex_aux_correlation": 0.8742257635314109,
+        "vortex_change_aux_rmse": 0.2909753620624542,
+        "vortex_change_aux_correlation": 0.44256287108783715
+      },
+      "B": {
+        "fold": "B",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_v51a_foldB_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 484,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.21764414296388357,
+            "auc_roc": 0.8566813509544787,
+            "brier": 0.06684286147356033,
+            "brier_skill_score": -0.14965795575259544,
+            "prevalence": 0.06198347107438017,
+            "fixed_threshold_metrics": {
+              "POD": 0.3333333332222222,
+              "FAR": 0.696969696758494,
+              "CSI": 0.188679245247419,
+              "ACC": 0.9111570247745628,
+              "TP": 10,
+              "FP": 23,
+              "FN": 20,
+              "TN": 431
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 3,
+              "event_pod": 0.5,
+              "mean_first_alarm_lead_days": 3.6666666666666665,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 1,
+                "2007": 0,
+                "2008": 1,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 5,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.2927610120806893,
+            "auc_roc": 0.7964229559748427,
+            "brier": 0.11949086934328079,
+            "brier_skill_score": -0.10029296733017246,
+            "prevalence": 0.12396694214876033,
+            "fixed_threshold_metrics": {
+              "POD": 0.33333333327777775,
+              "FAR": 0.6226415093164828,
+              "CSI": 0.21505376341773616,
+              "ACC": 0.8491735537014633,
+              "TP": 20,
+              "FP": 33,
+              "FN": 40,
+              "TN": 391
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 3,
+              "event_pod": 0.5,
+              "mean_first_alarm_lead_days": 8.0,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 1,
+                "2007": 1,
+                "2008": 2,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 7,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 10.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 10.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.4646266635153864,
+            "auc_roc": 0.7724690082644627,
+            "brier": 0.13297061622142792,
+            "brier_skill_score": 0.1061419687337346,
+            "prevalence": 0.18181818181818182,
+            "fixed_threshold_metrics": {
+              "POD": 0.3863636363197314,
+              "FAR": 0.4137931033769322,
+              "CSI": 0.303571428544324,
+              "ACC": 0.8388429751892801,
+              "TP": 34,
+              "FP": 24,
+              "FN": 54,
+              "TN": 372
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2005": 0.2,
+                "2006": 0.2,
+                "2007": 0.2,
+                "2008": 0.2,
+                "2009": 0.2,
+                "2010": 0.2
+              },
+              "n_events": 6,
+              "events_hit": 4,
+              "event_pod": 0.6666666666666666,
+              "mean_first_alarm_lead_days": 11.5,
+              "false_alarm_episodes_by_winter": {
+                "2005": 2,
+                "2006": 1,
+                "2007": 1,
+                "2008": 2,
+                "2009": 0,
+                "2010": 1
+              },
+              "false_alarm_episodes_total": 7,
+              "events": [
+                {
+                  "onset_step": 19900,
+                  "winter": 2006,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 20760,
+                  "winter": 2007,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 21476,
+                  "winter": 2008,
+                  "hit": true,
+                  "first_alarm_lead_days": 12.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 22088,
+                  "winter": 2009,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 22876,
+                  "winter": 2010,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 23048,
+                  "winter": 2010,
+                  "hit": false,
+                  "first_alarm_lead_days": null,
+                  "n_eligible_initializations": 13
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.42646124958992004,
+        "vortex_aux_correlation": 0.8894275016880383,
+        "vortex_change_aux_rmse": 0.3867493271827698,
+        "vortex_change_aux_correlation": 0.46975092644786354
+      },
+      "C": {
+        "fold": "C",
+        "prediction_file": "/share/home/xiayan/ssw_phase1/v52_paired21_v51a_foldC_seed42_fixed_epoch21_predictions.npz",
+        "n_test_samples": 1060,
+        "horizons": {
+          "5": {
+            "auc_pr": 0.3521958066679768,
+            "auc_roc": 0.9591586538461538,
+            "brier": 0.0283036008477211,
+            "brier_skill_score": -0.5289387457932417,
+            "prevalence": 0.018867924528301886,
+            "fixed_threshold_metrics": {
+              "POD": 0.5999999997,
+              "FAR": 0.79310344813912,
+              "CSI": 0.18181818179063364,
+              "ACC": 0.9490566037646316,
+              "TP": 12,
+              "FP": 46,
+              "FN": 8,
+              "TN": 994
+            },
+            "event_metrics": {
+              "horizon_days": 5,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 4,
+              "event_pod": 1.0,
+              "mean_first_alarm_lead_days": 3.0,
+              "false_alarm_episodes_by_winter": {
+                "2011": 0,
+                "2012": 2,
+                "2013": 0,
+                "2014": 3,
+                "2015": 0,
+                "2016": 1,
+                "2017": 1,
+                "2018": 0,
+                "2019": 0,
+                "2020": 0,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 7,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 5
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0,
+                  "n_eligible_initializations": 5
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "10": {
+            "auc_pr": 0.23242682012227767,
+            "auc_roc": 0.8344485294117647,
+            "brier": 0.06394268572330475,
+            "brier_skill_score": -0.7609314136937553,
+            "prevalence": 0.03773584905660377,
+            "fixed_threshold_metrics": {
+              "POD": 0.499999999875,
+              "FAR": 0.8039215685486352,
+              "CSI": 0.16393442621607096,
+              "ACC": 0.9037735848971343,
+              "TP": 20,
+              "FP": 82,
+              "FN": 20,
+              "TN": 938
+            },
+            "event_metrics": {
+              "horizon_days": 10,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 4,
+              "event_pod": 1.0,
+              "mean_first_alarm_lead_days": 5.0,
+              "false_alarm_episodes_by_winter": {
+                "2011": 1,
+                "2012": 2,
+                "2013": 1,
+                "2014": 4,
+                "2015": 2,
+                "2016": 1,
+                "2017": 2,
+                "2018": 0,
+                "2019": 0,
+                "2020": 0,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 13,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 6.0,
+                  "n_eligible_initializations": 10
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 10
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          },
+          "15": {
+            "auc_pr": 0.20916904142007747,
+            "auc_roc": 0.7587499999999999,
+            "brier": 0.08556626737117767,
+            "brier_skill_score": -0.6023709669709205,
+            "prevalence": 0.05660377358490566,
+            "fixed_threshold_metrics": {
+              "POD": 0.41666666659722223,
+              "FAR": 0.799999999936,
+              "CSI": 0.15624999999023437,
+              "ACC": 0.8726415094257299,
+              "TP": 25,
+              "FP": 100,
+              "FN": 35,
+              "TN": 900
+            },
+            "event_metrics": {
+              "horizon_days": 15,
+              "thresholds_by_held_winter": {
+                "2011": 0.2,
+                "2012": 0.2,
+                "2013": 0.2,
+                "2014": 0.2,
+                "2015": 0.2,
+                "2016": 0.2,
+                "2017": 0.2,
+                "2018": 0.2,
+                "2019": 0.2,
+                "2020": 0.2,
+                "2021": 0.2
+              },
+              "n_events": 4,
+              "events_hit": 4,
+              "event_pod": 1.0,
+              "mean_first_alarm_lead_days": 9.25,
+              "false_alarm_episodes_by_winter": {
+                "2011": 1,
+                "2012": 2,
+                "2013": 0,
+                "2014": 6,
+                "2015": 3,
+                "2016": 3,
+                "2017": 2,
+                "2018": 0,
+                "2019": 0,
+                "2020": 0,
+                "2021": 0
+              },
+              "false_alarm_episodes_total": 17,
+              "events": [
+                {
+                  "onset_step": 24920,
+                  "winter": 2013,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 28688,
+                  "winter": 2018,
+                  "hit": true,
+                  "first_alarm_lead_days": 5.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 29244,
+                  "winter": 2019,
+                  "hit": true,
+                  "first_alarm_lead_days": 13.0,
+                  "n_eligible_initializations": 15
+                },
+                {
+                  "onset_step": 30712,
+                  "winter": 2021,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0,
+                  "n_eligible_initializations": 15
+                }
+              ],
+              "note": "Fixed pre-registered 0.20 decision threshold; no outer-test threshold, calibration, or checkpoint selection."
+            }
+          }
+        },
+        "vortex_aux_rmse": 0.4039706885814667,
+        "vortex_aux_correlation": 0.8723479904601773,
+        "vortex_change_aux_rmse": 0.3630526065826416,
+        "vortex_change_aux_correlation": 0.4420952236685221
+      }
+    }
+  },
+  "pooled_outer_test": {
+    "scratch": {
+      "5": {
+        "pr_auc": 0.31895595733562576,
+        "roc_auc": 0.886694096844396,
+        "brier": 0.038392361253499985,
+        "brier_skill_score": 0.04812205697362193,
+        "fixed_threshold_metrics": {
+          "CSI": 0.1788617886033446,
+          "POD": 0.274999999965625,
+          "FAR": 0.6615384614366865,
+          "TP": 22,
+          "FP": 43,
+          "FN": 58,
+          "TN": 1795
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "events_hit": 7,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 3.142857142857143,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 1,
+            "2016": 1,
+            "2017": 3,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 14
+        },
+        "calibration": {
+          "intercept": -0.4207750069938114,
+          "slope": 0.4620017849939948
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1833,
+            "mean_probability": 0.002783312229439616,
+            "observed_frequency": 0.03000545553737043
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 20,
+            "mean_probability": 0.13959479331970215,
+            "observed_frequency": 0.15
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 9,
+            "mean_probability": 0.24469035863876343,
+            "observed_frequency": 0.3333333333333333
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 6,
+            "mean_probability": 0.3575526773929596,
+            "observed_frequency": 0.16666666666666666
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 8,
+            "mean_probability": 0.4557911455631256,
+            "observed_frequency": 0.125
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 10,
+            "mean_probability": 0.5456754565238953,
+            "observed_frequency": 0.1
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 9,
+            "mean_probability": 0.6676225066184998,
+            "observed_frequency": 0.1111111111111111
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 10,
+            "mean_probability": 0.7444929480552673,
+            "observed_frequency": 0.6
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 11,
+            "mean_probability": 0.8438392281532288,
+            "observed_frequency": 0.6363636363636364
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 2,
+            "mean_probability": 0.9051594138145447,
+            "observed_frequency": 1.0
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.1781783508469028,
+            0.5474277778778959
+          ],
+          "roc_auc": [
+            0.8288121176862192,
+            0.9448651412739605
+          ],
+          "brier": [
+            0.02416707337833941,
+            0.05541795343160629
+          ],
+          "brier_skill_score": [
+            -0.19121769841144376,
+            0.284036812454485
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.28139857663174184,
+        "roc_auc": 0.830249217861206,
+        "brier": 0.08033467084169388,
+        "brier_skill_score": -0.03108301898490584,
+        "fixed_threshold_metrics": {
+          "CSI": 0.13654618473347205,
+          "POD": 0.21249999998671873,
+          "FAR": 0.7235772357135304,
+          "TP": 34,
+          "FP": 89,
+          "FN": 126,
+          "TN": 1669
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            }
+          ],
+          "events_hit": 9,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 4.333333333333333,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 3,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 3,
+            "2013": 1,
+            "2014": 3,
+            "2015": 1,
+            "2016": 2,
+            "2017": 3,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 22
+        },
+        "calibration": {
+          "intercept": -0.48580907592231953,
+          "slope": 0.46807196440867377
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1752,
+            "mean_probability": 0.00969718024134636,
+            "observed_frequency": 0.0639269406392694
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 43,
+            "mean_probability": 0.14491353929042816,
+            "observed_frequency": 0.32558139534883723
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 25,
+            "mean_probability": 0.24154449999332428,
+            "observed_frequency": 0.2
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 12,
+            "mean_probability": 0.34898650646209717,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 14,
+            "mean_probability": 0.4553452432155609,
+            "observed_frequency": 0.07142857142857142
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 15,
+            "mean_probability": 0.5643885731697083,
+            "observed_frequency": 0.13333333333333333
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 24,
+            "mean_probability": 0.647617518901825,
+            "observed_frequency": 0.25
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 18,
+            "mean_probability": 0.7462905645370483,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 12,
+            "mean_probability": 0.8577354550361633,
+            "observed_frequency": 0.16666666666666666
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 3,
+            "mean_probability": 0.9059734344482422,
+            "observed_frequency": 1.0
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.16045717716014232,
+            0.45722096719609834
+          ],
+          "roc_auc": [
+            0.7770251390995788,
+            0.8874400614556863
+          ],
+          "brier": [
+            0.053395834378898145,
+            0.11774261817336082
+          ],
+          "brier_skill_score": [
+            -0.2566827422005499,
+            0.1363537133913569
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.33549261117439383,
+        "roc_auc": 0.7904326588804637,
+        "brier": 0.10774590820074081,
+        "brier_skill_score": 0.032833257494755075,
+        "fixed_threshold_metrics": {
+          "CSI": 0.1976744185989048,
+          "POD": 0.28691983121152237,
+          "FAR": 0.6114285713936326,
+          "TP": 68,
+          "FP": 107,
+          "FN": 169,
+          "TN": 1574
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            }
+          ],
+          "events_hit": 11,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 8.090909090909092,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 4,
+            "2013": 0,
+            "2014": 3,
+            "2015": 1,
+            "2016": 2,
+            "2017": 3,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 21
+        },
+        "calibration": {
+          "intercept": -0.3504158530363553,
+          "slope": 0.5365765380989466
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1657,
+            "mean_probability": 0.024116573855280876,
+            "observed_frequency": 0.08328304164152082
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 86,
+            "mean_probability": 0.13616426289081573,
+            "observed_frequency": 0.36046511627906974
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 35,
+            "mean_probability": 0.246800035238266,
+            "observed_frequency": 0.42857142857142855
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 26,
+            "mean_probability": 0.3457931876182556,
+            "observed_frequency": 0.23076923076923078
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 17,
+            "mean_probability": 0.4523231089115143,
+            "observed_frequency": 0.5294117647058824
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 20,
+            "mean_probability": 0.5645555257797241,
+            "observed_frequency": 0.3
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 29,
+            "mean_probability": 0.6613221168518066,
+            "observed_frequency": 0.3103448275862069
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 26,
+            "mean_probability": 0.753238320350647,
+            "observed_frequency": 0.5769230769230769
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 14,
+            "mean_probability": 0.8515767455101013,
+            "observed_frequency": 0.2857142857142857
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 8,
+            "mean_probability": 0.9134074449539185,
+            "observed_frequency": 0.5
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.18259983029199342,
+            0.5402866688309355
+          ],
+          "roc_auc": [
+            0.7171540147852774,
+            0.8631427888346406
+          ],
+          "brier": [
+            0.07294558864086867,
+            0.14802222624421119
+          ],
+          "brier_skill_score": [
+            -0.16792019024967386,
+            0.1929608756999954
+          ]
+        }
+      }
+    },
+    "v51a": {
+      "5": {
+        "pr_auc": 0.2420799876450529,
+        "roc_auc": 0.8790703210010882,
+        "brier": 0.04699471592903137,
+        "brier_skill_score": -0.16515976922814413,
+        "fixed_threshold_metrics": {
+          "CSI": 0.1666666666559829,
+          "POD": 0.324999999959375,
+          "FAR": 0.7450980391426375,
+          "TP": 26,
+          "FP": 76,
+          "FN": 54,
+          "TN": 1762
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            }
+          ],
+          "events_hit": 8,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 3.375,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 1,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 3,
+            "2015": 0,
+            "2016": 1,
+            "2017": 1,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 14
+        },
+        "calibration": {
+          "intercept": -0.9794415690252619,
+          "slope": 0.3695824452901488
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1797,
+            "mean_probability": 0.001572072389535606,
+            "observed_frequency": 0.027824151363383415
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 19,
+            "mean_probability": 0.1487027108669281,
+            "observed_frequency": 0.21052631578947367
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 10,
+            "mean_probability": 0.2533937990665436,
+            "observed_frequency": 0.3
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 10,
+            "mean_probability": 0.34769389033317566,
+            "observed_frequency": 0.2
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 7,
+            "mean_probability": 0.4453582465648651,
+            "observed_frequency": 0.14285714285714285
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 10,
+            "mean_probability": 0.5524857044219971,
+            "observed_frequency": 0.3
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 13,
+            "mean_probability": 0.654425859451294,
+            "observed_frequency": 0.23076923076923078
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 23,
+            "mean_probability": 0.7462379336357117,
+            "observed_frequency": 0.13043478260869565
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 29,
+            "mean_probability": 0.8587130308151245,
+            "observed_frequency": 0.3793103448275862
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.12420429305073385,
+            0.48588005783803434
+          ],
+          "roc_auc": [
+            0.8130713396410386,
+            0.9442175210420334
+          ],
+          "brier": [
+            0.030899101588875055,
+            0.06601695790886879
+          ],
+          "brier_skill_score": [
+            -0.6517204422303711,
+            0.17774027431416617
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.25231172841972005,
+        "roc_auc": 0.8117942974971559,
+        "brier": 0.09033340960741043,
+        "brier_skill_score": -0.15941532302502637,
+        "fixed_threshold_metrics": {
+          "CSI": 0.19133574006529475,
+          "POD": 0.3312499999792969,
+          "FAR": 0.6882352940771626,
+          "TP": 53,
+          "FP": 117,
+          "FN": 107,
+          "TN": 1641
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            }
+          ],
+          "events_hit": 10,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 6.5,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 1,
+            "2014": 4,
+            "2015": 2,
+            "2016": 1,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 22
+        },
+        "calibration": {
+          "intercept": -1.0824014691356034,
+          "slope": 0.35346274700989333
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1721,
+            "mean_probability": 0.009572421200573444,
+            "observed_frequency": 0.058686809994189425
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 27,
+            "mean_probability": 0.13740423321723938,
+            "observed_frequency": 0.2222222222222222
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 25,
+            "mean_probability": 0.25502508878707886,
+            "observed_frequency": 0.28
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 11,
+            "mean_probability": 0.34785333275794983,
+            "observed_frequency": 0.18181818181818182
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 7,
+            "mean_probability": 0.4549599587917328,
+            "observed_frequency": 0.14285714285714285
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 15,
+            "mean_probability": 0.5586168169975281,
+            "observed_frequency": 0.5333333333333333
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 15,
+            "mean_probability": 0.6471884846687317,
+            "observed_frequency": 0.6666666666666666
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 24,
+            "mean_probability": 0.7544199824333191,
+            "observed_frequency": 0.375
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 32,
+            "mean_probability": 0.8475178480148315,
+            "observed_frequency": 0.125
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 41,
+            "mean_probability": 0.9369633197784424,
+            "observed_frequency": 0.2926829268292683
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.1381673960867469,
+            0.4369588400700527
+          ],
+          "roc_auc": [
+            0.7510144319274453,
+            0.8778238267854
+          ],
+          "brier": [
+            0.06234711622819304,
+            0.12481235228478908
+          ],
+          "brier_skill_score": [
+            -0.6549525187223507,
+            0.1261649108704429
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.29000310703887244,
+        "roc_auc": 0.7696757254698203,
+        "brier": 0.11853030323982239,
+        "brier_skill_score": -0.06397145177306607,
+        "fixed_threshold_metrics": {
+          "CSI": 0.20441988949711548,
+          "POD": 0.31223628690665667,
+          "FAR": 0.628140703486023,
+          "TP": 74,
+          "FP": 125,
+          "FN": 163,
+          "TN": 1556
+        },
+        "event_metrics": {
+          "events": [
+            {
+              "onset_step": 15784,
+              "winter": 2000,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 16360,
+              "winter": 2001,
+              "hit": true,
+              "first_alarm_lead_days": 11.0
+            },
+            {
+              "onset_step": 16912,
+              "winter": 2002,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "onset_step": 17108,
+              "winter": 2002,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 17712,
+              "winter": 2003,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 18384,
+              "winter": 2004,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 19900,
+              "winter": 2006,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 20760,
+              "winter": 2007,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 21476,
+              "winter": 2008,
+              "hit": true,
+              "first_alarm_lead_days": 12.0
+            },
+            {
+              "onset_step": 22088,
+              "winter": 2009,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "onset_step": 22876,
+              "winter": 2010,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 23048,
+              "winter": 2010,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "onset_step": 24920,
+              "winter": 2013,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "onset_step": 28688,
+              "winter": 2018,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "onset_step": 29244,
+              "winter": 2019,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "onset_step": 30712,
+              "winter": 2021,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            }
+          ],
+          "events_hit": 11,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 9.545454545454545,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 0,
+            "2014": 6,
+            "2015": 3,
+            "2016": 3,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "false_alarm_episodes_total": 25
+        },
+        "calibration": {
+          "intercept": -0.9375131988755518,
+          "slope": 0.3840893068235417
+        },
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 1665,
+            "mean_probability": 0.03143658861517906,
+            "observed_frequency": 0.09069069069069069
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 54,
+            "mean_probability": 0.13672757148742676,
+            "observed_frequency": 0.2222222222222222
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "n": 29,
+            "mean_probability": 0.24742437899112701,
+            "observed_frequency": 0.27586206896551724
+          },
+          {
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 15,
+            "mean_probability": 0.3430539667606354,
+            "observed_frequency": 0.4666666666666667
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 21,
+            "mean_probability": 0.45622071623802185,
+            "observed_frequency": 0.2857142857142857
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 18,
+            "mean_probability": 0.5504833459854126,
+            "observed_frequency": 0.6111111111111112
+          },
+          {
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 13,
+            "mean_probability": 0.6520832777023315,
+            "observed_frequency": 0.5384615384615384
+          },
+          {
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 19,
+            "mean_probability": 0.7454806566238403,
+            "observed_frequency": 0.631578947368421
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 38,
+            "mean_probability": 0.8384320735931396,
+            "observed_frequency": 0.2894736842105263
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 46,
+            "mean_probability": 0.9440529942512512,
+            "observed_frequency": 0.2608695652173913
+          }
+        ],
+        "winter_clustered_95ci": {
+          "pr_auc": [
+            0.15848313919887497,
+            0.4895449722255096
+          ],
+          "roc_auc": [
+            0.6939884353020661,
+            0.8456138570684457
+          ],
+          "brier": [
+            0.08514790665358304,
+            0.15643094889819623
+          ],
+          "brier_skill_score": [
+            -0.4414895044637281,
+            0.15128262036222268
+          ]
+        }
+      }
+    }
+  },
+  "v51a_minus_scratch": {
+    "5": {
+      "pr_auc": -0.07687596969057287,
+      "roc_auc": -0.007623775843307867,
+      "brier": 0.008602354675531387,
+      "brier_skill_score": -0.21328182620176606,
+      "event_hits": 1,
+      "false_alarm_episodes": 0
+    },
+    "10": {
+      "pr_auc": -0.029086848212021787,
+      "roc_auc": -0.018454920364050054,
+      "brier": 0.009998738765716553,
+      "brier_skill_score": -0.12833230404012053,
+      "event_hits": 1,
+      "false_alarm_episodes": 0
+    },
+    "15": {
+      "pr_auc": -0.045489504135521386,
+      "roc_auc": -0.02075693341064333,
+      "brier": 0.010784395039081573,
+      "brier_skill_score": -0.09680470926782114,
+      "event_hits": 0,
+      "false_alarm_episodes": 4
+    }
+  },
+  "paired_winter_clustered_95ci": {
+    "5": {
+      "pr_auc": [
+        -0.24523144209116018,
+        0.09318711917217508
+      ],
+      "brier_skill_score": [
+        -0.5937514250186696,
+        0.04609913431956137
+      ]
+    },
+    "10": {
+      "pr_auc": [
+        -0.08673766155507,
+        0.0457919306475291
+      ],
+      "brier_skill_score": [
+        -0.4029927609180047,
+        0.054795388527272386
+      ]
+    },
+    "15": {
+      "pr_auc": [
+        -0.1008212102272814,
+        0.006259559219237426
+      ],
+      "brier_skill_score": [
+        -0.28681564633985807,
+        0.01080519769826117
+      ]
+    }
+  },
+  "continuation_gate": {
+    "delta_pr_auc_5_at_least_0.02": false,
+    "delta_bss_5_at_least_0.02": false,
+    "event_hits_5_not_lower": true,
+    "false_episodes_5_not_higher": true,
+    "bss_10_not_below_minus_0.03": false,
+    "bss_15_not_below_minus_0.03": false,
+    "pass": false
+  }
+}

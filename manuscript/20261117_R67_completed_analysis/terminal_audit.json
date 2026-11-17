@@ -1,0 +1,551 @@
+{
+  "status": "TRAINING_AND_INITIAL_EVALUATION_VERIFIED_FINAL_ANALYSIS_PENDING",
+  "observed_beijing": "2026-11-17T08:25:45+08:00",
+  "slurm_accounting": "621834_0|COMPLETED|0:0|05:04:23|2026-11-11T14:04:29\n621834_1|COMPLETED|0:0|07:18:43|2026-11-11T21:23:12\n621834_2|COMPLETED|0:0|09:27:59|2026-11-12T06:51:11\n621834_3|COMPLETED|0:0|04:51:10|2026-11-12T11:42:21\n621834_4|COMPLETED|0:0|07:13:03|2026-11-12T18:55:24\n621834_5|COMPLETED|0:0|09:25:43|2026-11-13T04:21:08\n621834_6|COMPLETED|0:0|05:01:07|2026-11-13T09:22:15\n621834_7|COMPLETED|0:0|07:14:58|2026-11-13T16:37:13\n621834_8|COMPLETED|0:0|09:40:52|2026-11-14T02:18:06\n621834_9|COMPLETED|0:0|04:57:55|2026-11-14T07:16:01\n621834_10|COMPLETED|0:0|07:13:45|2026-11-14T14:29:47\n621834_11|COMPLETED|0:0|09:23:07|2026-11-14T23:52:55\n621834_12|COMPLETED|0:0|04:50:53|2026-11-15T04:43:49\n621834_13|COMPLETED|0:0|07:05:30|2026-11-15T11:49:19\n621834_14|COMPLETED|0:0|09:17:42|2026-11-15T21:07:01\n621834_15|COMPLETED|0:0|04:51:55|2026-11-16T01:58:56\n621834_16|COMPLETED|0:0|07:08:00|2026-11-16T09:06:57\n621834_17|COMPLETED|0:0|12:06:01|2026-11-16T21:12:58\n621836|COMPLETED|0:0|00:00:39|2026-11-16T21:13:38",
+  "artifact_checks": [
+    {
+      "task": 0,
+      "arm": "balanced",
+      "fold": "A",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        2213,
+        988,
+        961,
+        2486,
+        4440
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 1,
+      "arm": "balanced",
+      "fold": "B",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        3768,
+        1762,
+        1665,
+        4088,
+        7533
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 2,
+      "arm": "balanced",
+      "fold": "C",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        5243,
+        2451,
+        2396,
+        5631,
+        10487
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 3,
+      "arm": "balanced",
+      "fold": "A",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        2217,
+        943,
+        950,
+        2543,
+        4435
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 4,
+      "arm": "balanced",
+      "fold": "B",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        3764,
+        1737,
+        1729,
+        4058,
+        7528
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 5,
+      "arm": "balanced",
+      "fold": "C",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        5254,
+        2409,
+        2333,
+        5733,
+        10479
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640243,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 6,
+      "arm": "balanced",
+      "fold": "A",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        2217,
+        968,
+        941,
+        2516,
+        4446
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640557,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 7,
+      "arm": "balanced",
+      "fold": "B",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        3760,
+        1783,
+        1706,
+        4042,
+        7525
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640557,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 8,
+      "arm": "balanced",
+      "fold": "C",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        5243,
+        2399,
+        2309,
+        5778,
+        10479
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640557,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 9,
+      "arm": "uniform",
+      "fold": "A",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        262,
+        237,
+        275,
+        702,
+        9612
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 10,
+      "arm": "uniform",
+      "fold": "B",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        636,
+        631,
+        609,
+        1447,
+        15493
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 11,
+      "arm": "uniform",
+      "fold": "C",
+      "seed": 42,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        1000,
+        979,
+        947,
+        2339,
+        20943
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 12,
+      "arm": "uniform",
+      "fold": "A",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        241,
+        254,
+        271,
+        707,
+        9615
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 13,
+      "arm": "uniform",
+      "fold": "B",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        638,
+        625,
+        585,
+        1416,
+        15552
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 14,
+      "arm": "uniform",
+      "fold": "C",
+      "seed": 73,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        1014,
+        931,
+        987,
+        2404,
+        20872
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1639798,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 15,
+      "arm": "uniform",
+      "fold": "A",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        528
+      ],
+      "class_counts": [
+        250,
+        232,
+        274,
+        697,
+        9635
+      ],
+      "rows": 374,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640432,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 16,
+      "arm": "uniform",
+      "fold": "B",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        896
+      ],
+      "class_counts": [
+        636,
+        593,
+        638,
+        1412,
+        15537
+      ],
+      "rows": 484,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640432,
+      "result_json_ok": true,
+      "outer_test_done": true
+    },
+    {
+      "task": 17,
+      "arm": "uniform",
+      "fold": "C",
+      "seed": 2026,
+      "exposure_records": 21,
+      "epochs_ok": true,
+      "counts_ok": true,
+      "retained": [
+        1248
+      ],
+      "class_counts": [
+        1014,
+        974,
+        963,
+        2319,
+        20938
+      ],
+      "rows": 1060,
+      "finite": true,
+      "probability_bounds": true,
+      "unique": true,
+      "identity_ok": true,
+      "checkpoint_bytes": 1640432,
+      "result_json_ok": true,
+      "outer_test_done": true
+    }
+  ],
+  "preflight_records": [
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 2 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032",
+    "R67_GPU_PREFLIGHT gpu02 1 NVIDIA H100 80GB HBM3 84466860032"
+  ],
+  "stderr_bytes": {
+    "control_621834_0.err": 0,
+    "control_621834_1.err": 0,
+    "control_621834_10.err": 0,
+    "control_621834_11.err": 0,
+    "control_621834_12.err": 0,
+    "control_621834_13.err": 0,
+    "control_621834_14.err": 0,
+    "control_621834_15.err": 0,
+    "control_621834_16.err": 0,
+    "control_621834_17.err": 0,
+    "control_621834_2.err": 0,
+    "control_621834_3.err": 0,
+    "control_621834_4.err": 0,
+    "control_621834_5.err": 0,
+    "control_621834_6.err": 0,
+    "control_621834_7.err": 0,
+    "control_621834_8.err": 0,
+    "control_621834_9.err": 0,
+    "eval_621836.err": 0
+  },
+  "forecast_origins": 1918,
+  "winter_clusters": 22,
+  "equal_probability_means_and_source_identity_verified": true,
+  "probability_metric_cells_independently_recomputed": 96,
+  "code_sha256": {
+    "run_sampling_control.py": "5fd59556a98286727b7aec5d06ab20e170a6a4f945fa6d7e9c9e455bab5304a8",
+    "evaluate_controls.py": "c46a3cddaf28b634f0ce0db5df41666f0fb3a255986c7ab97a491cf6022237dd",
+    "submit_controls.sh": "1fed587857bda42d8bab8a1336f6828f5dc3595cad7469c4e6105d110eddff3f"
+  },
+  "local_copies_sha256_matched_remote": {
+    "r67_results.json": "2614a66698b7bcfb6ab15cf064a87e438152cd87e7f1d9fe8aa7d666fd5a1347",
+    "r67_aligned_predictions.npz": "8555737b384b323171239f306e424f966765c96449e2d9c45f32b49488d24703"
+  },
+  "training_gpu_hours": 132.21277777777777,
+  "original_event_metrics_read_from_frozen_result_not_independently_recomputed_this_check": true,
+  "remaining": "per-fold/equal-fold reliability and event diagnostics, separately labelled prior-correction diagnostics, final scientific/manuscript/reply reconciliation and author release confirmations",
+  "scientific_boundary": "This is the new fixed-cumulative formulation raw balanced/uniform pair, not the old prior-corrected anchor. Positive exposure is not matched. No seed/threshold/calibration/checkpoint selection. Not full final manuscript or submission closure."
+}

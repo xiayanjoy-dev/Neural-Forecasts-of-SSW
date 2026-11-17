@@ -1,0 +1,3294 @@
+{
+  "status": "V57_P7_FORWARD_EVALUATION_OK",
+  "protocol": {
+    "arms": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      42,
+      73,
+      2026
+    ],
+    "horizons_days": [
+      5,
+      10,
+      15
+    ],
+    "fixed_threshold": 0.2,
+    "forward_event_dates": [
+      "2023-02-16",
+      "2024-01-16",
+      "2024-03-04"
+    ],
+    "bss_reference": "constant forward-test prevalence; diagnostic only",
+    "outer_test_selection": "forbidden"
+  },
+  "arms": {
+    "A": {
+      "n_samples": 340,
+      "alignment": "PASS",
+      "metrics": {
+        "seed42": {
+          "5": {
+            "pr_auc": 0.4322936857051874,
+            "roc_auc": 0.9117948717948718,
+            "brier": 0.03474003858278122,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.17621570047804958,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.2222222222222222,
+              "POD": 0.26666666666666666,
+              "FAR": 0.42857142857142855,
+              "TP": 4,
+              "FP": 3,
+              "FN": 11,
+              "TN": 322
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.3333333333333333,
+              "false_alarm_episodes_total": 2,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 1,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 332,
+                "mean_probability": 0.002046843059360981,
+                "observed_frequency": 0.03313253012048193
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 1,
+                "mean_probability": 0.13217981159687042,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 1,
+                "mean_probability": 0.2142825424671173,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 1,
+                "mean_probability": 0.30767306685447693,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.44975870847702026,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 2,
+                "mean_probability": 0.6408793926239014,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.7920648455619812,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8767942786216736,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.391813882622898,
+            "roc_auc": 0.845,
+            "brier": 0.07885080490357962,
+            "reference_brier": 0.08044982698961937,
+            "bss": 0.019876016467332835,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.14893617021276595,
+              "POD": 0.23333333333333334,
+              "FAR": 0.7083333333333334,
+              "TP": 7,
+              "FP": 17,
+              "FN": 23,
+              "TN": 293
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 4.0,
+              "false_alarm_episodes_total": 6,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 1,
+                "2024": 2,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 9.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 313,
+                "mean_probability": 0.009695709683001041,
+                "observed_frequency": 0.07028753993610223
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 3,
+                "mean_probability": 0.15182140469551086,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 4,
+                "mean_probability": 0.2662714421749115,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 4,
+                "mean_probability": 0.32642847299575806,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.45949113368988037,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 7,
+                "mean_probability": 0.5376542806625366,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6517342329025269,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 2,
+                "mean_probability": 0.7409756779670715,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 3,
+                "mean_probability": 0.8408357501029968,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 2,
+                "mean_probability": 0.9073774814605713,
+                "observed_frequency": 1.0
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.3827996113225608,
+            "roc_auc": 0.8170998116760828,
+            "brier": 0.11705313036867329,
+            "reference_brier": 0.11483564013840832,
+            "bss": -0.019310122080499426,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.22058823529411764,
+              "POD": 0.3333333333333333,
+              "FAR": 0.6052631578947368,
+              "TP": 15,
+              "FP": 23,
+              "FN": 30,
+              "TN": 272
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 8.333333333333334,
+              "false_alarm_episodes_total": 6,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 1,
+                "2024": 2,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 13.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 9.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 285,
+                "mean_probability": 0.02247311733663082,
+                "observed_frequency": 0.08070175438596491
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 17,
+                "mean_probability": 0.15159104764461517,
+                "observed_frequency": 0.4117647058823529
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 12,
+                "mean_probability": 0.24039264023303986,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 2,
+                "mean_probability": 0.353317528963089,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 3,
+                "mean_probability": 0.46565747261047363,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 5,
+                "mean_probability": 0.5178725123405457,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 7,
+                "mean_probability": 0.6746810078620911,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 2,
+                "mean_probability": 0.7427988648414612,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 5,
+                "mean_probability": 0.8530418276786804,
+                "observed_frequency": 0.4
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 2,
+                "mean_probability": 0.9186873435974121,
+                "observed_frequency": 1.0
+              }
+            ]
+          }
+        },
+        "seed73": {
+          "5": {
+            "pr_auc": 0.3633903085859018,
+            "roc_auc": 0.7673846153846153,
+            "brier": 0.034742294094814254,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.17616221592604575,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.23809523809523808,
+              "POD": 0.3333333333333333,
+              "FAR": 0.5454545454545454,
+              "TP": 5,
+              "FP": 6,
+              "FN": 10,
+              "TN": 319
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.5,
+              "false_alarm_episodes_total": 3,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 0,
+                "2024": 1,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 328,
+                "mean_probability": 0.0010189482709392905,
+                "observed_frequency": 0.03048780487804878
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 1,
+                "mean_probability": 0.11148424446582794,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 3,
+                "mean_probability": 0.2516421675682068,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 3,
+                "mean_probability": 0.32700011134147644,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 3,
+                "mean_probability": 0.551429808139801,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6061522960662842,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.7623382210731506,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.2744090142110232,
+            "roc_auc": 0.7220430107526882,
+            "brier": 0.0841471518412586,
+            "reference_brier": 0.08044982698961937,
+            "bss": -0.045958145467687395,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.10638297872340426,
+              "POD": 0.16666666666666666,
+              "FAR": 0.7727272727272727,
+              "TP": 5,
+              "FP": 17,
+              "FN": 25,
+              "TN": 293
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.5,
+              "false_alarm_episodes_total": 7,
+              "false_alarm_episodes_by_winter": {
+                "2022": 2,
+                "2023": 0,
+                "2024": 2,
+                "2025": 3
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 308,
+                "mean_probability": 0.006928903516381979,
+                "observed_frequency": 0.07792207792207792
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 10,
+                "mean_probability": 0.14024940133094788,
+                "observed_frequency": 0.1
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 7,
+                "mean_probability": 0.2685852348804474,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 3,
+                "mean_probability": 0.3444840610027313,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 4,
+                "mean_probability": 0.5682271122932434,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 3,
+                "mean_probability": 0.6667359471321106,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 4,
+                "mean_probability": 0.7492576837539673,
+                "observed_frequency": 0.75
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8009585738182068,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.28357896823737544,
+            "roc_auc": 0.6979661016949152,
+            "brier": 0.12459830423001743,
+            "reference_brier": 0.11483564013840832,
+            "bss": -0.08501423495216676,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.1267605633802817,
+              "POD": 0.2,
+              "FAR": 0.7428571428571429,
+              "TP": 9,
+              "FP": 26,
+              "FN": 36,
+              "TN": 269
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 9.5,
+              "false_alarm_episodes_total": 6,
+              "false_alarm_episodes_by_winter": {
+                "2022": 2,
+                "2023": 1,
+                "2024": 1,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 292,
+                "mean_probability": 0.019150666892528534,
+                "observed_frequency": 0.11643835616438356
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 13,
+                "mean_probability": 0.14166182279586792,
+                "observed_frequency": 0.15384615384615385
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 10,
+                "mean_probability": 0.24397370219230652,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 4,
+                "mean_probability": 0.3478592038154602,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 6,
+                "mean_probability": 0.45407137274742126,
+                "observed_frequency": 0.16666666666666666
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 4,
+                "mean_probability": 0.5362173914909363,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 4,
+                "mean_probability": 0.676263153553009,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 6,
+                "mean_probability": 0.7496888637542725,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.815664529800415,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        },
+        "seed2026": {
+          "5": {
+            "pr_auc": 0.4050491978557488,
+            "roc_auc": 0.9213333333333333,
+            "brier": 0.03725695808506076,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.11653244007527741,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.17647058823529413,
+              "POD": 0.2,
+              "FAR": 0.4,
+              "TP": 3,
+              "FP": 2,
+              "FN": 12,
+              "TN": 323
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.5,
+              "false_alarm_episodes_total": 1,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 0,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 333,
+                "mean_probability": 0.0018975818529725075,
+                "observed_frequency": 0.036036036036036036
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 2,
+                "mean_probability": 0.13363589346408844,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 1,
+                "mean_probability": 0.23819823563098907,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.4385576844215393,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5062289237976074,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.7109324336051941,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.3758313623775833,
+            "roc_auc": 0.8506451612903225,
+            "brier": 0.07512721201700195,
+            "reference_brier": 0.08044982698961937,
+            "bss": 0.06616067643382517,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.1951219512195122,
+              "POD": 0.26666666666666666,
+              "FAR": 0.5789473684210527,
+              "TP": 8,
+              "FP": 11,
+              "FN": 22,
+              "TN": 299
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 4.5,
+              "false_alarm_episodes_total": 4,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 1,
+                "2024": 1,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 6.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 305,
+                "mean_probability": 0.006817987188696861,
+                "observed_frequency": 0.06229508196721312
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 16,
+                "mean_probability": 0.15007352828979492,
+                "observed_frequency": 0.1875
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 5,
+                "mean_probability": 0.2771112322807312,
+                "observed_frequency": 0.4
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 5,
+                "mean_probability": 0.3400960862636566,
+                "observed_frequency": 0.6
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.43056637048721313,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5393984317779541,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 2,
+                "mean_probability": 0.6283251047134399,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 2,
+                "mean_probability": 0.7575353980064392,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 2,
+                "mean_probability": 0.8347411751747131,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.3673881288029732,
+            "roc_auc": 0.8129566854990584,
+            "brier": 0.11836174791096446,
+            "reference_brier": 0.11483564013840832,
+            "bss": -0.030705691789641554,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.19736842105263158,
+              "POD": 0.3333333333333333,
+              "FAR": 0.6739130434782609,
+              "TP": 15,
+              "FP": 31,
+              "FN": 30,
+              "TN": 264
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 9.5,
+              "false_alarm_episodes_total": 8,
+              "false_alarm_episodes_by_winter": {
+                "2022": 3,
+                "2023": 1,
+                "2024": 2,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 279,
+                "mean_probability": 0.014611344784498215,
+                "observed_frequency": 0.0931899641577061
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 15,
+                "mean_probability": 0.13886456191539764,
+                "observed_frequency": 0.26666666666666666
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 8,
+                "mean_probability": 0.23577049374580383,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 9,
+                "mean_probability": 0.3691830635070801,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 6,
+                "mean_probability": 0.469222754240036,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 8,
+                "mean_probability": 0.5509535670280457,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 7,
+                "mean_probability": 0.6385467648506165,
+                "observed_frequency": 0.42857142857142855
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 3,
+                "mean_probability": 0.7384943962097168,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 5,
+                "mean_probability": 0.8423672914505005,
+                "observed_frequency": 0.6
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        },
+        "three_seed_equal_mean": {
+          "5": {
+            "pr_auc": 0.5275001729454876,
+            "roc_auc": 0.9300512820512821,
+            "brier": 0.033375019951270166,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.20858414228372713,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.29411764705882354,
+              "POD": 0.3333333333333333,
+              "FAR": 0.2857142857142857,
+              "TP": 5,
+              "FP": 2,
+              "FN": 10,
+              "TN": 323
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.0,
+              "false_alarm_episodes_total": 1,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 0,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 326,
+                "mean_probability": 0.002557310275733471,
+                "observed_frequency": 0.024539877300613498
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 7,
+                "mean_probability": 0.1313237100839615,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 3,
+                "mean_probability": 0.23612497746944427,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 1,
+                "mean_probability": 0.3187166750431061,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.4033443033695221,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5295347571372986,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6771172881126404,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.38968250212108024,
+            "roc_auc": 0.8523655913978495,
+            "brier": 0.07233142357660613,
+            "reference_brier": 0.08044982698961937,
+            "bss": 0.10091262737035822,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.16326530612244897,
+              "POD": 0.26666666666666666,
+              "FAR": 0.7037037037037037,
+              "TP": 8,
+              "FP": 19,
+              "FN": 22,
+              "TN": 291
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.6666666666666665,
+              "false_alarm_episodes_total": 7,
+              "false_alarm_episodes_by_winter": {
+                "2022": 2,
+                "2023": 1,
+                "2024": 2,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 293,
+                "mean_probability": 0.00888487696647644,
+                "observed_frequency": 0.05460750853242321
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 20,
+                "mean_probability": 0.13786444067955017,
+                "observed_frequency": 0.3
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 15,
+                "mean_probability": 0.24456851184368134,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 4,
+                "mean_probability": 0.3436267673969269,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.43603765964508057,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 5,
+                "mean_probability": 0.5450488924980164,
+                "observed_frequency": 0.6
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.827329158782959,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.34131522821781113,
+            "roc_auc": 0.8212429378531073,
+            "brier": 0.1102221971528082,
+            "reference_brier": 0.11483564013840832,
+            "bss": 0.04017431330586607,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.19753086419753085,
+              "POD": 0.35555555555555557,
+              "FAR": 0.6923076923076923,
+              "TP": 16,
+              "FP": 36,
+              "FN": 29,
+              "TN": 259
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 7.0,
+              "false_alarm_episodes_total": 9,
+              "false_alarm_episodes_by_winter": {
+                "2022": 3,
+                "2023": 1,
+                "2024": 2,
+                "2025": 3
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 32328,
+                  "hit": true,
+                  "first_alarm_lead_days": 4.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 32928,
+                  "hit": true,
+                  "first_alarm_lead_days": 14.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 33120,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 268,
+                "mean_probability": 0.018878092989325523,
+                "observed_frequency": 0.08208955223880597
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 20,
+                "mean_probability": 0.1533530354499817,
+                "observed_frequency": 0.35
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 22,
+                "mean_probability": 0.25428506731987,
+                "observed_frequency": 0.22727272727272727
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 13,
+                "mean_probability": 0.3353831470012665,
+                "observed_frequency": 0.38461538461538464
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 7,
+                "mean_probability": 0.46250295639038086,
+                "observed_frequency": 0.2857142857142857
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 5,
+                "mean_probability": 0.5556858777999878,
+                "observed_frequency": 0.4
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 4,
+                "mean_probability": 0.6360272765159607,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8632631301879883,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      },
+      "bootstrap_95ci": {
+        "5": {
+          "seed42": {
+            "pr_auc": [
+              0.23477777777777778,
+              0.525777289225252
+            ],
+            "bss": [
+              0.05914712953592349,
+              0.24757669659718282
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.1360498030147724,
+              0.8666666666666667
+            ],
+            "bss": [
+              -0.06880470510150305,
+              0.5830557935656311
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.06130796763149704,
+              0.7177255925046917
+            ],
+            "bss": [
+              -0.09545587474172597,
+              0.23584920547904342
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.40311247831824737,
+              0.6171508617523109
+            ],
+            "bss": [
+              0.12407831942644436,
+              0.26481346693201957
+            ]
+          }
+        },
+        "10": {
+          "seed42": {
+            "pr_auc": [
+              0.13727622338633239,
+              0.5780045478056248
+            ],
+            "bss": [
+              -0.287813346047022,
+              0.08835145154535629
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.12307375841702593,
+              0.510213972944506
+            ],
+            "bss": [
+              -0.3653484869003336,
+              0.28357627836291455
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.06976073632101971,
+              0.6843774367862754
+            ],
+            "bss": [
+              -0.33515723432765143,
+              0.24817740188156534
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.25395910576177116,
+              0.5393190819613913
+            ],
+            "bss": [
+              -0.0407057573933538,
+              0.12949577910418275
+            ]
+          }
+        },
+        "15": {
+          "seed42": {
+            "pr_auc": [
+              0.11973662774720903,
+              0.5885449940452978
+            ],
+            "bss": [
+              -0.4591493778859388,
+              0.044633864481346874
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.1522402358561928,
+              0.5195290556470497
+            ],
+            "bss": [
+              -0.45836509543262816,
+              0.11489600733395944
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.09943888175088396,
+              0.616715938492336
+            ],
+            "bss": [
+              -0.5643200921139728,
+              0.13437226018286408
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.1371642886730984,
+              0.5307349559385262
+            ],
+            "bss": [
+              -0.21703267632134882,
+              0.08931145040715549
+            ]
+          }
+        }
+      },
+      "auxiliary": {
+        "seed42": {
+          "vortex_corr": 0.8536851406123326,
+          "vortex_change_corr": 0.32200907567633064
+        },
+        "seed73": {
+          "vortex_corr": 0.9269530007726157,
+          "vortex_change_corr": 0.3891238273840746
+        },
+        "seed2026": {
+          "vortex_corr": 0.8784034684997355,
+          "vortex_change_corr": 0.3368275446154924
+        }
+      }
+    },
+    "B": {
+      "n_samples": 340,
+      "alignment": "PASS",
+      "metrics": {
+        "seed42": {
+          "5": {
+            "pr_auc": 0.23722389006258354,
+            "roc_auc": 0.9107692307692308,
+            "brier": 0.044840898076065124,
+            "reference_brier": 0.04217128027681662,
+            "bss": -0.06330416771141079,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.05,
+              "POD": 0.06666666666666667,
+              "FAR": 0.8333333333333334,
+              "TP": 1,
+              "FP": 5,
+              "FN": 14,
+              "TN": 320
+            },
+            "event_metrics": {
+              "events_hit": 1,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.0,
+              "false_alarm_episodes_total": 2,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 0,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 333,
+                "mean_probability": 0.0009127840748988092,
+                "observed_frequency": 0.042042042042042045
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 1,
+                "mean_probability": 0.14458316564559937,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 3,
+                "mean_probability": 0.2588661015033722,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 2,
+                "mean_probability": 0.5576786994934082,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8274938464164734,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.2712041241673702,
+            "roc_auc": 0.853763440860215,
+            "brier": 0.09597110749903502,
+            "reference_brier": 0.08044982698961937,
+            "bss": -0.19293118568693002,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.1111111111111111,
+              "POD": 0.16666666666666666,
+              "FAR": 0.75,
+              "TP": 5,
+              "FP": 15,
+              "FN": 25,
+              "TN": 295
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.6666666666666667,
+              "false_alarm_episodes_total": 3,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 1,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 316,
+                "mean_probability": 0.0060097514651715755,
+                "observed_frequency": 0.0759493670886076
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 4,
+                "mean_probability": 0.1205701008439064,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 2,
+                "mean_probability": 0.24887540936470032,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 3,
+                "mean_probability": 0.34381628036499023,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.4583895802497864,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 4,
+                "mean_probability": 0.5491634607315063,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6733482480049133,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.7440484166145325,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 5,
+                "mean_probability": 0.8457083702087402,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 2,
+                "mean_probability": 0.932037353515625,
+                "observed_frequency": 0.0
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.3070685308206874,
+            "roc_auc": 0.8161205273069679,
+            "brier": 0.13755890838514576,
+            "reference_brier": 0.11483564013840832,
+            "bss": -0.19787644514673053,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.1,
+              "POD": 0.15555555555555556,
+              "FAR": 0.78125,
+              "TP": 7,
+              "FP": 25,
+              "FN": 38,
+              "TN": 270
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 6.333333333333333,
+              "false_alarm_episodes_total": 5,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 2,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 14.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 298,
+                "mean_probability": 0.016605738550424576,
+                "observed_frequency": 0.11073825503355705
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 10,
+                "mean_probability": 0.13497133553028107,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 10,
+                "mean_probability": 0.2611331045627594,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 2,
+                "mean_probability": 0.3426114320755005,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.4509972929954529,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 3,
+                "mean_probability": 0.5938749313354492,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6572011113166809,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 6,
+                "mean_probability": 0.7526199817657471,
+                "observed_frequency": 0.16666666666666666
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 2,
+                "mean_probability": 0.883012056350708,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 6,
+                "mean_probability": 0.9269620776176453,
+                "observed_frequency": 0.16666666666666666
+              }
+            ]
+          }
+        },
+        "seed73": {
+          "5": {
+            "pr_auc": 0.6227093209799379,
+            "roc_auc": 0.8795897435897436,
+            "brier": 0.03288873891251634,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.22011523727448445,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.26666666666666666,
+              "POD": 0.26666666666666666,
+              "FAR": 0.0,
+              "TP": 4,
+              "FP": 0,
+              "FN": 11,
+              "TN": 325
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.0,
+              "false_alarm_episodes_total": 0,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 336,
+                "mean_probability": 0.0003062092000618577,
+                "observed_frequency": 0.03273809523809524
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.481844037771225,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8584340214729309,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 2,
+                "mean_probability": 0.912864089012146,
+                "observed_frequency": 1.0
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.3912831278721607,
+            "roc_auc": 0.8032795698924731,
+            "brier": 0.0722470215742145,
+            "reference_brier": 0.08044982698961937,
+            "bss": 0.10196175333557023,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.21212121212121213,
+              "POD": 0.23333333333333334,
+              "FAR": 0.3,
+              "TP": 7,
+              "FP": 3,
+              "FN": 23,
+              "TN": 307
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.6666666666666665,
+              "false_alarm_episodes_total": 3,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 0,
+                "2024": 2,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 329,
+                "mean_probability": 0.0039049757178872824,
+                "observed_frequency": 0.06990881458966565
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 1,
+                "mean_probability": 0.13355401158332825,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 3,
+                "mean_probability": 0.2887434661388397,
+                "observed_frequency": 0.6666666666666666
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 1,
+                "mean_probability": 0.3823094964027405,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 2,
+                "mean_probability": 0.4160813093185425,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8796365261077881,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 3,
+                "mean_probability": 0.9313772320747375,
+                "observed_frequency": 1.0
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.3863232200674911,
+            "roc_auc": 0.7285499058380415,
+            "brier": 0.11055836189051695,
+            "reference_brier": 0.11483564013840832,
+            "bss": 0.037246957849811135,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.16,
+              "POD": 0.17777777777777778,
+              "FAR": 0.38461538461538464,
+              "TP": 8,
+              "FP": 5,
+              "FN": 37,
+              "TN": 290
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 6.666666666666667,
+              "false_alarm_episodes_total": 2,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 0,
+                "2024": 1,
+                "2025": 0
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 319,
+                "mean_probability": 0.015754597261548042,
+                "observed_frequency": 0.10658307210031348
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 8,
+                "mean_probability": 0.1476587951183319,
+                "observed_frequency": 0.375
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 2,
+                "mean_probability": 0.2506313621997833,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 1,
+                "mean_probability": 0.319644957780838,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 4,
+                "mean_probability": 0.46963614225387573,
+                "observed_frequency": 0.75
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 2,
+                "mean_probability": 0.6482959985733032,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 4,
+                "mean_probability": 0.9404268264770508,
+                "observed_frequency": 1.0
+              }
+            ]
+          }
+        },
+        "seed2026": {
+          "5": {
+            "pr_auc": 0.33498093012721175,
+            "roc_auc": 0.892102564102564,
+            "brier": 0.03813358758415524,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.09574508210700616,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.16666666666666666,
+              "POD": 0.2,
+              "FAR": 0.5,
+              "TP": 3,
+              "FP": 3,
+              "FN": 12,
+              "TN": 322
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.5,
+              "false_alarm_episodes_total": 1,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 332,
+                "mean_probability": 0.0013079064665362239,
+                "observed_frequency": 0.03614457831325301
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 2,
+                "mean_probability": 0.14089038968086243,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 2,
+                "mean_probability": 0.2441970705986023,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 2,
+                "mean_probability": 0.3228681683540344,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5750154256820679,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.770050048828125,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.30648156103049373,
+            "roc_auc": 0.8458064516129032,
+            "brier": 0.08641115814024666,
+            "reference_brier": 0.08044982698961937,
+            "bss": -0.0740999872056467,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.1111111111111111,
+              "POD": 0.16666666666666666,
+              "FAR": 0.75,
+              "TP": 5,
+              "FP": 15,
+              "FN": 25,
+              "TN": 295
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.5,
+              "false_alarm_episodes_total": 4,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 0,
+                "2024": 1,
+                "2025": 2
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 310,
+                "mean_probability": 0.004662584513425827,
+                "observed_frequency": 0.08064516129032258
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 10,
+                "mean_probability": 0.13829007744789124,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 5,
+                "mean_probability": 0.23044319450855255,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 5,
+                "mean_probability": 0.34219425916671753,
+                "observed_frequency": 0.4
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.421725332736969,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5748074054718018,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.638097882270813,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 5,
+                "mean_probability": 0.7571978569030762,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8273724317550659,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 1,
+                "mean_probability": 0.9356251955032349,
+                "observed_frequency": 1.0
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.3260365104967736,
+            "roc_auc": 0.7890395480225989,
+            "brier": 0.1255814421351503,
+            "reference_brier": 0.11483564013840832,
+            "bss": -0.09357549610722216,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.14864864864864866,
+              "POD": 0.24444444444444444,
+              "FAR": 0.725,
+              "TP": 11,
+              "FP": 29,
+              "FN": 34,
+              "TN": 266
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 9.0,
+              "false_alarm_episodes_total": 4,
+              "false_alarm_episodes_by_winter": {
+                "2022": 1,
+                "2023": 1,
+                "2024": 1,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 289,
+                "mean_probability": 0.01139308512210846,
+                "observed_frequency": 0.10726643598615918
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 11,
+                "mean_probability": 0.1575649082660675,
+                "observed_frequency": 0.2727272727272727
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 9,
+                "mean_probability": 0.24763447046279907,
+                "observed_frequency": 0.2222222222222222
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 4,
+                "mean_probability": 0.3418070673942566,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 8,
+                "mean_probability": 0.4647379219532013,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 4,
+                "mean_probability": 0.5472688674926758,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 5,
+                "mean_probability": 0.6308803558349609,
+                "observed_frequency": 0.4
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 3,
+                "mean_probability": 0.7502503991127014,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 6,
+                "mean_probability": 0.8265826106071472,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 1,
+                "mean_probability": 0.9516149759292603,
+                "observed_frequency": 1.0
+              }
+            ]
+          }
+        },
+        "three_seed_equal_mean": {
+          "5": {
+            "pr_auc": 0.44364763930295953,
+            "roc_auc": 0.9056410256410257,
+            "brier": 0.03609485294829367,
+            "reference_brier": 0.04217128027681662,
+            "bss": 0.14408923060046208,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.04411764705882353,
+            "fixed_0.20": {
+              "CSI": 0.17647058823529413,
+              "POD": 0.2,
+              "FAR": 0.4,
+              "TP": 3,
+              "FP": 2,
+              "FN": 12,
+              "TN": 323
+            },
+            "event_metrics": {
+              "events_hit": 2,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 1.5,
+              "false_alarm_episodes_total": 2,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 0,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 1.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": false,
+                  "first_alarm_lead_days": null
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 331,
+                "mean_probability": 0.001980534754693508,
+                "observed_frequency": 0.030211480362537766
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 4,
+                "mean_probability": 0.15248699486255646,
+                "observed_frequency": 0.5
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 2,
+                "mean_probability": 0.2518402636051178,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 1,
+                "mean_probability": 0.3766002357006073,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.4985107481479645,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 1,
+                "mean_probability": 0.5663983225822449,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "10": {
+            "pr_auc": 0.3552672591617979,
+            "roc_auc": 0.8494623655913979,
+            "brier": 0.07742402583852355,
+            "reference_brier": 0.08044982698961937,
+            "bss": 0.037611033663083604,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.08823529411764706,
+            "fixed_0.20": {
+              "CSI": 0.15217391304347827,
+              "POD": 0.23333333333333334,
+              "FAR": 0.6956521739130435,
+              "TP": 7,
+              "FP": 16,
+              "FN": 23,
+              "TN": 294
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 2.3333333333333335,
+              "false_alarm_episodes_total": 3,
+              "false_alarm_episodes_by_winter": {
+                "2022": 0,
+                "2023": 1,
+                "2024": 1,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 307,
+                "mean_probability": 0.005836288910359144,
+                "observed_frequency": 0.07166123778501629
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 10,
+                "mean_probability": 0.13148538768291473,
+                "observed_frequency": 0.1
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 11,
+                "mean_probability": 0.25528737902641296,
+                "observed_frequency": 0.18181818181818182
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 6,
+                "mean_probability": 0.34355083107948303,
+                "observed_frequency": 0.16666666666666666
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 1,
+                "mean_probability": 0.41119444370269775,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 2,
+                "mean_probability": 0.5318285226821899,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 2,
+                "mean_probability": 0.6535046100616455,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 1,
+                "mean_probability": 0.7693702578544617,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          },
+          "15": {
+            "pr_auc": 0.34756662625224793,
+            "roc_auc": 0.7933709981167608,
+            "brier": 0.11472458413100885,
+            "reference_brier": 0.11483564013840832,
+            "bss": 0.0009670865879757296,
+            "reference": "constant forward-test prevalence",
+            "prevalence": 0.1323529411764706,
+            "fixed_0.20": {
+              "CSI": 0.15942028985507245,
+              "POD": 0.24444444444444444,
+              "FAR": 0.6857142857142857,
+              "TP": 11,
+              "FP": 24,
+              "FN": 34,
+              "TN": 271
+            },
+            "event_metrics": {
+              "events_hit": 3,
+              "n_events": 3,
+              "mean_first_alarm_lead_days": 6.666666666666667,
+              "false_alarm_episodes_total": 5,
+              "false_alarm_episodes_by_winter": {
+                "2022": 2,
+                "2023": 1,
+                "2024": 1,
+                "2025": 1
+              },
+              "events": [
+                {
+                  "winter": 2023,
+                  "onset_step": 46104,
+                  "hit": true,
+                  "first_alarm_lead_days": 3.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46704,
+                  "hit": true,
+                  "first_alarm_lead_days": 15.0
+                },
+                {
+                  "winter": 2024,
+                  "onset_step": 46896,
+                  "hit": true,
+                  "first_alarm_lead_days": 2.0
+                }
+              ]
+            },
+            "reliability": [
+              {
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 291,
+                "mean_probability": 0.016805365681648254,
+                "observed_frequency": 0.10996563573883161
+              },
+              {
+                "lower": 0.1,
+                "upper": 0.2,
+                "count": 14,
+                "mean_probability": 0.1500455141067505,
+                "observed_frequency": 0.14285714285714285
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.30000000000000004,
+                "count": 8,
+                "mean_probability": 0.2492578774690628,
+                "observed_frequency": 0.25
+              },
+              {
+                "lower": 0.30000000000000004,
+                "upper": 0.4,
+                "count": 12,
+                "mean_probability": 0.3499029576778412,
+                "observed_frequency": 0.3333333333333333
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.5,
+                "count": 6,
+                "mean_probability": 0.45183154940605164,
+                "observed_frequency": 0.16666666666666666
+              },
+              {
+                "lower": 0.5,
+                "upper": 0.6000000000000001,
+                "count": 5,
+                "mean_probability": 0.5376249551773071,
+                "observed_frequency": 0.2
+              },
+              {
+                "lower": 0.6000000000000001,
+                "upper": 0.7000000000000001,
+                "count": 1,
+                "mean_probability": 0.6028310656547546,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.7000000000000001,
+                "upper": 0.8,
+                "count": 2,
+                "mean_probability": 0.7438259720802307,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 0.9,
+                "count": 1,
+                "mean_probability": 0.8561229705810547,
+                "observed_frequency": 1.0
+              },
+              {
+                "lower": 0.9,
+                "upper": 1.0,
+                "count": 0,
+                "mean_probability": null,
+                "observed_frequency": null
+              }
+            ]
+          }
+        }
+      },
+      "bootstrap_95ci": {
+        "5": {
+          "seed42": {
+            "pr_auc": [
+              0.13486772486772486,
+              0.3864087516117549
+            ],
+            "bss": [
+              -0.3387457802282481,
+              0.03406283068418452
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.4296436321936454,
+              1.0
+            ],
+            "bss": [
+              0.07170803073692374,
+              0.3932442837341893
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.18340143037727188,
+              0.7158333333333333
+            ],
+            "bss": [
+              -0.03449606281729478,
+              0.2533866673899138
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.2942681084884918,
+              0.6282051282051282
+            ],
+            "bss": [
+              0.03499865371091515,
+              0.24087350983085754
+            ]
+          }
+        },
+        "10": {
+          "seed42": {
+            "pr_auc": [
+              0.11165599328887937,
+              0.42476226929228456
+            ],
+            "bss": [
+              -0.687230599964624,
+              -0.07839145155155536
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.27073328084607917,
+              0.6860325835869314
+            ],
+            "bss": [
+              -0.11799728160647605,
+              0.2266860013914671
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.17975709334726273,
+              0.567770149252576
+            ],
+            "bss": [
+              -0.48188724829676155,
+              0.16596651519687866
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.22022880938368172,
+              0.5214264673318044
+            ],
+            "bss": [
+              -0.14950841457633768,
+              0.14628718655530837
+            ]
+          }
+        },
+        "15": {
+          "seed42": {
+            "pr_auc": [
+              0.10331258152279564,
+              0.4974797361829285
+            ],
+            "bss": [
+              -0.7673837412538924,
+              -0.08338601093376488
+            ]
+          },
+          "seed73": {
+            "pr_auc": [
+              0.2804561173209095,
+              0.5946403303447823
+            ],
+            "bss": [
+              -0.31404833424931367,
+              0.14267231202192032
+            ]
+          },
+          "seed2026": {
+            "pr_auc": [
+              0.1733951462119232,
+              0.611157791513656
+            ],
+            "bss": [
+              -0.6446952686636165,
+              -0.0026805615598235466
+            ]
+          },
+          "three_seed_equal_mean": {
+            "pr_auc": [
+              0.205139586036711,
+              0.548117018406713
+            ],
+            "bss": [
+              -0.29756900440518935,
+              0.07166841305977671
+            ]
+          }
+        }
+      },
+      "auxiliary": {
+        "seed42": {
+          "vortex_corr": 0.9080700969059342,
+          "vortex_change_corr": 0.2678578445244954
+        },
+        "seed73": {
+          "vortex_corr": 0.9318047862072298,
+          "vortex_change_corr": 0.2227445354378904
+        },
+        "seed2026": {
+          "vortex_corr": 0.9164681587453603,
+          "vortex_change_corr": 0.36554729927784263
+        }
+      }
+    }
+  },
+  "arm_B_minus_A": {
+    "5": {
+      "pr_auc": -0.08385253364252804,
+      "roc_auc": -0.024410256410256403,
+      "brier": 0.002719832997023504,
+      "bss": -0.06449491168326504
+    },
+    "10": {
+      "pr_auc": -0.03441524295928233,
+      "roc_auc": -0.002903225806451637,
+      "brier": 0.00509260226191742,
+      "bss": -0.06330159370727462
+    },
+    "15": {
+      "pr_auc": 0.006251398034436806,
+      "roc_auc": -0.027871939736346496,
+      "brier": 0.004502386978200643,
+      "bss": -0.03920722671789034
+    }
+  },
+  "gate": {
+    "rule": "B must improve 5-day PR-AUC and BSS, not lose hits or add false episodes, and \u0394BSS10/15 >= -0.03",
+    "status": "DIAGNOSTIC_PENDING_EVENT_GATE",
+    "note": "Three forward events make this a stability/feasibility result, not an operational skill claim."
+  }
+}

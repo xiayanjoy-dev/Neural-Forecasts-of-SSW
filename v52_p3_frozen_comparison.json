@@ -1,0 +1,5757 @@
+{
+  "status": "V52_P3_FROZEN_COMPARISON_OK",
+  "alignment": {
+    "status": "PASS",
+    "n_samples": 1918,
+    "keys": [
+      "forecast_origin",
+      "start",
+      "winter",
+      "target_class"
+    ]
+  },
+  "protocol": {
+    "threshold": 0.2,
+    "bootstrap": "1000 paired winter-cluster resamples",
+    "outer_use": "reporting and uncertainty only; no selection",
+    "supersedes": "event_metrics fields in v52_p3_physical_baselines_results.json; that file inherited a 2018--2021 global event filter"
+  },
+  "folds": {
+    "A": {
+      "5": {
+        "climatology": {
+          "pr_auc": 0.08021390374331551,
+          "roc_auc": 0.5,
+          "brier": 0.07701010982905558,
+          "reference_brier": 0.07701010982905558,
+          "bss": 0.0,
+          "prevalence": 0.08021390374331551,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 30,
+            "TN": 344
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.44480053215771925,
+          "roc_auc": 0.8968992248062015,
+          "brier": 0.0696696062997349,
+          "reference_brier": 0.07701010982905558,
+          "bss": 0.09531869965664097,
+          "prevalence": 0.08021390374331551,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 30,
+            "TN": 344
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.4110722119753255,
+          "roc_auc": 0.8551356589147286,
+          "brier": 0.07168565474610071,
+          "reference_brier": 0.07701010982905558,
+          "bss": 0.06913968951315508,
+          "prevalence": 0.08021390374331551,
+          "fixed_0.20": {
+            "CSI": 0.06666666666666667,
+            "POD": 0.06666666666666667,
+            "FAR": 0.0,
+            "TP": 2,
+            "FP": 0,
+            "FN": 28,
+            "TN": 344
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 3.0,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.5284148218037088,
+          "roc_auc": 0.900968992248062,
+          "brier": 0.07468699080902372,
+          "reference_brier": 0.07701010982905558,
+          "bss": 0.030166416139239982,
+          "prevalence": 0.08021390374331551,
+          "fixed_0.20": {
+            "CSI": 0.03333333333333333,
+            "POD": 0.03333333333333333,
+            "FAR": 0.0,
+            "TP": 1,
+            "FP": 0,
+            "FN": 29,
+            "TN": 344
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 1.0,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.4252476619829075,
+          "roc_auc": 0.8799418604651162,
+          "brier": 0.0742837026498011,
+          "reference_brier": 0.07701010982905558,
+          "bss": 0.03540323712440452,
+          "prevalence": 0.08021390374331551,
+          "fixed_0.20": {
+            "CSI": 0.10810810810810811,
+            "POD": 0.13333333333333333,
+            "FAR": 0.6363636363636364,
+            "TP": 4,
+            "FP": 7,
+            "FN": 26,
+            "TN": 337
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 4.0,
+            "false_alarm_episodes_total": 2,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 1,
+              "2002": 1,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        }
+      },
+      "10": {
+        "climatology": {
+          "pr_auc": 0.16042780748663102,
+          "roc_auc": 0.5,
+          "brier": 0.14761263182959136,
+          "reference_brier": 0.14761263182959136,
+          "bss": 0.0,
+          "prevalence": 0.16042780748663102,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 60,
+            "TN": 314
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.4904504578941985,
+          "roc_auc": 0.8004777070063694,
+          "brier": 0.13645086655281283,
+          "reference_brier": 0.14761263182959136,
+          "bss": 0.07561524470117187,
+          "prevalence": 0.16042780748663102,
+          "fixed_0.20": {
+            "CSI": 0.01639344262295082,
+            "POD": 0.016666666666666666,
+            "FAR": 0.5,
+            "TP": 1,
+            "FP": 1,
+            "FN": 59,
+            "TN": 313
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 1.0,
+            "false_alarm_episodes_total": 1,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 1,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.419920944971575,
+          "roc_auc": 0.7699575371549894,
+          "brier": 0.14107558762962102,
+          "reference_brier": 0.14761263182959136,
+          "bss": 0.0442851273562882,
+          "prevalence": 0.16042780748663102,
+          "fixed_0.20": {
+            "CSI": 0.016666666666666666,
+            "POD": 0.016666666666666666,
+            "FAR": 0.0,
+            "TP": 1,
+            "FP": 0,
+            "FN": 59,
+            "TN": 314
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 2.0,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.6124534889543756,
+          "roc_auc": 0.8576433121019108,
+          "brier": 0.14535178073205293,
+          "reference_brier": 0.14761263182959136,
+          "bss": 0.015316108584449761,
+          "prevalence": 0.16042780748663102,
+          "fixed_0.20": {
+            "CSI": 0.016666666666666666,
+            "POD": 0.016666666666666666,
+            "FAR": 0.0,
+            "TP": 1,
+            "FP": 0,
+            "FN": 59,
+            "TN": 314
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 1.0,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.6843701273053716,
+          "roc_auc": 0.8562632696390658,
+          "brier": 0.12739746751107434,
+          "reference_brier": 0.14761263182959136,
+          "bss": 0.13694738768599457,
+          "prevalence": 0.16042780748663102,
+          "fixed_0.20": {
+            "CSI": 0.20967741935483872,
+            "POD": 0.21666666666666667,
+            "FAR": 0.13333333333333333,
+            "TP": 13,
+            "FP": 2,
+            "FN": 47,
+            "TN": 312
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 7.0,
+            "false_alarm_episodes_total": 2,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 1,
+              "2002": 0,
+              "2003": 1,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": true,
+                "first_alarm_lead_days": 10.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": true,
+                "first_alarm_lead_days": 7.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        }
+      },
+      "15": {
+        "climatology": {
+          "pr_auc": 0.23796791443850268,
+          "roc_auc": 0.5,
+          "brier": 0.20950879525363864,
+          "reference_brier": 0.20950879525363864,
+          "bss": 0.0,
+          "prevalence": 0.23796791443850268,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 89,
+            "TN": 285
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 14
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.4702042407611482,
+          "roc_auc": 0.7408239700374532,
+          "brier": 0.19840245114320632,
+          "reference_brier": 0.20950879525363864,
+          "bss": 0.05301135017738323,
+          "prevalence": 0.23796791443850268,
+          "fixed_0.20": {
+            "CSI": 0.010869565217391304,
+            "POD": 0.011235955056179775,
+            "FAR": 0.75,
+            "TP": 1,
+            "FP": 3,
+            "FN": 88,
+            "TN": 282
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 1.0,
+            "false_alarm_episodes_total": 2,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 2,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 14
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.49741146227573685,
+          "roc_auc": 0.70408042578356,
+          "brier": 0.19931010350114384,
+          "reference_brier": 0.20950879525363864,
+          "bss": 0.04867906256702925,
+          "prevalence": 0.23796791443850268,
+          "fixed_0.20": {
+            "CSI": 0.13186813186813187,
+            "POD": 0.1348314606741573,
+            "FAR": 0.14285714285714285,
+            "TP": 12,
+            "FP": 2,
+            "FN": 77,
+            "TN": 283
+          },
+          "event_metrics": {
+            "events_hit": 2,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 9.0,
+            "false_alarm_episodes_total": 1,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 1,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": true,
+                "first_alarm_lead_days": 14.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 14
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.6728424647955004,
+          "roc_auc": 0.8279124778237729,
+          "brier": 0.2087529822776994,
+          "reference_brier": 0.20950879525363864,
+          "bss": 0.003607547716668491,
+          "prevalence": 0.23796791443850268,
+          "fixed_0.20": {
+            "CSI": 0.0449438202247191,
+            "POD": 0.0449438202247191,
+            "FAR": 0.0,
+            "TP": 4,
+            "FP": 0,
+            "FN": 85,
+            "TN": 285
+          },
+          "event_metrics": {
+            "events_hit": 2,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 2.0,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 0,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 14
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.6886799969838737,
+          "roc_auc": 0.8134240094618569,
+          "brier": 0.19327034995040043,
+          "reference_brier": 0.20950879525363864,
+          "bss": 0.07750722485697736,
+          "prevalence": 0.23796791443850268,
+          "fixed_0.20": {
+            "CSI": 0.16666666666666666,
+            "POD": 0.16853932584269662,
+            "FAR": 0.0625,
+            "TP": 15,
+            "FP": 1,
+            "FN": 74,
+            "TN": 284
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 7.333333333333333,
+            "false_alarm_episodes_total": 1,
+            "false_alarm_episodes_by_winter": {
+              "2000": 0,
+              "2001": 0,
+              "2002": 0,
+              "2003": 1,
+              "2004": 0
+            },
+            "events": [
+              {
+                "winter": 2000,
+                "onset_step": 15784,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2001,
+                "onset_step": 16360,
+                "hit": true,
+                "first_alarm_lead_days": 11.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2002,
+                "onset_step": 16912,
+                "hit": true,
+                "first_alarm_lead_days": 7.0,
+                "n_eligible_initializations": 14
+              },
+              {
+                "winter": 2002,
+                "onset_step": 17108,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2003,
+                "onset_step": 17712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2004,
+                "onset_step": 18384,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        }
+      }
+    },
+    "B": {
+      "5": {
+        "climatology": {
+          "pr_auc": 0.06198347107438017,
+          "roc_auc": 0.5,
+          "brier": 0.059003564724795746,
+          "reference_brier": 0.059003564724795746,
+          "bss": 0.0,
+          "prevalence": 0.06198347107438017,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 30,
+            "TN": 454
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2005": 0,
+              "2006": 0,
+              "2007": 0,
+              "2008": 0,
+              "2009": 0,
+              "2010": 0
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.17927994832104713,
+          "roc_auc": 0.8288546255506608,
+          "brier": 0.05817700120879975,
+          "reference_brier": 0.059003564724795746,
+          "bss": 0.014008704725744225,
+          "prevalence": 0.06198347107438017,
+          "fixed_0.20": {
+            "CSI": 0.045454545454545456,
+            "POD": 0.06666666666666667,
+            "FAR": 0.875,
+            "TP": 2,
+            "FP": 14,
+            "FN": 28,
+            "TN": 440
+          },
+          "event_metrics": {
+            "events_hit": 1,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 2.0,
+            "false_alarm_episodes_total": 3,
+            "false_alarm_episodes_by_winter": {
+              "2005": 1,
+              "2006": 0,
+              "2007": 0,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.23790176886423878,
+          "roc_auc": 0.866446402349486,
+          "brier": 0.05911692833739092,
+          "reference_brier": 0.059003564724795746,
+          "bss": -0.0019213010794165708,
+          "prevalence": 0.06198347107438017,
+          "fixed_0.20": {
+            "CSI": 0.14893617021276595,
+            "POD": 0.23333333333333334,
+            "FAR": 0.7083333333333334,
+            "TP": 7,
+            "FP": 17,
+            "FN": 23,
+            "TN": 437
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 3.6666666666666665,
+            "false_alarm_episodes_total": 2,
+            "false_alarm_episodes_by_winter": {
+              "2005": 1,
+              "2006": 0,
+              "2007": 0,
+              "2008": 0,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.5170088270181101,
+          "roc_auc": 0.8901982378854626,
+          "brier": 0.045751826035392684,
+          "reference_brier": 0.059003564724795746,
+          "bss": 0.2245921708495373,
+          "prevalence": 0.06198347107438017,
+          "fixed_0.20": {
+            "CSI": 0.28888888888888886,
+            "POD": 0.43333333333333335,
+            "FAR": 0.5357142857142857,
+            "TP": 13,
+            "FP": 15,
+            "FN": 17,
+            "TN": 439
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 4.333333333333333,
+            "false_alarm_episodes_total": 4,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 0,
+              "2007": 0,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.21764414296388357,
+          "roc_auc": 0.8566813509544787,
+          "brier": 0.06684286254155573,
+          "reference_brier": 0.059003564724795746,
+          "bss": -0.13286142715824067,
+          "prevalence": 0.06198347107438017,
+          "fixed_0.20": {
+            "CSI": 0.18867924528301888,
+            "POD": 0.3333333333333333,
+            "FAR": 0.696969696969697,
+            "TP": 10,
+            "FP": 23,
+            "FN": 20,
+            "TN": 431
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 3.6666666666666665,
+            "false_alarm_episodes_total": 5,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 1,
+              "2007": 0,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        }
+      },
+      "10": {
+        "climatology": {
+          "pr_auc": 0.12396694214876033,
+          "roc_auc": 0.5,
+          "brier": 0.11204731675042255,
+          "reference_brier": 0.11204731675042255,
+          "bss": 0.0,
+          "prevalence": 0.12396694214876033,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 60,
+            "TN": 424
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2005": 0,
+              "2006": 0,
+              "2007": 0,
+              "2008": 0,
+              "2009": 0,
+              "2010": 0
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.26959957386028677,
+          "roc_auc": 0.7696147798742138,
+          "brier": 0.10713013494585207,
+          "reference_brier": 0.11204731675042255,
+          "bss": 0.04388486888555443,
+          "prevalence": 0.12396694214876033,
+          "fixed_0.20": {
+            "CSI": 0.05128205128205128,
+            "POD": 0.06666666666666667,
+            "FAR": 0.8181818181818182,
+            "TP": 4,
+            "FP": 18,
+            "FN": 56,
+            "TN": 406
+          },
+          "event_metrics": {
+            "events_hit": 2,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 2.0,
+            "false_alarm_episodes_total": 4,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 0,
+              "2007": 0,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.47884217755335023,
+          "roc_auc": 0.8482311320754717,
+          "brier": 0.08947306666741325,
+          "reference_brier": 0.11204731675042255,
+          "bss": 0.20147068879205599,
+          "prevalence": 0.12396694214876033,
+          "fixed_0.20": {
+            "CSI": 0.21176470588235294,
+            "POD": 0.3,
+            "FAR": 0.5813953488372093,
+            "TP": 18,
+            "FP": 25,
+            "FN": 42,
+            "TN": 399
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 4.75,
+            "false_alarm_episodes_total": 5,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 0,
+              "2007": 1,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 10.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.4670180956600883,
+          "roc_auc": 0.8241745283018868,
+          "brier": 0.09907635612607059,
+          "reference_brier": 0.11204731675042255,
+          "bss": 0.1157632418208091,
+          "prevalence": 0.12396694214876033,
+          "fixed_0.20": {
+            "CSI": 0.23863636363636365,
+            "POD": 0.35,
+            "FAR": 0.5714285714285714,
+            "TP": 21,
+            "FP": 28,
+            "FN": 39,
+            "TN": 396
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 5.75,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 1,
+              "2007": 0,
+              "2008": 3,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 8.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 10.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.2927610120806892,
+          "roc_auc": 0.7964229559748428,
+          "brier": 0.11949086956853537,
+          "reference_brier": 0.11204731675042255,
+          "bss": -0.06643222733028775,
+          "prevalence": 0.12396694214876033,
+          "fixed_0.20": {
+            "CSI": 0.21505376344086022,
+            "POD": 0.3333333333333333,
+            "FAR": 0.6226415094339622,
+            "TP": 20,
+            "FP": 33,
+            "FN": 40,
+            "TN": 391
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 8.0,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 1,
+              "2007": 1,
+              "2008": 2,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 10.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 10.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        }
+      },
+      "15": {
+        "climatology": {
+          "pr_auc": 0.18181818181818182,
+          "roc_auc": 0.5,
+          "brier": 0.1558810769513988,
+          "reference_brier": 0.1558810769513988,
+          "bss": 0.0,
+          "prevalence": 0.18181818181818182,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 88,
+            "TN": 396
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2005": 0,
+              "2006": 0,
+              "2007": 0,
+              "2008": 0,
+              "2009": 0,
+              "2010": 0
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 13
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.3452884800403807,
+          "roc_auc": 0.7101985766758494,
+          "brier": 0.14750303187345365,
+          "reference_brier": 0.1558810769513988,
+          "bss": 0.053746389502795755,
+          "prevalence": 0.18181818181818182,
+          "fixed_0.20": {
+            "CSI": 0.08181818181818182,
+            "POD": 0.10227272727272728,
+            "FAR": 0.7096774193548387,
+            "TP": 9,
+            "FP": 22,
+            "FN": 79,
+            "TN": 374
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 6.333333333333333,
+            "false_alarm_episodes_total": 6,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 0,
+              "2007": 2,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 13
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.5572274678846938,
+          "roc_auc": 0.8109217171717171,
+          "brier": 0.1208521244060184,
+          "reference_brier": 0.1558810769513988,
+          "bss": 0.22471587462987475,
+          "prevalence": 0.18181818181818182,
+          "fixed_0.20": {
+            "CSI": 0.325,
+            "POD": 0.4431818181818182,
+            "FAR": 0.4507042253521127,
+            "TP": 39,
+            "FP": 32,
+            "FN": 49,
+            "TN": 364
+          },
+          "event_metrics": {
+            "events_hit": 5,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 12.2,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2005": 3,
+              "2006": 1,
+              "2007": 1,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 9.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 7.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 13
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.5426375790549456,
+          "roc_auc": 0.7941058310376492,
+          "brier": 0.1281143639992669,
+          "reference_brier": 0.1558810769513988,
+          "bss": 0.17812754116902274,
+          "prevalence": 0.18181818181818182,
+          "fixed_0.20": {
+            "CSI": 0.33636363636363636,
+            "POD": 0.42045454545454547,
+            "FAR": 0.3728813559322034,
+            "TP": 37,
+            "FP": 22,
+            "FN": 51,
+            "TN": 374
+          },
+          "event_metrics": {
+            "events_hit": 5,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 9.6,
+            "false_alarm_episodes_total": 5,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 0,
+              "2007": 1,
+              "2008": 1,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 13.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 13
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.46462666351538634,
+          "roc_auc": 0.7724690082644629,
+          "brier": 0.13297062367712825,
+          "reference_brier": 0.1558810769513988,
+          "bss": 0.14697392218693517,
+          "prevalence": 0.18181818181818182,
+          "fixed_0.20": {
+            "CSI": 0.30357142857142855,
+            "POD": 0.38636363636363635,
+            "FAR": 0.41379310344827586,
+            "TP": 34,
+            "FP": 24,
+            "FN": 54,
+            "TN": 372
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 6,
+            "mean_first_alarm_lead_days": 11.5,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2005": 2,
+              "2006": 1,
+              "2007": 1,
+              "2008": 2,
+              "2009": 0,
+              "2010": 1
+            },
+            "events": [
+              {
+                "winter": 2006,
+                "onset_step": 19900,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2007,
+                "onset_step": 20760,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2008,
+                "onset_step": 21476,
+                "hit": true,
+                "first_alarm_lead_days": 12.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2009,
+                "onset_step": 22088,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 22876,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2010,
+                "onset_step": 23048,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 13
+              }
+            ]
+          }
+        }
+      }
+    },
+    "C": {
+      "5": {
+        "climatology": {
+          "pr_auc": 0.018867924528301886,
+          "roc_auc": 0.5,
+          "brier": 0.018867668736267024,
+          "reference_brier": 0.018867668736267024,
+          "bss": 0.0,
+          "prevalence": 0.018867924528301886,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 20,
+            "TN": 1040
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 0,
+              "2013": 0,
+              "2014": 0,
+              "2015": 0,
+              "2016": 0,
+              "2017": 0,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.06302292798067677,
+          "roc_auc": 0.7590384615384616,
+          "brier": 0.02384766728318244,
+          "reference_brier": 0.018867668736267024,
+          "bss": -0.2639435012627167,
+          "prevalence": 0.018867924528301886,
+          "fixed_0.20": {
+            "CSI": 0.06382978723404255,
+            "POD": 0.15,
+            "FAR": 0.9,
+            "TP": 3,
+            "FP": 27,
+            "FN": 17,
+            "TN": 1013
+          },
+          "event_metrics": {
+            "events_hit": 2,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 2.5,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 0,
+              "2013": 0,
+              "2014": 1,
+              "2015": 1,
+              "2016": 4,
+              "2017": 1,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.16236651514970973,
+          "roc_auc": 0.8664423076923077,
+          "brier": 0.020771672103837027,
+          "reference_brier": 0.018867668736267024,
+          "bss": -0.10091354656392548,
+          "prevalence": 0.018867924528301886,
+          "fixed_0.20": {
+            "CSI": 0.08955223880597014,
+            "POD": 0.3,
+            "FAR": 0.8867924528301887,
+            "TP": 6,
+            "FP": 47,
+            "FN": 14,
+            "TN": 993
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 2.6666666666666665,
+            "false_alarm_episodes_total": 13,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 2,
+              "2013": 0,
+              "2014": 3,
+              "2015": 1,
+              "2016": 3,
+              "2017": 2,
+              "2018": 1,
+              "2019": 1,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.2855035126298184,
+          "roc_auc": 0.9149038461538461,
+          "brier": 0.02222616167248037,
+          "reference_brier": 0.018867668736267024,
+          "bss": -0.17800253879578265,
+          "prevalence": 0.018867924528301886,
+          "fixed_0.20": {
+            "CSI": 0.16666666666666666,
+            "POD": 0.4,
+            "FAR": 0.7777777777777778,
+            "TP": 8,
+            "FP": 28,
+            "FN": 12,
+            "TN": 1012
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 2.6666666666666665,
+            "false_alarm_episodes_total": 10,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 2,
+              "2013": 0,
+              "2014": 2,
+              "2015": 1,
+              "2016": 1,
+              "2017": 3,
+              "2018": 0,
+              "2019": 1,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.35219580666797684,
+          "roc_auc": 0.9591586538461538,
+          "brier": 0.028303602307477863,
+          "reference_brier": 0.018867668736267024,
+          "bss": -0.5001112592714378,
+          "prevalence": 0.018867924528301886,
+          "fixed_0.20": {
+            "CSI": 0.18181818181818182,
+            "POD": 0.6,
+            "FAR": 0.7931034482758621,
+            "TP": 12,
+            "FP": 46,
+            "FN": 8,
+            "TN": 994
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 3.0,
+            "false_alarm_episodes_total": 7,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 2,
+              "2013": 0,
+              "2014": 3,
+              "2015": 0,
+              "2016": 1,
+              "2017": 1,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 5
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 5
+              }
+            ]
+          }
+        }
+      },
+      "10": {
+        "climatology": {
+          "pr_auc": 0.03773584905660377,
+          "roc_auc": 0.5,
+          "brier": 0.037734825888464336,
+          "reference_brier": 0.037734825888464336,
+          "bss": 0.0,
+          "prevalence": 0.03773584905660377,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 40,
+            "TN": 1020
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 0,
+              "2013": 0,
+              "2014": 0,
+              "2015": 0,
+              "2016": 0,
+              "2017": 0,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.07238646333638273,
+          "roc_auc": 0.64625,
+          "brier": 0.04159011300447376,
+          "reference_brier": 0.037734825888464336,
+          "bss": -0.10216787874958766,
+          "prevalence": 0.03773584905660377,
+          "fixed_0.20": {
+            "CSI": 0.08163265306122448,
+            "POD": 0.2,
+            "FAR": 0.8787878787878788,
+            "TP": 8,
+            "FP": 58,
+            "FN": 32,
+            "TN": 962
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 2.25,
+            "false_alarm_episodes_total": 15,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 2,
+              "2013": 0,
+              "2014": 2,
+              "2015": 3,
+              "2016": 5,
+              "2017": 1,
+              "2018": 1,
+              "2019": 0,
+              "2020": 1,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.1728341683318837,
+          "roc_auc": 0.7941421568627451,
+          "brier": 0.0391878464609354,
+          "reference_brier": 0.037734825888464336,
+          "bss": -0.038506089222880346,
+          "prevalence": 0.03773584905660377,
+          "fixed_0.20": {
+            "CSI": 0.08396946564885496,
+            "POD": 0.275,
+            "FAR": 0.8921568627450981,
+            "TP": 11,
+            "FP": 91,
+            "FN": 29,
+            "TN": 929
+          },
+          "event_metrics": {
+            "events_hit": 3,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 4.0,
+            "false_alarm_episodes_total": 14,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 3,
+              "2013": 1,
+              "2014": 2,
+              "2015": 1,
+              "2016": 2,
+              "2017": 2,
+              "2018": 1,
+              "2019": 0,
+              "2020": 1,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 7.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.22887060821760533,
+          "roc_auc": 0.8417279411764705,
+          "brier": 0.04883714148136049,
+          "reference_brier": 0.037734825888464336,
+          "bss": -0.29421934066191535,
+          "prevalence": 0.03773584905660377,
+          "fixed_0.20": {
+            "CSI": 0.1188118811881188,
+            "POD": 0.3,
+            "FAR": 0.8356164383561644,
+            "TP": 12,
+            "FP": 61,
+            "FN": 28,
+            "TN": 959
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 3.75,
+            "false_alarm_episodes_total": 15,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 3,
+              "2013": 1,
+              "2014": 3,
+              "2015": 1,
+              "2016": 2,
+              "2017": 3,
+              "2018": 0,
+              "2019": 1,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 3.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 6.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.23242682012227767,
+          "roc_auc": 0.8344485294117647,
+          "brier": 0.06394268449321283,
+          "reference_brier": 0.037734825888464336,
+          "bss": -0.6945270844024307,
+          "prevalence": 0.03773584905660377,
+          "fixed_0.20": {
+            "CSI": 0.16393442622950818,
+            "POD": 0.5,
+            "FAR": 0.803921568627451,
+            "TP": 20,
+            "FP": 82,
+            "FN": 20,
+            "TN": 938
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 5.0,
+            "false_alarm_episodes_total": 13,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 2,
+              "2013": 1,
+              "2014": 4,
+              "2015": 2,
+              "2016": 1,
+              "2017": 2,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 6.0,
+                "n_eligible_initializations": 10
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 10
+              }
+            ]
+          }
+        }
+      },
+      "15": {
+        "climatology": {
+          "pr_auc": 0.05660377358490566,
+          "roc_auc": 0.5,
+          "brier": 0.05648064260766856,
+          "reference_brier": 0.05648064260766856,
+          "bss": 0.0,
+          "prevalence": 0.05660377358490566,
+          "fixed_0.20": {
+            "CSI": 0.0,
+            "POD": 0.0,
+            "FAR": 0.0,
+            "TP": 0,
+            "FP": 0,
+            "FN": 60,
+            "TN": 1000
+          },
+          "event_metrics": {
+            "events_hit": 0,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": null,
+            "false_alarm_episodes_total": 0,
+            "false_alarm_episodes_by_winter": {
+              "2011": 0,
+              "2012": 0,
+              "2013": 0,
+              "2014": 0,
+              "2015": 0,
+              "2016": 0,
+              "2017": 0,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": false,
+                "first_alarm_lead_days": null,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "persistence": {
+          "pr_auc": 0.0906879302409618,
+          "roc_auc": 0.6101833333333333,
+          "brier": 0.05953694736808717,
+          "reference_brier": 0.05648064260766856,
+          "bss": -0.05411242895461754,
+          "prevalence": 0.05660377358490566,
+          "fixed_0.20": {
+            "CSI": 0.08333333333333333,
+            "POD": 0.21666666666666667,
+            "FAR": 0.8807339449541285,
+            "TP": 13,
+            "FP": 96,
+            "FN": 47,
+            "TN": 904
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 5.75,
+            "false_alarm_episodes_total": 25,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 3,
+              "2013": 0,
+              "2014": 4,
+              "2015": 5,
+              "2016": 4,
+              "2017": 2,
+              "2018": 3,
+              "2019": 0,
+              "2020": 3,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 1.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 12.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 8.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "physical_logistic": {
+          "pr_auc": 0.1652902078841952,
+          "roc_auc": 0.72375,
+          "brier": 0.05942434923446436,
+          "reference_brier": 0.05648064260766856,
+          "bss": -0.05211885861929133,
+          "prevalence": 0.05660377358490566,
+          "fixed_0.20": {
+            "CSI": 0.11616161616161616,
+            "POD": 0.38333333333333336,
+            "FAR": 0.8571428571428571,
+            "TP": 23,
+            "FP": 138,
+            "FN": 37,
+            "TN": 862
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 8.0,
+            "false_alarm_episodes_total": 18,
+            "false_alarm_episodes_by_winter": {
+              "2011": 2,
+              "2012": 2,
+              "2013": 0,
+              "2014": 3,
+              "2015": 4,
+              "2016": 3,
+              "2017": 2,
+              "2018": 1,
+              "2019": 0,
+              "2020": 1,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 14.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 8.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 6.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "scratch": {
+          "pr_auc": 0.2704553841843851,
+          "roc_auc": 0.82005,
+          "brier": 0.06280725427864126,
+          "reference_brier": 0.05648064260766856,
+          "bss": -0.11201380471038958,
+          "prevalence": 0.05660377358490566,
+          "fixed_0.20": {
+            "CSI": 0.18620689655172415,
+            "POD": 0.45,
+            "FAR": 0.7589285714285714,
+            "TP": 27,
+            "FP": 85,
+            "FN": 33,
+            "TN": 915
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 9.25,
+            "false_alarm_episodes_total": 16,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 4,
+              "2013": 0,
+              "2014": 3,
+              "2015": 1,
+              "2016": 2,
+              "2017": 3,
+              "2018": 1,
+              "2019": 0,
+              "2020": 1,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 14.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 2.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 6.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        },
+        "v51a": {
+          "pr_auc": 0.2091690414200775,
+          "roc_auc": 0.75875,
+          "brier": 0.08556626479890157,
+          "reference_brier": 0.05648064260766856,
+          "bss": -0.5149662052053914,
+          "prevalence": 0.05660377358490566,
+          "fixed_0.20": {
+            "CSI": 0.15625,
+            "POD": 0.4166666666666667,
+            "FAR": 0.8,
+            "TP": 25,
+            "FP": 100,
+            "FN": 35,
+            "TN": 900
+          },
+          "event_metrics": {
+            "events_hit": 4,
+            "n_events": 4,
+            "mean_first_alarm_lead_days": 9.25,
+            "false_alarm_episodes_total": 17,
+            "false_alarm_episodes_by_winter": {
+              "2011": 1,
+              "2012": 2,
+              "2013": 0,
+              "2014": 6,
+              "2015": 3,
+              "2016": 3,
+              "2017": 2,
+              "2018": 0,
+              "2019": 0,
+              "2020": 0,
+              "2021": 0
+            },
+            "events": [
+              {
+                "winter": 2013,
+                "onset_step": 24920,
+                "hit": true,
+                "first_alarm_lead_days": 15.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2018,
+                "onset_step": 28688,
+                "hit": true,
+                "first_alarm_lead_days": 5.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2019,
+                "onset_step": 29244,
+                "hit": true,
+                "first_alarm_lead_days": 13.0,
+                "n_eligible_initializations": 15
+              },
+              {
+                "winter": 2021,
+                "onset_step": 30712,
+                "hit": true,
+                "first_alarm_lead_days": 4.0,
+                "n_eligible_initializations": 15
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pooled": {
+    "5": {
+      "climatology": {
+        "pr_auc": 0.03250205652905094,
+        "roc_auc": 0.33086235038084877,
+        "brier": 0.040333282201934814,
+        "reference_brier": 0.040333282201934814,
+        "bss": 0.0,
+        "prevalence": 0.04171011470281543,
+        "fixed_0.20": {
+          "CSI": 0.0,
+          "POD": 0.0,
+          "FAR": 0.0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 80,
+          "TN": 1838
+        },
+        "event_metrics": {
+          "events_hit": 0,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": null,
+          "false_alarm_episodes_total": 0,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 0,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 0,
+            "2011": 0,
+            "2012": 0,
+            "2013": 0,
+            "2014": 0,
+            "2015": 0,
+            "2016": 0,
+            "2017": 0,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            }
+          ]
+        }
+      },
+      "persistence": {
+        "pr_auc": 0.12059723491354805,
+        "roc_auc": 0.813186887921654,
+        "brier": 0.041445583243656575,
+        "reference_brier": 0.040333282201934814,
+        "bss": -0.027577746739103848,
+        "prevalence": 0.04171011470281543,
+        "fixed_0.20": {
+          "CSI": 0.04132231404958678,
+          "POD": 0.0625,
+          "FAR": 0.8913043478260869,
+          "TP": 5,
+          "FP": 41,
+          "FN": 75,
+          "TN": 1797
+        },
+        "event_metrics": {
+          "events_hit": 3,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 2.3333333333333335,
+          "false_alarm_episodes_total": 10,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 1,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 0,
+            "2013": 0,
+            "2014": 1,
+            "2015": 1,
+            "2016": 4,
+            "2017": 1,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            }
+          ]
+        }
+      },
+      "physical_logistic": {
+        "pr_auc": 0.16853886910391894,
+        "roc_auc": 0.8360174102285093,
+        "brier": 0.04037591273222425,
+        "reference_brier": 0.040333282201934814,
+        "bss": -0.0010569566363580751,
+        "prevalence": 0.04171011470281543,
+        "fixed_0.20": {
+          "CSI": 0.10416666666666667,
+          "POD": 0.1875,
+          "FAR": 0.810126582278481,
+          "TP": 15,
+          "FP": 64,
+          "FN": 65,
+          "TN": 1774
+        },
+        "event_metrics": {
+          "events_hit": 7,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 3.142857142857143,
+          "false_alarm_episodes_total": 15,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 1,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 3,
+            "2015": 1,
+            "2016": 3,
+            "2017": 2,
+            "2018": 1,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            }
+          ]
+        }
+      },
+      "scratch": {
+        "pr_auc": 0.3189559573356257,
+        "roc_auc": 0.886694096844396,
+        "brier": 0.03839236169788014,
+        "reference_brier": 0.040333282201934814,
+        "bss": 0.04812205697362171,
+        "prevalence": 0.04171011470281543,
+        "fixed_0.20": {
+          "CSI": 0.17886178861788618,
+          "POD": 0.275,
+          "FAR": 0.6615384615384615,
+          "TP": 22,
+          "FP": 43,
+          "FN": 58,
+          "TN": 1795
+        },
+        "event_metrics": {
+          "events_hit": 7,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 3.142857142857143,
+          "false_alarm_episodes_total": 14,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 1,
+            "2016": 1,
+            "2017": 3,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            }
+          ]
+        }
+      },
+      "v51a": {
+        "pr_auc": 0.24207998764505292,
+        "roc_auc": 0.8790703210010882,
+        "brier": 0.04699471778261998,
+        "reference_brier": 0.040333282201934814,
+        "bss": -0.16515976922814413,
+        "prevalence": 0.04171011470281543,
+        "fixed_0.20": {
+          "CSI": 0.16666666666666666,
+          "POD": 0.325,
+          "FAR": 0.7450980392156863,
+          "TP": 26,
+          "FP": 76,
+          "FN": 54,
+          "TN": 1762
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 3.375,
+          "false_alarm_episodes_total": 14,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 1,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 3,
+            "2015": 0,
+            "2016": 1,
+            "2017": 1,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 5
+            }
+          ]
+        }
+      }
+    },
+    "10": {
+      "climatology": {
+        "pr_auc": 0.06500411305810189,
+        "roc_auc": 0.3231655290102389,
+        "brier": 0.07791289940210837,
+        "reference_brier": 0.07791289940210837,
+        "bss": 0.0,
+        "prevalence": 0.08342022940563086,
+        "fixed_0.20": {
+          "CSI": 0.0,
+          "POD": 0.0,
+          "FAR": 0.0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 160,
+          "TN": 1758
+        },
+        "event_metrics": {
+          "events_hit": 0,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": null,
+          "false_alarm_episodes_total": 0,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 0,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 0,
+            "2011": 0,
+            "2012": 0,
+            "2013": 0,
+            "2014": 0,
+            "2015": 0,
+            "2016": 0,
+            "2017": 0,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            }
+          ]
+        }
+      },
+      "persistence": {
+        "pr_auc": 0.1512220748702306,
+        "roc_auc": 0.7066055176336746,
+        "brier": 0.07662624045322554,
+        "reference_brier": 0.07791289940210837,
+        "bss": 0.016514068386062508,
+        "prevalence": 0.08342022940563086,
+        "fixed_0.20": {
+          "CSI": 0.05485232067510549,
+          "POD": 0.08125,
+          "FAR": 0.8555555555555555,
+          "TP": 13,
+          "FP": 77,
+          "FN": 147,
+          "TN": 1681
+        },
+        "event_metrics": {
+          "events_hit": 7,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 2.0,
+          "false_alarm_episodes_total": 20,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 3,
+            "2016": 5,
+            "2017": 1,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            }
+          ]
+        }
+      },
+      "physical_logistic": {
+        "pr_auc": 0.26146220533640796,
+        "roc_auc": 0.7712990614334471,
+        "brier": 0.0717447087013023,
+        "reference_brier": 0.07791289940210837,
+        "bss": 0.07916777257860785,
+        "prevalence": 0.08342022940563086,
+        "fixed_0.20": {
+          "CSI": 0.10869565217391304,
+          "POD": 0.1875,
+          "FAR": 0.7945205479452054,
+          "TP": 30,
+          "FP": 116,
+          "FN": 130,
+          "TN": 1642
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 4.125,
+          "false_alarm_episodes_total": 19,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 3,
+            "2013": 1,
+            "2014": 2,
+            "2015": 1,
+            "2016": 2,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            }
+          ]
+        }
+      },
+      "scratch": {
+        "pr_auc": 0.28139857663174184,
+        "roc_auc": 0.8302492178612059,
+        "brier": 0.08033466753339316,
+        "reference_brier": 0.07791289940210837,
+        "bss": -0.03108301898490584,
+        "prevalence": 0.08342022940563086,
+        "fixed_0.20": {
+          "CSI": 0.13654618473895583,
+          "POD": 0.2125,
+          "FAR": 0.7235772357723578,
+          "TP": 34,
+          "FP": 89,
+          "FN": 126,
+          "TN": 1669
+        },
+        "event_metrics": {
+          "events_hit": 9,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 4.333333333333333,
+          "false_alarm_episodes_total": 22,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 3,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 3,
+            "2013": 1,
+            "2014": 3,
+            "2015": 1,
+            "2016": 2,
+            "2017": 3,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 10
+            }
+          ]
+        }
+      },
+      "v51a": {
+        "pr_auc": 0.2523117284197201,
+        "roc_auc": 0.8117942974971558,
+        "brier": 0.09033340942811185,
+        "reference_brier": 0.07791289940210837,
+        "bss": -0.15941532302502637,
+        "prevalence": 0.08342022940563086,
+        "fixed_0.20": {
+          "CSI": 0.19133574007220217,
+          "POD": 0.33125,
+          "FAR": 0.6882352941176471,
+          "TP": 53,
+          "FP": 117,
+          "FN": 107,
+          "TN": 1641
+        },
+        "event_metrics": {
+          "events_hit": 10,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 6.5,
+          "false_alarm_episodes_total": 22,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 1,
+            "2014": 4,
+            "2015": 2,
+            "2016": 1,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 10
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 10
+            }
+          ]
+        }
+      }
+    },
+    "15": {
+      "climatology": {
+        "pr_auc": 0.09632427296855348,
+        "roc_auc": 0.3163841595192735,
+        "brier": 0.11140365580472708,
+        "reference_brier": 0.11140365580472708,
+        "bss": 0.0,
+        "prevalence": 0.12356621480709072,
+        "fixed_0.20": {
+          "CSI": 0.0,
+          "POD": 0.0,
+          "FAR": 0.0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 237,
+          "TN": 1681
+        },
+        "event_metrics": {
+          "events_hit": 0,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": null,
+          "false_alarm_episodes_total": 0,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 0,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 0,
+            "2011": 0,
+            "2012": 0,
+            "2013": 0,
+            "2014": 0,
+            "2015": 0,
+            "2016": 0,
+            "2017": 0,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 14
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 13
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            }
+          ]
+        }
+      },
+      "persistence": {
+        "pr_auc": 0.17398694679900245,
+        "roc_auc": 0.6243470708865779,
+        "brier": 0.10881290321401622,
+        "reference_brier": 0.11140365580472708,
+        "bss": 0.023255543743124885,
+        "prevalence": 0.12356621480709072,
+        "fixed_0.20": {
+          "CSI": 0.06424581005586592,
+          "POD": 0.0970464135021097,
+          "FAR": 0.8402777777777778,
+          "TP": 23,
+          "FP": 121,
+          "FN": 214,
+          "TN": 1560
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 5.375,
+          "false_alarm_episodes_total": 33,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 2,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 2,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 3,
+            "2013": 0,
+            "2014": 4,
+            "2015": 5,
+            "2016": 4,
+            "2017": 2,
+            "2018": 3,
+            "2019": 0,
+            "2020": 3,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 14
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 13
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 12.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 15
+            }
+          ]
+        }
+      },
+      "physical_logistic": {
+        "pr_auc": 0.2952164660778929,
+        "roc_auc": 0.7043476733007528,
+        "brier": 0.10220240725259278,
+        "reference_brier": 0.11140365580472708,
+        "bss": 0.08259377563212678,
+        "prevalence": 0.12356621480709072,
+        "fixed_0.20": {
+          "CSI": 0.18092909535452323,
+          "POD": 0.31223628691983124,
+          "FAR": 0.6991869918699187,
+          "TP": 74,
+          "FP": 172,
+          "FN": 163,
+          "TN": 1509
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 10.090909090909092,
+          "false_alarm_episodes_total": 26,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 3,
+            "2006": 1,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 0,
+            "2014": 3,
+            "2015": 4,
+            "2016": 3,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 14
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 9.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 13
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 15
+            }
+          ]
+        }
+      },
+      "scratch": {
+        "pr_auc": 0.33549261117439383,
+        "roc_auc": 0.7904326588804634,
+        "brier": 0.10774591088783342,
+        "reference_brier": 0.11140365580472708,
+        "bss": 0.032833257494754964,
+        "prevalence": 0.12356621480709072,
+        "fixed_0.20": {
+          "CSI": 0.19767441860465115,
+          "POD": 0.2869198312236287,
+          "FAR": 0.6114285714285714,
+          "TP": 68,
+          "FP": 107,
+          "FN": 169,
+          "TN": 1574
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 8.090909090909092,
+          "false_alarm_episodes_total": 21,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 4,
+            "2013": 0,
+            "2014": 3,
+            "2015": 1,
+            "2016": 2,
+            "2017": 3,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 14
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 13
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 15
+            }
+          ]
+        }
+      },
+      "v51a": {
+        "pr_auc": 0.29000310703887244,
+        "roc_auc": 0.7696757254698203,
+        "brier": 0.11853030939938243,
+        "reference_brier": 0.11140365580472708,
+        "bss": -0.06397145177306607,
+        "prevalence": 0.12356621480709072,
+        "fixed_0.20": {
+          "CSI": 0.20441988950276244,
+          "POD": 0.31223628691983124,
+          "FAR": 0.628140703517588,
+          "TP": 74,
+          "FP": 125,
+          "FN": 163,
+          "TN": 1556
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 16,
+          "mean_first_alarm_lead_days": 9.545454545454545,
+          "false_alarm_episodes_total": 25,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 0,
+            "2014": 6,
+            "2015": 3,
+            "2016": 3,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 11.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 14
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 12.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 13
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 15
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "physical_minus_scratch": {
+    "5": {
+      "pr_auc": -0.15041708823170677,
+      "roc_auc": -0.05067668661588676,
+      "brier": 0.001983551034344111,
+      "bss": -0.04917901360997978
+    },
+    "10": {
+      "pr_auc": -0.019936371295333877,
+      "roc_auc": -0.058950156427758804,
+      "brier": -0.008589958832090863,
+      "bss": 0.1102507915635137
+    },
+    "15": {
+      "pr_auc": -0.040276145096500904,
+      "roc_auc": -0.08608498557971067,
+      "brier": -0.005543503635240643,
+      "bss": 0.04976051813737181
+    }
+  },
+  "paired_winter_bootstrap_95ci": {
+    "5": {
+      "pr_auc": {
+        "lower_2.5": -0.2831583220820108,
+        "upper_97.5": -0.021208454789488254
+      },
+      "brier": {
+        "lower_2.5": -0.0037416695977757434,
+        "upper_97.5": 0.008515701439039946
+      },
+      "bss": {
+        "lower_2.5": -0.1979900655985727,
+        "upper_97.5": 0.11629000310812701
+      }
+    },
+    "10": {
+      "pr_auc": {
+        "lower_2.5": -0.13462409132708272,
+        "upper_97.5": 0.09616191748368029
+      },
+      "brier": {
+        "lower_2.5": -0.019402213686535216,
+        "upper_97.5": -0.00015398753078670621
+      },
+      "bss": {
+        "lower_2.5": 0.0018023610648425933,
+        "upper_97.5": 0.2545646260659323
+      }
+    },
+    "15": {
+      "pr_auc": {
+        "lower_2.5": -0.16762769428773297,
+        "upper_97.5": 0.07531521963919009
+      },
+      "brier": {
+        "lower_2.5": -0.019252375998204313,
+        "upper_97.5": 0.007660743007690196
+      },
+      "bss": {
+        "lower_2.5": -0.06178939257706972,
+        "upper_97.5": 0.18635261834112893
+      }
+    }
+  }
+}

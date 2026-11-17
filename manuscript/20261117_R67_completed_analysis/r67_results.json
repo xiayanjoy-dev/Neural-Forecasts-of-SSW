@@ -1,0 +1,3427 @@
+{
+  "status": "R67_FIXED_FORMULATION_METRICS_COMPLETE",
+  "aligned_origins": 1918,
+  "metrics": {
+    "balanced_seed42": {
+      "5": {
+        "pr_auc": 0.2584421408638933,
+        "roc_auc": 0.8328176006528836,
+        "brier": 0.053519914645873724,
+        "bss": -0.32694171473370304,
+        "fixed_0.20": {
+          "CSI": 0.14754098360655737,
+          "POD": 0.3375,
+          "FAR": 0.7923076923076923,
+          "TP": 27,
+          "FP": 103,
+          "FN": 53,
+          "events_hit": 8,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.375,
+          "false_alarm_episodes_total": 22,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 1,
+            "2006": 1,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 3,
+            "2013": 0,
+            "2014": 4,
+            "2015": 2,
+            "2016": 2,
+            "2017": 4,
+            "2018": 0,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.21939608261762436,
+        "roc_auc": 0.7727282423208192,
+        "brier": 0.10457755395631026,
+        "bss": -0.3422367125190098,
+        "fixed_0.20": {
+          "CSI": 0.14511873350923482,
+          "POD": 0.34375,
+          "FAR": 0.7992700729927007,
+          "TP": 55,
+          "FP": 219,
+          "FN": 105,
+          "events_hit": 12,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 6.75,
+          "false_alarm_episodes_total": 34,
+          "false_alarm_episodes_by_winter": {
+            "2000": 3,
+            "2001": 0,
+            "2002": 0,
+            "2003": 3,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 2,
+            "2014": 4,
+            "2015": 3,
+            "2016": 2,
+            "2017": 2,
+            "2018": 0,
+            "2019": 1,
+            "2020": 2,
+            "2021": 1
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.2726612024390833,
+        "roc_auc": 0.7612871080856533,
+        "brier": 0.13495056626111918,
+        "bss": -0.21136568891119767,
+        "fixed_0.20": {
+          "CSI": 0.24471830985915494,
+          "POD": 0.5864978902953587,
+          "FAR": 0.7042553191489361,
+          "TP": 139,
+          "FP": 331,
+          "FN": 98,
+          "events_hit": 15,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 11.2,
+          "false_alarm_episodes_total": 42,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 1,
+            "2002": 1,
+            "2003": 4,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 4,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 1,
+            "2014": 4,
+            "2015": 2,
+            "2016": 2,
+            "2017": 3,
+            "2018": 2,
+            "2019": 1,
+            "2020": 3,
+            "2021": 2
+          }
+        }
+      }
+    },
+    "balanced_seed73": {
+      "5": {
+        "pr_auc": 0.16004301918009362,
+        "roc_auc": 0.8267104189336234,
+        "brier": 0.061305269439923274,
+        "bss": -0.5199672849085022,
+        "fixed_0.20": {
+          "CSI": 0.1282051282051282,
+          "POD": 0.3125,
+          "FAR": 0.8214285714285714,
+          "TP": 25,
+          "FP": 115,
+          "FN": 55,
+          "events_hit": 8,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.125,
+          "false_alarm_episodes_total": 20,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 2,
+            "2016": 1,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.20156548472122843,
+        "roc_auc": 0.7844816552901024,
+        "brier": 0.10252572769039404,
+        "bss": -0.3159018400952953,
+        "fixed_0.20": {
+          "CSI": 0.16964285714285715,
+          "POD": 0.35625,
+          "FAR": 0.7553648068669528,
+          "TP": 57,
+          "FP": 176,
+          "FN": 103,
+          "events_hit": 12,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 6.416666666666667,
+          "false_alarm_episodes_total": 28,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 1,
+            "2014": 4,
+            "2015": 4,
+            "2016": 3,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.26588417011099486,
+        "roc_auc": 0.7678672279158728,
+        "brier": 0.12442653770770919,
+        "bss": -0.11689815571051954,
+        "fixed_0.20": {
+          "CSI": 0.26499032882011603,
+          "POD": 0.5780590717299579,
+          "FAR": 0.6714628297362111,
+          "TP": 137,
+          "FP": 280,
+          "FN": 100,
+          "events_hit": 15,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 11.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 11.066666666666666,
+          "false_alarm_episodes_total": 41,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 0,
+            "2002": 0,
+            "2003": 4,
+            "2004": 0,
+            "2005": 2,
+            "2006": 2,
+            "2007": 4,
+            "2008": 1,
+            "2009": 1,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 0,
+            "2014": 5,
+            "2015": 4,
+            "2016": 3,
+            "2017": 3,
+            "2018": 3,
+            "2019": 0,
+            "2020": 2,
+            "2021": 0
+          }
+        }
+      }
+    },
+    "balanced_seed2026": {
+      "5": {
+        "pr_auc": 0.17924818368722467,
+        "roc_auc": 0.8550122415669206,
+        "brier": 0.06844178429489976,
+        "bss": -0.6969058940513542,
+        "fixed_0.20": {
+          "CSI": 0.1565217391304348,
+          "POD": 0.45,
+          "FAR": 0.8064516129032258,
+          "TP": 36,
+          "FP": 150,
+          "FN": 44,
+          "events_hit": 11,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.6363636363636362,
+          "false_alarm_episodes_total": 23,
+          "false_alarm_episodes_by_winter": {
+            "2000": 1,
+            "2001": 1,
+            "2002": 1,
+            "2003": 0,
+            "2004": 2,
+            "2005": 1,
+            "2006": 1,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 1,
+            "2013": 1,
+            "2014": 2,
+            "2015": 2,
+            "2016": 2,
+            "2017": 1,
+            "2018": 1,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.2183092624848503,
+        "roc_auc": 0.7948592150170648,
+        "brier": 0.11510374141071622,
+        "bss": -0.4773386986494492,
+        "fixed_0.20": {
+          "CSI": 0.1970074812967581,
+          "POD": 0.49375,
+          "FAR": 0.753125,
+          "TP": 79,
+          "FP": 241,
+          "FN": 81,
+          "events_hit": 14,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 7.285714285714286,
+          "false_alarm_episodes_total": 31,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 2,
+            "2002": 1,
+            "2003": 3,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 1,
+            "2013": 1,
+            "2014": 1,
+            "2015": 2,
+            "2016": 2,
+            "2017": 2,
+            "2018": 1,
+            "2019": 1,
+            "2020": 3,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.2705488129830742,
+        "roc_auc": 0.7643129842845201,
+        "brier": 0.14518040132867155,
+        "bss": -0.3031924336769498,
+        "fixed_0.20": {
+          "CSI": 0.2660098522167488,
+          "POD": 0.6835443037974683,
+          "FAR": 0.6966292134831461,
+          "TP": 162,
+          "FP": 372,
+          "FN": 75,
+          "events_hit": 15,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 9.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 11.133333333333333,
+          "false_alarm_episodes_total": 37,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 1,
+            "2002": 1,
+            "2003": 5,
+            "2004": 2,
+            "2005": 2,
+            "2006": 1,
+            "2007": 3,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 2,
+            "2014": 2,
+            "2015": 2,
+            "2016": 2,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 3,
+            "2021": 0
+          }
+        }
+      }
+    },
+    "balanced_mean": {
+      "5": {
+        "pr_auc": 0.21060435727543045,
+        "roc_auc": 0.8368947225244832,
+        "brier": 0.052190648406634656,
+        "bss": -0.29398465875735336,
+        "fixed_0.20": {
+          "CSI": 0.1214574898785425,
+          "POD": 0.375,
+          "FAR": 0.8477157360406091,
+          "TP": 30,
+          "FP": 167,
+          "FN": 50,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.3333333333333335,
+          "false_alarm_episodes_total": 26,
+          "false_alarm_episodes_by_winter": {
+            "2000": 1,
+            "2001": 1,
+            "2002": 0,
+            "2003": 1,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 1,
+            "2013": 1,
+            "2014": 5,
+            "2015": 2,
+            "2016": 3,
+            "2017": 2,
+            "2018": 0,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.2197554888392318,
+        "roc_auc": 0.790148606370876,
+        "brier": 0.09485870714837885,
+        "bss": -0.21749681857959358,
+        "fixed_0.20": {
+          "CSI": 0.1655011655011655,
+          "POD": 0.44375,
+          "FAR": 0.7911764705882353,
+          "TP": 71,
+          "FP": 269,
+          "FN": 89,
+          "events_hit": 13,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 7.461538461538462,
+          "false_alarm_episodes_total": 37,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 1,
+            "2002": 0,
+            "2003": 3,
+            "2004": 1,
+            "2005": 2,
+            "2006": 1,
+            "2007": 2,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 2,
+            "2014": 6,
+            "2015": 2,
+            "2016": 2,
+            "2017": 4,
+            "2018": 1,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.2845206621910742,
+        "roc_auc": 0.7756283305346175,
+        "brier": 0.1222416004541657,
+        "bss": -0.09728535900505642,
+        "fixed_0.20": {
+          "CSI": 0.23923444976076555,
+          "POD": 0.6329113924050633,
+          "FAR": 0.7222222222222222,
+          "TP": 150,
+          "FP": 390,
+          "FN": 87,
+          "events_hit": 16,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": true,
+              "first_alarm_lead_days": 9.0
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 10.3125,
+          "false_alarm_episodes_total": 44,
+          "false_alarm_episodes_by_winter": {
+            "2000": 2,
+            "2001": 1,
+            "2002": 1,
+            "2003": 4,
+            "2004": 1,
+            "2005": 2,
+            "2006": 2,
+            "2007": 4,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 3,
+            "2014": 4,
+            "2015": 2,
+            "2016": 2,
+            "2017": 3,
+            "2018": 1,
+            "2019": 1,
+            "2020": 4,
+            "2021": 1
+          }
+        }
+      }
+    },
+    "uniform_seed42": {
+      "5": {
+        "pr_auc": 0.20894283770445626,
+        "roc_auc": 0.8666417301414582,
+        "brier": 0.03777509427042723,
+        "bss": 0.06342622746890814,
+        "fixed_0.20": {
+          "CSI": 0.11904761904761904,
+          "POD": 0.1875,
+          "FAR": 0.7540983606557377,
+          "TP": 15,
+          "FP": 46,
+          "FN": 65,
+          "events_hit": 7,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.0,
+          "false_alarm_episodes_total": 11,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 2,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 1,
+            "2013": 0,
+            "2014": 1,
+            "2015": 0,
+            "2016": 1,
+            "2017": 1,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.23680592395883304,
+        "roc_auc": 0.8022290955631401,
+        "brier": 0.07400354515234414,
+        "bss": 0.05017595648171247,
+        "fixed_0.20": {
+          "CSI": 0.1541501976284585,
+          "POD": 0.24375,
+          "FAR": 0.7045454545454546,
+          "TP": 39,
+          "FP": 93,
+          "FN": 121,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 5.444444444444445,
+          "false_alarm_episodes_total": 22,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 1,
+            "2014": 2,
+            "2015": 2,
+            "2016": 3,
+            "2017": 2,
+            "2018": 1,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.30062819618382586,
+        "roc_auc": 0.7664164137782163,
+        "brier": 0.102236958517851,
+        "bss": 0.08228363082575896,
+        "fixed_0.20": {
+          "CSI": 0.18208092485549132,
+          "POD": 0.26582278481012656,
+          "FAR": 0.6337209302325582,
+          "TP": 63,
+          "FP": 109,
+          "FN": 174,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 10.0,
+          "false_alarm_episodes_total": 26,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 2,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 4,
+            "2013": 1,
+            "2014": 4,
+            "2015": 2,
+            "2016": 3,
+            "2017": 3,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      }
+    },
+    "uniform_seed73": {
+      "5": {
+        "pr_auc": 0.1859725774355582,
+        "roc_auc": 0.8437193960826985,
+        "brier": 0.03836065611298942,
+        "bss": 0.048908146851752154,
+        "fixed_0.20": {
+          "CSI": 0.11888111888111888,
+          "POD": 0.2125,
+          "FAR": 0.7875,
+          "TP": 17,
+          "FP": 63,
+          "FN": 63,
+          "events_hit": 8,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 2.625,
+          "false_alarm_episodes_total": 23,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 3,
+            "2013": 0,
+            "2014": 2,
+            "2015": 3,
+            "2016": 4,
+            "2017": 2,
+            "2018": 0,
+            "2019": 2,
+            "2020": 0,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.20478366004774004,
+        "roc_auc": 0.7732153014789533,
+        "brier": 0.07631177822038608,
+        "bss": 0.020550142454061504,
+        "fixed_0.20": {
+          "CSI": 0.11231884057971014,
+          "POD": 0.19375,
+          "FAR": 0.7891156462585034,
+          "TP": 31,
+          "FP": 116,
+          "FN": 129,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 5.0,
+          "false_alarm_episodes_total": 26,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 1,
+            "2013": 1,
+            "2014": 3,
+            "2015": 3,
+            "2016": 4,
+            "2017": 2,
+            "2018": 0,
+            "2019": 1,
+            "2020": 2,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.26089942762527646,
+        "roc_auc": 0.7516911522928135,
+        "brier": 0.10608708319285322,
+        "bss": 0.04772350219092425,
+        "fixed_0.20": {
+          "CSI": 0.1628498727735369,
+          "POD": 0.270042194092827,
+          "FAR": 0.7090909090909091,
+          "TP": 64,
+          "FP": 156,
+          "FN": 173,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 10.222222222222221,
+          "false_alarm_episodes_total": 24,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 3,
+            "2012": 1,
+            "2013": 0,
+            "2014": 4,
+            "2015": 3,
+            "2016": 2,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 3,
+            "2021": 0
+          }
+        }
+      }
+    },
+    "uniform_seed2026": {
+      "5": {
+        "pr_auc": 0.23057731832990433,
+        "roc_auc": 0.8598816648531011,
+        "brier": 0.03861775671355404,
+        "bss": 0.04253374371546881,
+        "fixed_0.20": {
+          "CSI": 0.12138728323699421,
+          "POD": 0.2625,
+          "FAR": 0.8157894736842105,
+          "TP": 21,
+          "FP": 93,
+          "FN": 59,
+          "events_hit": 8,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 3.0,
+          "false_alarm_episodes_total": 18,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 2,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 1,
+            "2012": 2,
+            "2013": 0,
+            "2014": 0,
+            "2015": 4,
+            "2016": 1,
+            "2017": 1,
+            "2018": 0,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.2331975752725883,
+        "roc_auc": 0.7783187571103527,
+        "brier": 0.07450159099172565,
+        "bss": 0.04378361524934349,
+        "fixed_0.20": {
+          "CSI": 0.14736842105263157,
+          "POD": 0.2625,
+          "FAR": 0.7485029940119761,
+          "TP": 42,
+          "FP": 125,
+          "FN": 118,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 6.333333333333333,
+          "false_alarm_episodes_total": 24,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 3,
+            "2013": 1,
+            "2014": 1,
+            "2015": 3,
+            "2016": 2,
+            "2017": 1,
+            "2018": 2,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.29104368347636855,
+        "roc_auc": 0.7600207832890308,
+        "brier": 0.10222324525103785,
+        "bss": 0.08240672612917688,
+        "fixed_0.20": {
+          "CSI": 0.19143576826196473,
+          "POD": 0.3206751054852321,
+          "FAR": 0.6779661016949152,
+          "TP": 76,
+          "FP": 160,
+          "FN": 161,
+          "events_hit": 10,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 13.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 9.5,
+          "false_alarm_episodes_total": 27,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 3,
+            "2012": 3,
+            "2013": 0,
+            "2014": 3,
+            "2015": 3,
+            "2016": 3,
+            "2017": 2,
+            "2018": 2,
+            "2019": 0,
+            "2020": 2,
+            "2021": 0
+          }
+        }
+      }
+    },
+    "uniform_mean": {
+      "5": {
+        "pr_auc": 0.20703479566645466,
+        "roc_auc": 0.8597592491838955,
+        "brier": 0.037396692136989276,
+        "bss": 0.07280811043948876,
+        "fixed_0.20": {
+          "CSI": 0.12949640287769784,
+          "POD": 0.225,
+          "FAR": 0.7662337662337663,
+          "TP": 18,
+          "FP": 59,
+          "FN": 62,
+          "events_hit": 8,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 1.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 5.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 2.75,
+          "false_alarm_episodes_total": 18,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 2,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 1,
+            "2015": 3,
+            "2016": 2,
+            "2017": 1,
+            "2018": 0,
+            "2019": 2,
+            "2020": 0,
+            "2021": 0
+          }
+        }
+      },
+      "10": {
+        "pr_auc": 0.22481284574771374,
+        "roc_auc": 0.7875888794084186,
+        "brier": 0.07382834592459087,
+        "bss": 0.0524246114425434,
+        "fixed_0.20": {
+          "CSI": 0.13454545454545455,
+          "POD": 0.23125,
+          "FAR": 0.756578947368421,
+          "TP": 37,
+          "FP": 115,
+          "FN": 123,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 5.333333333333333,
+          "false_alarm_episodes_total": 26,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 2,
+            "2012": 2,
+            "2013": 1,
+            "2014": 3,
+            "2015": 4,
+            "2016": 3,
+            "2017": 2,
+            "2018": 0,
+            "2019": 1,
+            "2020": 1,
+            "2021": 0
+          }
+        }
+      },
+      "15": {
+        "pr_auc": 0.2949964728675095,
+        "roc_auc": 0.7618179855772005,
+        "brier": 0.1021752835587801,
+        "bss": 0.08283724783792423,
+        "fixed_0.20": {
+          "CSI": 0.17894736842105263,
+          "POD": 0.2869198312236287,
+          "FAR": 0.6777251184834123,
+          "TP": 68,
+          "FP": 143,
+          "FN": 169,
+          "events_hit": 9,
+          "n_events": 16,
+          "events": [
+            {
+              "winter": 2000,
+              "onset_step": 15784,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2001,
+              "onset_step": 16360,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 16912,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2002,
+              "onset_step": 17108,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2003,
+              "onset_step": 17712,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 3.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 15.0
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 10.0
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 8.0
+            }
+          ],
+          "mean_first_alarm_lead_days": 10.777777777777779,
+          "false_alarm_episodes_total": 27,
+          "false_alarm_episodes_by_winter": {
+            "2000": 0,
+            "2001": 0,
+            "2002": 0,
+            "2003": 0,
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 3,
+            "2012": 2,
+            "2013": 0,
+            "2014": 4,
+            "2015": 3,
+            "2016": 4,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 2,
+            "2021": 0
+          }
+        }
+      }
+    }
+  },
+  "uniform_minus_balanced_paired_winter_95ci": {
+    "5": {
+      "pr_auc": [
+        -0.13317956043693316,
+        0.09760680926214874
+      ],
+      "brier": [
+        -0.029224194714204444,
+        -0.0004378959510818534
+      ],
+      "bss": [
+        0.0075261388557557995,
+        1.0382346065287116
+      ]
+    },
+    "10": {
+      "pr_auc": [
+        -0.06329683477793645,
+        0.07192085564544767
+      ],
+      "brier": [
+        -0.04483262608530722,
+        0.0005505287437535299
+      ],
+      "bss": [
+        -0.005417508179049668,
+        0.8153280630684744
+      ]
+    },
+    "15": {
+      "pr_auc": [
+        -0.053359658378819945,
+        0.08056250216476915
+      ],
+      "brier": [
+        -0.05222390259899918,
+        0.014306148196413727
+      ],
+      "bss": [
+        -0.08916691088401697,
+        0.6906290578254377
+      ]
+    }
+  },
+  "note": "No model selection. Event-level/figure/manuscript finalization remains a separate checked step."
+}

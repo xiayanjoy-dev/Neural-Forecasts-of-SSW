@@ -1,0 +1,21 @@
+{
+  "status": "SSW_PAPER1_FIG3_LESSONS_V3_OK",
+  "checks": {
+    "common_origins_454": true,
+    "covered_events_11": true,
+    "ecmwf_pr5": true,
+    "neural_bss10": true,
+    "six_interventions": true,
+    "v65_final_stop": true,
+    "case_probabilities": true,
+    "case_ranks": true,
+    "ecmwf_alerts": true,
+    "v65_alerts": true
+  },
+  "outputs": [
+    "figure3_v18.png",
+    "figure3_v18.pdf",
+    "figure3_v18.csv"
+  ],
+  "claim_boundary": "Panels a-b use 454 common origins and 11 events from one IFS cycle; panel c rows have different registered estimands and cannot be ranked across rows; panel d is descriptive and does not identify a causal failure mechanism."
+}

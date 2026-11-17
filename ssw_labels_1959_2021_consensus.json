@@ -1,0 +1,320 @@
+{
+  "status": "EARLY_CONSENSUS_LABEL_CONTRACT_OK",
+  "n": 40,
+  "events": [
+    {
+      "date": "1960-01-17",
+      "winter": 1960,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1960",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": true
+    },
+    {
+      "date": "1963-01-27",
+      "winter": 1963,
+      "source": "SSWC_ERA5_plus_ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1963",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": true
+    },
+    {
+      "date": "1965-12-16",
+      "winter": 1966,
+      "source": "SSWC_ERA5_plus_ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "DEC 1965",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1966-02-22",
+      "winter": 1966,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "FEB 1966",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1968-01-07",
+      "winter": 1968,
+      "source": "SSWC_ERA5_plus_ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1968",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1968-11-28",
+      "winter": 1969,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "NOV 1968",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1969-03-13",
+      "winter": 1969,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40",
+      "quality": "consensus",
+      "sswc_event": "MAR 1969",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1970-01-02",
+      "winter": 1970,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1970",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1971-01-18",
+      "winter": 1971,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1971",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1971-03-20",
+      "winter": 1971,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "MAR 1971",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1973-01-31",
+      "winter": 1973,
+      "source": "SSWC_ERA5_plus_NCEP-NCAR+ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1973",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "date": "1977-01-09",
+      "winter": 1977,
+      "source": "SSWC_ERA5_plus_ERA-40+JRA-55",
+      "quality": "consensus",
+      "sswc_event": "JAN 1977",
+      "label_period": "early_consensus_1959_1978",
+      "pre1964_observation_caveat": false
+    },
+    {
+      "step": 208,
+      "date": "1979-02-22",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 1696,
+      "date": "1980-02-29",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 3172,
+      "date": "1981-03-04",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 4272,
+      "date": "1981-12-04",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 7520,
+      "date": "1984-02-24",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 8768,
+      "date": "1985-01-01",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 11776,
+      "date": "1987-01-23",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 13052,
+      "date": "1987-12-08",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 13440,
+      "date": "1988-03-14",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 14816,
+      "date": "1989-02-21",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 29152,
+      "date": "1998-12-15",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 29444,
+      "date": "1999-02-26",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 30996,
+      "date": "2000-03-20",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 32308,
+      "date": "2001-02-11",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 33596,
+      "date": "2001-12-30",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 33792,
+      "date": "2002-02-17",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 35132,
+      "date": "2003-01-18",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 36540,
+      "date": "2004-01-05",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 39528,
+      "date": "2006-01-21",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 41124,
+      "date": "2007-02-24",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 42576,
+      "date": "2008-02-22",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 43924,
+      "date": "2009-01-24",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 45448,
+      "date": "2010-02-09",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 45620,
+      "date": "2010-03-24",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 49700,
+      "date": "2013-01-07",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 57148,
+      "date": "2018-02-12",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 58440,
+      "date": "2019-01-01",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    },
+    {
+      "step": 61380,
+      "date": "2021-01-05",
+      "source": "SSWC",
+      "quality": "legacy_1979plus",
+      "label_period": "legacy_1979_2021"
+    }
+  ],
+  "provenance": {
+    "early_audit": "/share/home/xiayan/ssw_phase1/early_ssw_label_audit_1959_1978.json",
+    "legacy_label_file": "/share/home/xiayan/ssw_phase1/ssw_labels_final.json",
+    "early_consensus_count": 12,
+    "legacy_1979_2021_count": 28,
+    "excluded_sswc_rows": [
+      "MAR 1965"
+    ],
+    "training_use_constraint": "Early labels are a separately versioned experimental label contract; no frozen v50 result may be overwritten or compared as a fresh external test."
+  }
+}

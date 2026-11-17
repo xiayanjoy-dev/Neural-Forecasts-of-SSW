@@ -1,0 +1,3660 @@
+{
+  "status": "SSW_PAPER1_REVISION_P0_OK",
+  "contract": "ssw_paper1_revision_analysis_contract.md",
+  "alignment": {
+    "status": "PASS",
+    "common_origins": 454,
+    "covered_events": 11,
+    "keys": [
+      "forecast_origin",
+      "start",
+      "winter",
+      "target_class"
+    ]
+  },
+  "common_origin": {
+    "ecmwf_s2s": {
+      "5": {
+        "pr_auc": 0.7424338624338623,
+        "roc_auc": 0.9939255884586181,
+        "brier": 0.012014417300760914,
+        "reference_brier": 0.03212631758623752,
+        "bss": 0.6260256947124332,
+        "prevalence": 0.03303964757709251,
+        "fixed_threshold": {
+          "CSI": 0.6818181818181818,
+          "POD": 1.0,
+          "FAR": 0.3181818181818182,
+          "TP": 15,
+          "FP": 7,
+          "FN": 0,
+          "TN": 432
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 3.5454545454545454,
+          "false_alarm_episodes_total": 6,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 1,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 0,
+            "2013": 0,
+            "2014": 1,
+            "2015": 0,
+            "2016": 0,
+            "2017": 1,
+            "2018": 1,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 5.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 2
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.003112995637047756,
+          "resolution": 0.023137456577849366,
+          "uncertainty": 0.031948029265074035,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 430,
+              "mean_probability": 0.0004228329809725159,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 2,
+              "mean_probability": 0.18181818181818182,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 1,
+              "mean_probability": 0.2727272727272727,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 1,
+              "mean_probability": 0.36363636363636365,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 2,
+              "mean_probability": 0.5454545454545454,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 2,
+              "mean_probability": 0.6363636363636364,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 16,
+              "mean_probability": 0.9772727272727273,
+              "observed_frequency": 0.75
+            }
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.7452587536888639,
+        "roc_auc": 0.9710973842751468,
+        "brier": 0.02499362871809808,
+        "reference_brier": 0.06425972729958408,
+        "bss": 0.6110529912214575,
+        "prevalence": 0.06828193832599119,
+        "fixed_threshold": {
+          "CSI": 0.6086956521739131,
+          "POD": 0.9032258064516129,
+          "FAR": 0.3488372093023256,
+          "TP": 28,
+          "FP": 15,
+          "FN": 3,
+          "TN": 408
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 7.7272727272727275,
+          "false_alarm_episodes_total": 11,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 1,
+            "2013": 0,
+            "2014": 1,
+            "2015": 0,
+            "2016": 1,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 0,
+            "2021": 1
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 9.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 3
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.005969351355039481,
+          "resolution": 0.043910102640095976,
+          "uncertainty": 0.06361951522443673,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 407,
+              "mean_probability": 0.0013401831583649765,
+              "observed_frequency": 0.007371007371007371
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 4,
+              "mean_probability": 0.18181818181818182,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 7,
+              "mean_probability": 0.2727272727272727,
+              "observed_frequency": 0.14285714285714285
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 1,
+              "mean_probability": 0.36363636363636365,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 3,
+              "mean_probability": 0.45454545454545453,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 1,
+              "mean_probability": 0.5454545454545454,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 5,
+              "mean_probability": 0.6363636363636364,
+              "observed_frequency": 0.4
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 1,
+              "mean_probability": 0.7272727272727273,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 2,
+              "mean_probability": 0.8181818181818182,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 23,
+              "mean_probability": 0.9683794466403164,
+              "observed_frequency": 0.782608695652174
+            }
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.7003119240552175,
+        "roc_auc": 0.9330597522086884,
+        "brier": 0.04421669639931554,
+        "reference_brier": 0.0941296608351124,
+        "bss": 0.5302575616758012,
+        "prevalence": 0.10352422907488987,
+        "fixed_threshold": {
+          "CSI": 0.547945205479452,
+          "POD": 0.851063829787234,
+          "FAR": 0.3939393939393939,
+          "TP": 40,
+          "FP": 26,
+          "FN": 7,
+          "TN": 381
+        },
+        "event_metrics": {
+          "events_hit": 11,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 11.636363636363637,
+          "false_alarm_episodes_total": 12,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 3,
+            "2013": 0,
+            "2014": 1,
+            "2015": 0,
+            "2016": 1,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 11.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 9.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 11.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 11.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 5
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.006166187303552138,
+          "resolution": 0.05450078401426185,
+          "uncertainty": 0.0928069630693396,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 378,
+              "mean_probability": 0.003607503607503608,
+              "observed_frequency": 0.013227513227513227
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 10,
+              "mean_probability": 0.18181818181818182,
+              "observed_frequency": 0.2
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 14,
+              "mean_probability": 0.2727272727272726,
+              "observed_frequency": 0.2857142857142857
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 6,
+              "mean_probability": 0.3636363636363637,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 4,
+              "mean_probability": 0.45454545454545453,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 3,
+              "mean_probability": 0.5454545454545454,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 6,
+              "mean_probability": 0.6363636363636364,
+              "observed_frequency": 0.6666666666666666
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 2,
+              "mean_probability": 0.7272727272727273,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 4,
+              "mean_probability": 0.8181818181818182,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 27,
+              "mean_probability": 0.9663299663299663,
+              "observed_frequency": 0.7777777777777778
+            }
+          ]
+        }
+      }
+    },
+    "three_seed_equal_mean": {
+      "5": {
+        "pr_auc": 0.23703759923345258,
+        "roc_auc": 0.8760820045558086,
+        "brier": 0.03155646390562586,
+        "reference_brier": 0.03212631758623752,
+        "bss": 0.01773790846342682,
+        "prevalence": 0.03303964757709251,
+        "fixed_threshold": {
+          "CSI": 0.1388888888888889,
+          "POD": 0.3333333333333333,
+          "FAR": 0.8076923076923077,
+          "TP": 5,
+          "FP": 21,
+          "FN": 10,
+          "TN": 418
+        },
+        "event_metrics": {
+          "events_hit": 5,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 2.6,
+          "false_alarm_episodes_total": 17,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 3,
+            "2013": 1,
+            "2014": 2,
+            "2015": 2,
+            "2016": 1,
+            "2017": 3,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.0032178450304695557,
+          "resolution": 0.0033786332078504806,
+          "uncertainty": 0.031948029265074035,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 418,
+              "mean_probability": 0.002466842532157898,
+              "observed_frequency": 0.0215311004784689
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 10,
+              "mean_probability": 0.14331918954849243,
+              "observed_frequency": 0.1
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 14,
+              "mean_probability": 0.2556995749473572,
+              "observed_frequency": 0.14285714285714285
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 5,
+              "mean_probability": 0.38355305790901184,
+              "observed_frequency": 0.2
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 4,
+              "mean_probability": 0.44654580950737,
+              "observed_frequency": 0.25
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 1,
+              "mean_probability": 0.5338028073310852,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 1,
+              "mean_probability": 0.656866729259491,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 1,
+              "mean_probability": 0.7306509017944336,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.2119347110940938,
+        "roc_auc": 0.7984442919240449,
+        "brier": 0.06684118878414046,
+        "reference_brier": 0.06425972729958408,
+        "bss": -0.04017230687147788,
+        "prevalence": 0.06828193832599119,
+        "fixed_threshold": {
+          "CSI": 0.13636363636363635,
+          "POD": 0.2903225806451613,
+          "FAR": 0.7954545454545454,
+          "TP": 9,
+          "FP": 35,
+          "FN": 22,
+          "TN": 388
+        },
+        "event_metrics": {
+          "events_hit": 5,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 5.4,
+          "false_alarm_episodes_total": 22,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 1,
+            "2007": 0,
+            "2008": 2,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 1,
+            "2014": 4,
+            "2015": 3,
+            "2016": 1,
+            "2017": 4,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.007598044475191631,
+          "resolution": 0.003254049454628601,
+          "uncertainty": 0.06361951522443673,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 392,
+              "mean_probability": 0.00861633475869894,
+              "observed_frequency": 0.04846938775510204
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 18,
+              "mean_probability": 0.14507192373275757,
+              "observed_frequency": 0.16666666666666666
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 12,
+              "mean_probability": 0.2558548152446747,
+              "observed_frequency": 0.16666666666666666
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 11,
+              "mean_probability": 0.34569621086120605,
+              "observed_frequency": 0.18181818181818182
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 7,
+              "mean_probability": 0.45564669370651245,
+              "observed_frequency": 0.14285714285714285
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 8,
+              "mean_probability": 0.5462970733642578,
+              "observed_frequency": 0.25
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 3,
+              "mean_probability": 0.6269953846931458,
+              "observed_frequency": 0.3333333333333333
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 2,
+              "mean_probability": 0.7320579290390015,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 1,
+              "mean_probability": 0.8209974765777588,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.27146460182864235,
+        "roc_auc": 0.7591614825657379,
+        "brier": 0.09123507712373997,
+        "reference_brier": 0.0941296608351124,
+        "bss": 0.03075102667630858,
+        "prevalence": 0.10352422907488987,
+        "fixed_threshold": {
+          "CSI": 0.20652173913043478,
+          "POD": 0.40425531914893614,
+          "FAR": 0.703125,
+          "TP": 19,
+          "FP": 45,
+          "FN": 28,
+          "TN": 362
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 9.625,
+          "false_alarm_episodes_total": 21,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 4,
+            "2015": 3,
+            "2016": 1,
+            "2017": 6,
+            "2018": 0,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.009242885334521063,
+          "resolution": 0.010518696593251145,
+          "uncertainty": 0.0928069630693396,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 367,
+              "mean_probability": 0.02173307165503502,
+              "observed_frequency": 0.0681198910081744
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 23,
+              "mean_probability": 0.1400645673274994,
+              "observed_frequency": 0.13043478260869565
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 20,
+              "mean_probability": 0.2558945417404175,
+              "observed_frequency": 0.25
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 14,
+              "mean_probability": 0.34053927659988403,
+              "observed_frequency": 0.14285714285714285
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 9,
+              "mean_probability": 0.4535852074623108,
+              "observed_frequency": 0.5555555555555556
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 10,
+              "mean_probability": 0.5562506914138794,
+              "observed_frequency": 0.2
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 6,
+              "mean_probability": 0.6279802322387695,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 3,
+              "mean_probability": 0.7478250861167908,
+              "observed_frequency": 0.6666666666666666
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 2,
+              "mean_probability": 0.8294271230697632,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      }
+    },
+    "seed42": {
+      "5": {
+        "pr_auc": 0.35720674633989125,
+        "roc_auc": 0.9009870918754745,
+        "brier": 0.031874329625417225,
+        "reference_brier": 0.03212631758623752,
+        "bss": 0.007843661513457834,
+        "prevalence": 0.03303964757709251,
+        "fixed_threshold": {
+          "CSI": 0.15384615384615385,
+          "POD": 0.26666666666666666,
+          "FAR": 0.7333333333333333,
+          "TP": 4,
+          "FP": 11,
+          "FN": 11,
+          "TN": 428
+        },
+        "event_metrics": {
+          "events_hit": 4,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 3.0,
+          "false_alarm_episodes_total": 11,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 1,
+            "2015": 1,
+            "2016": 1,
+            "2017": 3,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.006230578875278395,
+          "resolution": 0.005935588504761816,
+          "uncertainty": 0.031948029265074035,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 431,
+              "mean_probability": 0.0020291758701205254,
+              "observed_frequency": 0.02320185614849188
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 8,
+              "mean_probability": 0.14654049277305603,
+              "observed_frequency": 0.125
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 2,
+              "mean_probability": 0.2549382448196411,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 3,
+              "mean_probability": 0.42679858207702637,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 2,
+              "mean_probability": 0.5267680883407593,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 3,
+              "mean_probability": 0.6680051684379578,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 3,
+              "mean_probability": 0.7710378766059875,
+              "observed_frequency": 0.3333333333333333
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 2,
+              "mean_probability": 0.8578355312347412,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.25547685736975234,
+        "roc_auc": 0.8393578891176695,
+        "brier": 0.06948183791557479,
+        "reference_brier": 0.06425972729958408,
+        "bss": -0.08126568280697488,
+        "prevalence": 0.06828193832599119,
+        "fixed_threshold": {
+          "CSI": 0.14814814814814814,
+          "POD": 0.25806451612903225,
+          "FAR": 0.7419354838709677,
+          "TP": 8,
+          "FP": 23,
+          "FN": 23,
+          "TN": 400
+        },
+        "event_metrics": {
+          "events_hit": 6,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 4.333333333333333,
+          "false_alarm_episodes_total": 16,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 0,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 3,
+            "2013": 1,
+            "2014": 2,
+            "2015": 1,
+            "2016": 1,
+            "2017": 3,
+            "2018": 0,
+            "2019": 1,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 3
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.017203817300345012,
+          "resolution": 0.010539903629182631,
+          "uncertainty": 0.06361951522443673,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 413,
+              "mean_probability": 0.008713685907423496,
+              "observed_frequency": 0.048426150121065374
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 10,
+              "mean_probability": 0.14655247330665588,
+              "observed_frequency": 0.3
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 6,
+              "mean_probability": 0.2288137674331665,
+              "observed_frequency": 0.16666666666666666
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 3,
+              "mean_probability": 0.3553647994995117,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 4,
+              "mean_probability": 0.4627963900566101,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 4,
+              "mean_probability": 0.5702601075172424,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 5,
+              "mean_probability": 0.6496078372001648,
+              "observed_frequency": 0.2
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 6,
+              "mean_probability": 0.7462345957756042,
+              "observed_frequency": 0.3333333333333333
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 2,
+              "mean_probability": 0.8526371121406555,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1,
+              "mean_probability": 0.9064518213272095,
+              "observed_frequency": 1.0
+            }
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.324447898298515,
+        "roc_auc": 0.8067855089131685,
+        "brier": 0.08989407586258252,
+        "reference_brier": 0.0941296608351124,
+        "bss": 0.04499734658504062,
+        "prevalence": 0.10352422907488987,
+        "fixed_threshold": {
+          "CSI": 0.2328767123287671,
+          "POD": 0.3617021276595745,
+          "FAR": 0.6046511627906976,
+          "TP": 17,
+          "FP": 26,
+          "FN": 30,
+          "TN": 381
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 9.0,
+          "false_alarm_episodes_total": 21,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 4,
+            "2013": 0,
+            "2014": 2,
+            "2015": 1,
+            "2016": 2,
+            "2017": 6,
+            "2018": 0,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": true,
+              "first_alarm_lead_days": 1.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 14.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.012850000993742549,
+          "resolution": 0.01476083518840995,
+          "uncertainty": 0.0928069630693396,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 385,
+              "mean_probability": 0.02318967506289482,
+              "observed_frequency": 0.06493506493506493
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 26,
+              "mean_probability": 0.14944103360176086,
+              "observed_frequency": 0.19230769230769232
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 8,
+              "mean_probability": 0.24146731197834015,
+              "observed_frequency": 0.375
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 8,
+              "mean_probability": 0.3633207082748413,
+              "observed_frequency": 0.25
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 2,
+              "mean_probability": 0.4458302855491638,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 6,
+              "mean_probability": 0.5713683366775513,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 7,
+              "mean_probability": 0.6729413270950317,
+              "observed_frequency": 0.2857142857142857
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 7,
+              "mean_probability": 0.7717135548591614,
+              "observed_frequency": 0.5714285714285714
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 4,
+              "mean_probability": 0.849848747253418,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1,
+              "mean_probability": 0.9247641563415527,
+              "observed_frequency": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "physical_logistic": {
+      "5": {
+        "pr_auc": 0.15346705250511616,
+        "roc_auc": 0.8378132118451025,
+        "brier": 0.03381623297045552,
+        "reference_brier": 0.03212631758623752,
+        "bss": -0.05260221249079411,
+        "prevalence": 0.03303964757709251,
+        "fixed_threshold": {
+          "CSI": 0.06896551724137931,
+          "POD": 0.13333333333333333,
+          "FAR": 0.875,
+          "TP": 2,
+          "FP": 14,
+          "FN": 13,
+          "TN": 425
+        },
+        "event_metrics": {
+          "events_hit": 2,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 3.0,
+          "false_alarm_episodes_total": 9,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 1,
+            "2006": 0,
+            "2007": 0,
+            "2008": 0,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 1,
+            "2015": 1,
+            "2016": 1,
+            "2017": 2,
+            "2018": 0,
+            "2019": 0,
+            "2020": 0,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 1
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.0056885443985270675,
+          "resolution": 0.003744619956512457,
+          "uncertainty": 0.031948029265074035,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 414,
+              "mean_probability": 0.015617409761228843,
+              "observed_frequency": 0.021739130434782608
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 24,
+              "mean_probability": 0.1411970378308783,
+              "observed_frequency": 0.16666666666666666
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 3,
+              "mean_probability": 0.26463028891469226,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 6,
+              "mean_probability": 0.36430090442268437,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 3,
+              "mean_probability": 0.4521203655565175,
+              "observed_frequency": 0.3333333333333333
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 1,
+              "mean_probability": 0.5512147926532837,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 1,
+              "mean_probability": 0.6914511101001923,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 1,
+              "mean_probability": 0.7465701363388233,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 1,
+              "mean_probability": 0.810331318425371,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      },
+      "10": {
+        "pr_auc": 0.25776729145296495,
+        "roc_auc": 0.7957751849309845,
+        "brier": 0.06022288816485345,
+        "reference_brier": 0.06425972729958408,
+        "bss": 0.0628206701829056,
+        "prevalence": 0.06828193832599119,
+        "fixed_threshold": {
+          "CSI": 0.09836065573770492,
+          "POD": 0.1935483870967742,
+          "FAR": 0.8333333333333334,
+          "TP": 6,
+          "FP": 30,
+          "FN": 25,
+          "TN": 393
+        },
+        "event_metrics": {
+          "events_hit": 4,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 5.0,
+          "false_alarm_episodes_total": 16,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 2,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 1,
+            "2011": 0,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 1,
+            "2016": 2,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 3.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 2.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 8.0,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 2
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 3
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.006644599240871807,
+          "resolution": 0.008873107704813546,
+          "uncertainty": 0.06361951522443673,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 367,
+              "mean_probability": 0.028613861463085078,
+              "observed_frequency": 0.035422343324250684
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 51,
+              "mean_probability": 0.14281684874020173,
+              "observed_frequency": 0.23529411764705882
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 16,
+              "mean_probability": 0.2412974874914956,
+              "observed_frequency": 0.125
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 9,
+              "mean_probability": 0.3486907400142667,
+              "observed_frequency": 0.1111111111111111
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 6,
+              "mean_probability": 0.4372046365283928,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 2,
+              "mean_probability": 0.5098124102776197,
+              "observed_frequency": 0.5
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 1,
+              "mean_probability": 0.7894757419971392,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 2,
+              "mean_probability": 0.8146206370465899,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      },
+      "15": {
+        "pr_auc": 0.2794243256494532,
+        "roc_auc": 0.7262271943123007,
+        "brier": 0.08709657706224426,
+        "reference_brier": 0.0941296608351124,
+        "bss": 0.07471697773550934,
+        "prevalence": 0.10352422907488987,
+        "fixed_threshold": {
+          "CSI": 0.1702127659574468,
+          "POD": 0.3404255319148936,
+          "FAR": 0.746031746031746,
+          "TP": 16,
+          "FP": 47,
+          "FN": 31,
+          "TN": 360
+        },
+        "event_metrics": {
+          "events_hit": 8,
+          "n_events": 11,
+          "mean_first_alarm_lead_days": 8.25,
+          "false_alarm_episodes_total": 21,
+          "false_alarm_episodes_by_winter": {
+            "2004": 0,
+            "2005": 3,
+            "2006": 0,
+            "2007": 1,
+            "2008": 1,
+            "2009": 0,
+            "2010": 0,
+            "2011": 2,
+            "2012": 2,
+            "2013": 0,
+            "2014": 2,
+            "2015": 4,
+            "2016": 2,
+            "2017": 2,
+            "2018": 1,
+            "2019": 0,
+            "2020": 1,
+            "2021": 0
+          },
+          "events": [
+            {
+              "winter": 2004,
+              "onset_step": 18384,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2006,
+              "onset_step": 19900,
+              "hit": true,
+              "first_alarm_lead_days": 10.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2007,
+              "onset_step": 20760,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2008,
+              "onset_step": 21476,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2009,
+              "onset_step": 22088,
+              "hit": true,
+              "first_alarm_lead_days": 6.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2010,
+              "onset_step": 22876,
+              "hit": true,
+              "first_alarm_lead_days": 15.0,
+              "n_eligible_initializations": 5
+            },
+            {
+              "winter": 2010,
+              "onset_step": 23048,
+              "hit": false,
+              "first_alarm_lead_days": null,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2013,
+              "onset_step": 24920,
+              "hit": true,
+              "first_alarm_lead_days": 13.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2018,
+              "onset_step": 28688,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2019,
+              "onset_step": 29244,
+              "hit": true,
+              "first_alarm_lead_days": 7.0,
+              "n_eligible_initializations": 4
+            },
+            {
+              "winter": 2021,
+              "onset_step": 30712,
+              "hit": true,
+              "first_alarm_lead_days": 4.0,
+              "n_eligible_initializations": 5
+            }
+          ]
+        },
+        "probability_decomposition": {
+          "reliability": 0.005949137366218309,
+          "resolution": 0.011340529933645887,
+          "uncertainty": 0.0928069630693396,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 318,
+              "mean_probability": 0.040938890181908556,
+              "observed_frequency": 0.050314465408805034
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 73,
+              "mean_probability": 0.14129201360797314,
+              "observed_frequency": 0.2054794520547945
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.30000000000000004,
+              "count": 31,
+              "mean_probability": 0.24214392119304587,
+              "observed_frequency": 0.25806451612903225
+            },
+            {
+              "lower": 0.30000000000000004,
+              "upper": 0.4,
+              "count": 16,
+              "mean_probability": 0.3431718997256409,
+              "observed_frequency": 0.1875
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 8,
+              "mean_probability": 0.4625021509357029,
+              "observed_frequency": 0.25
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6000000000000001,
+              "count": 5,
+              "mean_probability": 0.5544355870314945,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.6000000000000001,
+              "upper": 0.7000000000000001,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.7000000000000001,
+              "upper": 0.8,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 3,
+              "mean_probability": 0.8383985968170523,
+              "observed_frequency": 1.0
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 0,
+              "mean_probability": null,
+              "observed_frequency": null
+            }
+          ]
+        }
+      }
+    }
+  },
+  "common_origin_winter_bootstrap": {
+    "model_95ci": {
+      "5": {
+        "ecmwf_s2s": {
+          "pr_auc": [
+            0.46860119838738257,
+            0.9900548507932511
+          ],
+          "roc_auc": [
+            0.9843731831395349,
+            0.9996883498904585
+          ],
+          "brier": [
+            0.003606913597032174,
+            0.02377812704723291
+          ],
+          "bss": [
+            0.10451720560400765,
+            0.8965487720271818
+          ],
+          "events_hit": [
+            6.0,
+            16.0
+          ],
+          "event_hit_fraction": [
+            1.0,
+            1.0
+          ],
+          "mean_lead_days": [
+            3.0,
+            4.0
+          ],
+          "false_episodes": [
+            2.0,
+            10.0
+          ]
+        },
+        "three_seed_equal_mean": {
+          "pr_auc": [
+            0.1106564886691836,
+            0.4665662148533243
+          ],
+          "roc_auc": [
+            0.8154757159602932,
+            0.9466886133321287
+          ],
+          "brier": [
+            0.01696708635697559,
+            0.05090603220150478
+          ],
+          "bss": [
+            -0.25432792801833803,
+            0.21610237409286548
+          ],
+          "events_hit": [
+            2.0,
+            9.0
+          ],
+          "event_hit_fraction": [
+            0.18168449197860964,
+            0.8
+          ],
+          "mean_lead_days": [
+            1.6666666666666667,
+            3.5
+          ],
+          "false_episodes": [
+            8.0,
+            26.0
+          ]
+        },
+        "seed42": {
+          "pr_auc": [
+            0.18589105455382054,
+            0.6476204420924659
+          ],
+          "roc_auc": [
+            0.842338988647279,
+            0.9626533294539034
+          ],
+          "brier": [
+            0.01687757190590943,
+            0.05248762139196292
+          ],
+          "bss": [
+            -0.3869303660073494,
+            0.2910822529673463
+          ],
+          "events_hit": [
+            1.0,
+            7.0
+          ],
+          "event_hit_fraction": [
+            0.1,
+            0.7142857142857143
+          ],
+          "mean_lead_days": [
+            2.24125,
+            3.7937499999999886
+          ],
+          "false_episodes": [
+            4.0,
+            19.0
+          ]
+        },
+        "physical_logistic": {
+          "pr_auc": [
+            0.0633112965696606,
+            0.42062365480426867
+          ],
+          "roc_auc": [
+            0.7533041818246847,
+            0.9107601005008235
+          ],
+          "brier": [
+            0.01789097567355165,
+            0.05786619022538837
+          ],
+          "bss": [
+            -0.34028187578628194,
+            0.18387527085877817
+          ],
+          "events_hit": [
+            0.0,
+            5.0
+          ],
+          "event_hit_fraction": [
+            0.0,
+            0.45472027972027956
+          ],
+          "mean_lead_days": [
+            2.0,
+            4.0
+          ],
+          "false_episodes": [
+            4.0,
+            15.0
+          ]
+        }
+      },
+      "10": {
+        "ecmwf_s2s": {
+          "pr_auc": [
+            0.5620046293218509,
+            0.9110694075111052
+          ],
+          "roc_auc": [
+            0.9328966617694784,
+            0.9938451574122616
+          ],
+          "brier": [
+            0.01212829807381722,
+            0.04140779068110573
+          ],
+          "bss": [
+            0.3591250643957202,
+            0.7802926448755344
+          ],
+          "events_hit": [
+            6.0,
+            16.0
+          ],
+          "event_hit_fraction": [
+            1.0,
+            1.0
+          ],
+          "mean_lead_days": [
+            6.940861344537815,
+            8.61590909090909
+          ],
+          "false_episodes": [
+            6.0,
+            16.0
+          ]
+        },
+        "three_seed_equal_mean": {
+          "pr_auc": [
+            0.09932726548096271,
+            0.4125665103895612
+          ],
+          "roc_auc": [
+            0.7267806644395134,
+            0.8736208982636797
+          ],
+          "brier": [
+            0.04218140576338887,
+            0.10229475418652222
+          ],
+          "bss": [
+            -0.36421694142382155,
+            0.15033544017234943
+          ],
+          "events_hit": [
+            2.0,
+            9.0
+          ],
+          "event_hit_fraction": [
+            0.18168449197860964,
+            0.8
+          ],
+          "mean_lead_days": [
+            1.8,
+            10.0
+          ],
+          "false_episodes": [
+            12.0,
+            33.0
+          ]
+        },
+        "seed42": {
+          "pr_auc": [
+            0.1336705062704159,
+            0.439662392277324
+          ],
+          "roc_auc": [
+            0.7720644635222125,
+            0.9072392644048394
+          ],
+          "brier": [
+            0.045070890177441536,
+            0.10577811162446094
+          ],
+          "bss": [
+            -0.4448017274995572,
+            0.11263003318184747
+          ],
+          "events_hit": [
+            3.0,
+            10.0
+          ],
+          "event_hit_fraction": [
+            0.23529411764705882,
+            0.8891666666666663
+          ],
+          "mean_lead_days": [
+            2.6666666666666665,
+            6.857142857142857
+          ],
+          "false_episodes": [
+            8.0,
+            25.0
+          ]
+        },
+        "physical_logistic": {
+          "pr_auc": [
+            0.12472311565057155,
+            0.4186888352470311
+          ],
+          "roc_auc": [
+            0.6849089580570905,
+            0.8775809098118589
+          ],
+          "brier": [
+            0.03769457709217537,
+            0.09047152881600912
+          ],
+          "bss": [
+            -0.12627538626556417,
+            0.15986167556844388
+          ],
+          "events_hit": [
+            1.0,
+            8.0
+          ],
+          "event_hit_fraction": [
+            0.1,
+            0.6252840909090907
+          ],
+          "mean_lead_days": [
+            2.0,
+            7.75
+          ],
+          "false_episodes": [
+            10.0,
+            22.0
+          ]
+        }
+      },
+      "15": {
+        "ecmwf_s2s": {
+          "pr_auc": [
+            0.5153539818397861,
+            0.8688970721245692
+          ],
+          "roc_auc": [
+            0.8866192147656476,
+            0.9694433014293766
+          ],
+          "brier": [
+            0.026570249442536314,
+            0.06479169310883778
+          ],
+          "bss": [
+            0.27394789870670644,
+            0.6952263806965981
+          ],
+          "events_hit": [
+            6.0,
+            16.0
+          ],
+          "event_hit_fraction": [
+            1.0,
+            1.0
+          ],
+          "mean_lead_days": [
+            10.0,
+            12.88888888888889
+          ],
+          "false_episodes": [
+            5.0,
+            20.0
+          ]
+        },
+        "three_seed_equal_mean": {
+          "pr_auc": [
+            0.1309379562036813,
+            0.4864112498152429
+          ],
+          "roc_auc": [
+            0.6602531402204563,
+            0.8626948510747888
+          ],
+          "brier": [
+            0.057639961378397386,
+            0.1386346102971175
+          ],
+          "bss": [
+            -0.24815968218703202,
+            0.21756835240859776
+          ],
+          "events_hit": [
+            4.0,
+            12.0
+          ],
+          "event_hit_fraction": [
+            0.5,
+            1.0
+          ],
+          "mean_lead_days": [
+            5.498214285714286,
+            13.501388888888888
+          ],
+          "false_episodes": [
+            9.0,
+            35.0
+          ]
+        },
+        "seed42": {
+          "pr_auc": [
+            0.16038251819270397,
+            0.5535291869721827
+          ],
+          "roc_auc": [
+            0.7283728603882162,
+            0.894113085477087
+          ],
+          "brier": [
+            0.057278088783525326,
+            0.13686140759134366
+          ],
+          "bss": [
+            -0.24465530413644218,
+            0.22737775045535927
+          ],
+          "events_hit": [
+            4.0,
+            12.0
+          ],
+          "event_hit_fraction": [
+            0.4991666666666667,
+            1.0
+          ],
+          "mean_lead_days": [
+            4.9975000000000005,
+            12.911363636363633
+          ],
+          "false_episodes": [
+            10.0,
+            35.02499999999998
+          ]
+        },
+        "physical_logistic": {
+          "pr_auc": [
+            0.1161156401863267,
+            0.4816180162344287
+          ],
+          "roc_auc": [
+            0.5991091472345528,
+            0.8278715149105232
+          ],
+          "brier": [
+            0.05659012240245847,
+            0.12380231543442419
+          ],
+          "bss": [
+            -0.111458675279398,
+            0.18447156088697508
+          ],
+          "events_hit": [
+            4.0,
+            12.0
+          ],
+          "event_hit_fraction": [
+            0.5,
+            1.0
+          ],
+          "mean_lead_days": [
+            5.6,
+            11.0
+          ],
+          "false_episodes": [
+            12.0,
+            31.0
+          ]
+        }
+      }
+    },
+    "paired_difference_95ci": {
+      "5": {
+        "ecmwf_minus_neural_pr_auc": [
+          0.06840361231430989,
+          0.8189696452849695
+        ],
+        "ecmwf_minus_neural_brier": [
+          -0.039587099308422476,
+          -0.0018628669772252134
+        ],
+        "ecmwf_minus_neural_bss": [
+          0.08679432069923385,
+          0.9473904527087372
+        ],
+        "ecmwf_minus_neural_events_hit": [
+          2.0,
+          12.0
+        ],
+        "ecmwf_minus_neural_false_episodes": [
+          -20.0,
+          -3.0
+        ]
+      },
+      "10": {
+        "ecmwf_minus_neural_pr_auc": [
+          0.22410041775419584,
+          0.7433192155531092
+        ],
+        "ecmwf_minus_neural_brier": [
+          -0.06949125128700127,
+          -0.01823463280706113
+        ],
+        "ecmwf_minus_neural_bss": [
+          0.34622047619322066,
+          0.9637728941688318
+        ],
+        "ecmwf_minus_neural_events_hit": [
+          2.0,
+          12.0
+        ],
+        "ecmwf_minus_neural_false_episodes": [
+          -21.0,
+          -2.0
+        ]
+      },
+      "15": {
+        "ecmwf_minus_neural_pr_auc": [
+          0.14403253432043675,
+          0.615160495250411
+        ],
+        "ecmwf_minus_neural_brier": [
+          -0.08476823292401138,
+          -0.01871254431688134
+        ],
+        "ecmwf_minus_neural_bss": [
+          0.22983657629472648,
+          0.723875847096718
+        ],
+        "ecmwf_minus_neural_events_hit": [
+          0.0,
+          7.0
+        ],
+        "ecmwf_minus_neural_false_episodes": [
+          -20.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "full_outer_prevalence": {
+    "5": 0.04171011470281543,
+    "10": 0.08342022940563086,
+    "15": 0.12356621480709072
+  },
+  "outer_fold_inventory": {
+    "A": {
+      "5": {
+        "forecast_origins": 374,
+        "positive_origin_count": 30,
+        "prevalence": 0.08021390374331551,
+        "events": 6
+      },
+      "10": {
+        "forecast_origins": 374,
+        "positive_origin_count": 60,
+        "prevalence": 0.16042780748663102,
+        "events": 6
+      },
+      "15": {
+        "forecast_origins": 374,
+        "positive_origin_count": 89,
+        "prevalence": 0.23796791443850268,
+        "events": 6
+      }
+    },
+    "B": {
+      "5": {
+        "forecast_origins": 484,
+        "positive_origin_count": 30,
+        "prevalence": 0.06198347107438017,
+        "events": 6
+      },
+      "10": {
+        "forecast_origins": 484,
+        "positive_origin_count": 60,
+        "prevalence": 0.12396694214876033,
+        "events": 6
+      },
+      "15": {
+        "forecast_origins": 484,
+        "positive_origin_count": 88,
+        "prevalence": 0.18181818181818182,
+        "events": 6
+      }
+    },
+    "C": {
+      "5": {
+        "forecast_origins": 1060,
+        "positive_origin_count": 20,
+        "prevalence": 0.018867924528301886,
+        "events": 4
+      },
+      "10": {
+        "forecast_origins": 1060,
+        "positive_origin_count": 40,
+        "prevalence": 0.03773584905660377,
+        "events": 4
+      },
+      "15": {
+        "forecast_origins": 1060,
+        "positive_origin_count": 60,
+        "prevalence": 0.05660377358490566,
+        "events": 4
+      }
+    }
+  },
+  "full_outer_event_metric_95ci": {
+    "5": {
+      "events_hit": [
+        2.0,
+        10.0
+      ],
+      "event_hit_fraction": [
+        0.15,
+        0.6666666666666666
+      ],
+      "mean_lead_days": [
+        2.855952380952381,
+        5.0
+      ],
+      "false_episodes": [
+        10.0,
+        30.0
+      ]
+    },
+    "10": {
+      "events_hit": [
+        4.0,
+        12.0
+      ],
+      "event_hit_fraction": [
+        0.23529411764705882,
+        0.7779761904761903
+      ],
+      "mean_lead_days": [
+        2.2853896103896103,
+        7.125446428571428
+      ],
+      "false_episodes": [
+        15.0,
+        41.0
+      ]
+    },
+    "15": {
+      "events_hit": [
+        5.0,
+        15.0
+      ],
+      "event_hit_fraction": [
+        0.3888888888888889,
+        0.8751838235294116
+      ],
+      "mean_lead_days": [
+        6.0,
+        13.428968253968254
+      ],
+      "false_episodes": [
+        11.0,
+        38.0
+      ]
+    }
+  },
+  "threshold_sensitivity": {
+    "0.10": {
+      "5": {
+        "decision": {
+          "CSI": 0.13471502590673576,
+          "POD": 0.325,
+          "FAR": 0.8129496402877698,
+          "TP": 26,
+          "FP": 113,
+          "FN": 54,
+          "TN": 1725
+        },
+        "events_hit": 8,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 3.25,
+        "false_alarm_episodes": 23
+      },
+      "10": {
+        "decision": {
+          "CSI": 0.12968299711815562,
+          "POD": 0.28125,
+          "FAR": 0.8060344827586207,
+          "TP": 45,
+          "FP": 187,
+          "FN": 115,
+          "TN": 1571
+        },
+        "events_hit": 10,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 5.5,
+        "false_alarm_episodes": 26
+      },
+      "15": {
+        "decision": {
+          "CSI": 0.19661733615221988,
+          "POD": 0.3924050632911392,
+          "FAR": 0.7173252279635258,
+          "TP": 93,
+          "FP": 236,
+          "FN": 144,
+          "TN": 1445
+        },
+        "events_hit": 14,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 9.5,
+        "false_alarm_episodes": 31
+      }
+    },
+    "0.15": {
+      "5": {
+        "decision": {
+          "CSI": 0.13793103448275862,
+          "POD": 0.3,
+          "FAR": 0.7966101694915254,
+          "TP": 24,
+          "FP": 94,
+          "FN": 56,
+          "TN": 1744
+        },
+        "events_hit": 7,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 3.4285714285714284,
+        "false_alarm_episodes": 22
+      },
+      "10": {
+        "decision": {
+          "CSI": 0.12974683544303797,
+          "POD": 0.25625,
+          "FAR": 0.7918781725888325,
+          "TP": 41,
+          "FP": 156,
+          "FN": 119,
+          "TN": 1602
+        },
+        "events_hit": 9,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 4.888888888888889,
+        "false_alarm_episodes": 27
+      },
+      "15": {
+        "decision": {
+          "CSI": 0.1716937354988399,
+          "POD": 0.31223628691983124,
+          "FAR": 0.7238805970149254,
+          "TP": 74,
+          "FP": 194,
+          "FN": 163,
+          "TN": 1487
+        },
+        "events_hit": 13,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 8.76923076923077,
+        "false_alarm_episodes": 27
+      }
+    },
+    "0.20": {
+      "5": {
+        "decision": {
+          "CSI": 0.1503267973856209,
+          "POD": 0.2875,
+          "FAR": 0.7604166666666666,
+          "TP": 23,
+          "FP": 73,
+          "FN": 57,
+          "TN": 1765
+        },
+        "events_hit": 6,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 3.8333333333333335,
+        "false_alarm_episodes": 20
+      },
+      "10": {
+        "decision": {
+          "CSI": 0.12203389830508475,
+          "POD": 0.225,
+          "FAR": 0.7894736842105263,
+          "TP": 36,
+          "FP": 135,
+          "FN": 124,
+          "TN": 1623
+        },
+        "events_hit": 8,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 4.5,
+        "false_alarm_episodes": 26
+      },
+      "15": {
+        "decision": {
+          "CSI": 0.16136919315403422,
+          "POD": 0.27848101265822783,
+          "FAR": 0.7226890756302521,
+          "TP": 66,
+          "FP": 172,
+          "FN": 171,
+          "TN": 1509
+        },
+        "events_hit": 10,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 10.0,
+        "false_alarm_episodes": 23
+      }
+    },
+    "0.25": {
+      "5": {
+        "decision": {
+          "CSI": 0.13970588235294118,
+          "POD": 0.2375,
+          "FAR": 0.7466666666666667,
+          "TP": 19,
+          "FP": 56,
+          "FN": 61,
+          "TN": 1782
+        },
+        "events_hit": 6,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 3.3333333333333335,
+        "false_alarm_episodes": 18
+      },
+      "10": {
+        "decision": {
+          "CSI": 0.12043795620437957,
+          "POD": 0.20625,
+          "FAR": 0.7755102040816326,
+          "TP": 33,
+          "FP": 114,
+          "FN": 127,
+          "TN": 1644
+        },
+        "events_hit": 6,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 5.5,
+        "false_alarm_episodes": 24
+      },
+      "15": {
+        "decision": {
+          "CSI": 0.16010498687664043,
+          "POD": 0.25738396624472576,
+          "FAR": 0.7024390243902439,
+          "TP": 61,
+          "FP": 144,
+          "FN": 176,
+          "TN": 1537
+        },
+        "events_hit": 9,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 9.222222222222221,
+        "false_alarm_episodes": 25
+      }
+    },
+    "0.30": {
+      "5": {
+        "decision": {
+          "CSI": 0.11666666666666667,
+          "POD": 0.175,
+          "FAR": 0.7407407407407407,
+          "TP": 14,
+          "FP": 40,
+          "FN": 66,
+          "TN": 1798
+        },
+        "events_hit": 5,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 3.6,
+        "false_alarm_episodes": 14
+      },
+      "10": {
+        "decision": {
+          "CSI": 0.11507936507936507,
+          "POD": 0.18125,
+          "FAR": 0.7603305785123967,
+          "TP": 29,
+          "FP": 92,
+          "FN": 131,
+          "TN": 1666
+        },
+        "events_hit": 5,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 6.0,
+        "false_alarm_episodes": 19
+      },
+      "15": {
+        "decision": {
+          "CSI": 0.15819209039548024,
+          "POD": 0.23628691983122363,
+          "FAR": 0.6763005780346821,
+          "TP": 56,
+          "FP": 117,
+          "FN": 181,
+          "TN": 1564
+        },
+        "events_hit": 8,
+        "n_events": 16,
+        "mean_first_alarm_lead_days": 9.75,
+        "false_alarm_episodes": 24
+      }
+    }
+  },
+  "forward_training_climatology_reference": {
+    "A": {
+      "5": {
+        "pr_auc": 0.5275001729454876,
+        "roc_auc": 0.9300512820512821,
+        "brier": 0.03337501995127017,
+        "reference_brier": 0.04230563098262288,
+        "bss": 0.21109745497049737,
+        "prevalence": 0.04411764705882353,
+        "training_climatology_probability": 0.032526671870934165,
+        "old_test_prevalence_bss": 0.20858414228372713,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      },
+      "10": {
+        "pr_auc": 0.38968250212108024,
+        "roc_auc": 0.8523655913978495,
+        "brier": 0.07233142357660612,
+        "reference_brier": 0.08098722981284444,
+        "bss": 0.10687865551447129,
+        "prevalence": 0.08823529411764706,
+        "training_climatology_probability": 0.06505334374186833,
+        "old_test_prevalence_bss": 0.10091262737035822,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      },
+      "15": {
+        "pr_auc": 0.34131522821781113,
+        "roc_auc": 0.8212429378531073,
+        "brier": 0.11022219715280823,
+        "reference_brier": 0.1160996961715798,
+        "bss": 0.05062458570163186,
+        "prevalence": 0.1323529411764706,
+        "training_climatology_probability": 0.09679937548790007,
+        "old_test_prevalence_bss": 0.04017431330586607,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      }
+    },
+    "B": {
+      "5": {
+        "pr_auc": 0.44364763930295953,
+        "roc_auc": 0.9056410256410257,
+        "brier": 0.03609485294829367,
+        "reference_brier": 0.042331980417830296,
+        "bss": 0.1473384284877336,
+        "prevalence": 0.04411764705882353,
+        "training_climatology_probability": 0.031440891124685594,
+        "old_test_prevalence_bss": 0.14408923060046208,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      },
+      "10": {
+        "pr_auc": 0.3552672591617979,
+        "roc_auc": 0.8494623655913979,
+        "brier": 0.07742402583852355,
+        "reference_brier": 0.08109262755367416,
+        "bss": 0.045239645400840134,
+        "prevalence": 0.08823529411764706,
+        "training_climatology_probability": 0.06288178224937119,
+        "old_test_prevalence_bss": 0.037611033663083604,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      },
+      "15": {
+        "pr_auc": 0.34756662625224793,
+        "roc_auc": 0.7933709981167608,
+        "brier": 0.11472458413100885,
+        "reference_brier": 0.11632322753166555,
+        "bss": 0.013743114204955442,
+        "prevalence": 0.1323529411764706,
+        "training_climatology_probability": 0.09378368666906216,
+        "old_test_prevalence_bss": 0.0009670865879757296,
+        "old_test_prevalence_reference": "diagnostic only; replaced in manuscript"
+      }
+    }
+  },
+  "event_association_multiplicity": [
+    {
+      "feature": "u10_now",
+      "spearman": 0.46470588235294125,
+      "bootstrap_ci95": [
+        0.0057639185913886636,
+        0.7812005432261446
+      ],
+      "permutation_p_two_sided": 0.06888931110688894,
+      "bh_q": 0.8266717332826672,
+      "max_abs_rho_fwer_p": 0.4306556934430656
+    },
+    {
+      "feature": "u10_delta5",
+      "spearman": 0.05588235294117645,
+      "bootstrap_ci95": [
+        -0.5335466569822159,
+        0.5385074626865671
+      ],
+      "permutation_p_two_sided": 0.8373916260837392,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 1.0
+    },
+    {
+      "feature": "u10_delta10",
+      "spearman": -0.19411764705882348,
+      "bootstrap_ci95": [
+        -0.6240021449638038,
+        0.3079996698035327
+      ],
+      "permutation_p_two_sided": 0.46918530814691856,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.991760082399176
+    },
+    {
+      "feature": "t10_pcap_delta5",
+      "spearman": 0.14117647058823526,
+      "bootstrap_ci95": [
+        -0.37052047475616745,
+        0.6383004080313497
+      ],
+      "permutation_p_two_sided": 0.6001139988600114,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.999310006899931
+    },
+    {
+      "feature": "t30_pcap_delta5",
+      "spearman": 0.0411764705882353,
+      "bootstrap_ci95": [
+        -0.5439811981051734,
+        0.5911171415649028
+      ],
+      "permutation_p_two_sided": 0.8769312306876931,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 1.0
+    },
+    {
+      "feature": "t50_pcap_delta5",
+      "spearman": -0.09999999999999999,
+      "bootstrap_ci95": [
+        -0.6394751135690301,
+        0.5007474965440507
+      ],
+      "permutation_p_two_sided": 0.7114428855711443,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.999980000199998
+    },
+    {
+      "feature": "heat_flux100_5d",
+      "spearman": -0.15588235294117647,
+      "bootstrap_ci95": [
+        -0.6659230159866807,
+        0.46163537992815645
+      ],
+      "permutation_p_two_sided": 0.5583144168558315,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.998150018499815
+    },
+    {
+      "feature": "heat_flux100_10d",
+      "spearman": -0.21764705882352947,
+      "bootstrap_ci95": [
+        -0.7259612960858278,
+        0.38410004510719575
+      ],
+      "permutation_p_two_sided": 0.4108558914410856,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.9809701902980971
+    },
+    {
+      "feature": "epdiv_upper_5d",
+      "spearman": -0.008823529411764725,
+      "bootstrap_ci95": [
+        -0.5389907684630738,
+        0.5446428571428571
+      ],
+      "permutation_p_two_sided": 0.970560294397056,
+      "bh_q": 0.970560294397056,
+      "max_abs_rho_fwer_p": 1.0
+    },
+    {
+      "feature": "epdiv_lower_5d",
+      "spearman": 0.09117647058823526,
+      "bootstrap_ci95": [
+        -0.43368379505814936,
+        0.5676481250251743
+      ],
+      "permutation_p_two_sided": 0.7369326306736933,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 1.0
+    },
+    {
+      "feature": "ep_f_p_100_5d",
+      "spearman": 0.14411764705882352,
+      "bootstrap_ci95": [
+        -0.4146330580208738,
+        0.6391307019405869
+      ],
+      "permutation_p_two_sided": 0.5909740902590974,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 0.999060009399906
+    },
+    {
+      "feature": "qbo30_5d",
+      "spearman": 0.09117647058823528,
+      "bootstrap_ci95": [
+        -0.519400876077434,
+        0.6402678492686429
+      ],
+      "permutation_p_two_sided": 0.7379826201737982,
+      "bh_q": 0.9566522516593016,
+      "max_abs_rho_fwer_p": 1.0
+    }
+  ],
+  "state_contrasts": [
+    {
+      "feature": "u10_now",
+      "hit_mean_z": -0.44448962759967064,
+      "miss_mean_z": -0.5859906983963878,
+      "hit_minus_miss": 0.1415010707967172,
+      "hit_minus_miss_ci95": [
+        -0.6524477300114055,
+        0.8477304747458348
+      ],
+      "false_mean_z": -0.9545523273756681,
+      "false_minus_hit": -0.5100626997759974,
+      "false_minus_hit_ci95": [
+        -1.1168194826254878,
+        0.007441749258393845
+      ]
+    },
+    {
+      "feature": "u10_delta5",
+      "hit_mean_z": -0.5693292023267074,
+      "miss_mean_z": -0.49777610294425256,
+      "hit_minus_miss": -0.0715530993824548,
+      "hit_minus_miss_ci95": [
+        -1.087891223396377,
+        0.9683663672753657
+      ],
+      "false_mean_z": -1.3874814839076148,
+      "false_minus_hit": -0.8181522815809075,
+      "false_minus_hit_ci95": [
+        -1.5872065298497178,
+        -0.0917347873163283
+      ]
+    },
+    {
+      "feature": "u10_delta10",
+      "hit_mean_z": -0.8691317423745827,
+      "miss_mean_z": -0.4065218107043814,
+      "hit_minus_miss": -0.46260993167020126,
+      "hit_minus_miss_ci95": [
+        -1.4419910372428721,
+        0.35883377214576095
+      ],
+      "false_mean_z": -1.0052781938788145,
+      "false_minus_hit": -0.13614645150423177,
+      "false_minus_hit_ci95": [
+        -0.6861617601521763,
+        0.4564469901025922
+      ]
+    },
+    {
+      "feature": "t10_pcap_delta5",
+      "hit_mean_z": 0.8237522564273511,
+      "miss_mean_z": 0.518220294367274,
+      "hit_minus_miss": 0.30553196206007704,
+      "hit_minus_miss_ci95": [
+        -1.074457999469929,
+        1.7543485633066225
+      ],
+      "false_mean_z": 0.7989685707469165,
+      "false_minus_hit": -0.024783685680434542,
+      "false_minus_hit_ci95": [
+        -1.5102455031617557,
+        1.2084873908563836
+      ]
+    },
+    {
+      "feature": "t30_pcap_delta5",
+      "hit_mean_z": 0.7441872151326338,
+      "miss_mean_z": 0.6653926906334127,
+      "hit_minus_miss": 0.07879452449922109,
+      "hit_minus_miss_ci95": [
+        -0.9729401647606783,
+        1.0902022467125583
+      ],
+      "false_mean_z": 1.1559591348995875,
+      "false_minus_hit": 0.4117719197669537,
+      "false_minus_hit_ci95": [
+        -0.4339958287826264,
+        1.220094503817762
+      ]
+    },
+    {
+      "feature": "t50_pcap_delta5",
+      "hit_mean_z": 0.43815305177605396,
+      "miss_mean_z": 0.5176682064731779,
+      "hit_minus_miss": -0.07951515469712395,
+      "hit_minus_miss_ci95": [
+        -1.02124967379937,
+        0.8769703615422769
+      ],
+      "false_mean_z": 1.2919179229541087,
+      "false_minus_hit": 0.8537648711780548,
+      "false_minus_hit_ci95": [
+        0.19494059978391826,
+        1.5185566221720386
+      ]
+    },
+    {
+      "feature": "heat_flux100_5d",
+      "hit_mean_z": 0.9271660795506765,
+      "miss_mean_z": 0.9008010126368777,
+      "hit_minus_miss": 0.026365066913798807,
+      "hit_minus_miss_ci95": [
+        -0.8918615328039426,
+        1.0793745216648605
+      ],
+      "false_mean_z": 1.3292045452396166,
+      "false_minus_hit": 0.4020384656889401,
+      "false_minus_hit_ci95": [
+        -0.5828583018775129,
+        1.3260133634885598
+      ]
+    },
+    {
+      "feature": "heat_flux100_10d",
+      "hit_mean_z": 1.024749811510689,
+      "miss_mean_z": 1.146898644592895,
+      "hit_minus_miss": -0.12214883308220603,
+      "hit_minus_miss_ci95": [
+        -0.8574629772583886,
+        0.6229458681268861
+      ],
+      "false_mean_z": 1.0579704725668748,
+      "false_minus_hit": 0.03322066105618582,
+      "false_minus_hit_ci95": [
+        -0.7044179868663916,
+        0.8445436183857375
+      ]
+    },
+    {
+      "feature": "epdiv_upper_5d",
+      "hit_mean_z": -0.4736962533573393,
+      "miss_mean_z": -0.2751691702265995,
+      "hit_minus_miss": -0.1985270831307398,
+      "hit_minus_miss_ci95": [
+        -0.9091330308975516,
+        0.4705583283316941
+      ],
+      "false_mean_z": -1.3094240763604297,
+      "false_minus_hit": -0.8357278230030905,
+      "false_minus_hit_ci95": [
+        -1.4962063969739203,
+        -0.19886641725349127
+      ]
+    },
+    {
+      "feature": "epdiv_lower_5d",
+      "hit_mean_z": -0.8469791547411208,
+      "miss_mean_z": -0.623794783611171,
+      "hit_minus_miss": -0.22318437112994982,
+      "hit_minus_miss_ci95": [
+        -1.2423833854470137,
+        0.6758724859895132
+      ],
+      "false_mean_z": -1.0768993813254382,
+      "false_minus_hit": -0.22992022658431732,
+      "false_minus_hit_ci95": [
+        -1.1937784417978643,
+        0.7463781959771952
+      ]
+    },
+    {
+      "feature": "ep_f_p_100_5d",
+      "hit_mean_z": -0.9993566657279601,
+      "miss_mean_z": -0.941724006971224,
+      "hit_minus_miss": -0.057632658756736066,
+      "hit_minus_miss_ci95": [
+        -1.1830057418285318,
+        0.8893467053525527
+      ],
+      "false_mean_z": -1.3004067551487561,
+      "false_minus_hit": -0.30105008942079603,
+      "false_minus_hit_ci95": [
+        -1.2861106868369339,
+        0.7699589467443133
+      ]
+    },
+    {
+      "feature": "qbo30_5d",
+      "hit_mean_z": -0.15068314105598077,
+      "miss_mean_z": -0.12702386944911828,
+      "hit_minus_miss": -0.023659271606862486,
+      "hit_minus_miss_ci95": [
+        -1.279732461666788,
+        1.2546433335293754
+      ],
+      "false_mean_z": -0.21698669015669,
+      "false_minus_hit": -0.06630354910070924,
+      "false_minus_hit_ci95": [
+        -1.2243786352426222,
+        1.0264868640594698
+      ]
+    }
+  ],
+  "claim_boundary": "Frozen post hoc diagnostics only: no fitting, threshold selection, seed selection, calibration, feature selection, or causal attribution."
+}

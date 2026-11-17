@@ -1,0 +1,69 @@
+panel,category,scope,horizon_days,metric,value,note,source
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,5,pr_auc,0.7424338624338623,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,5,bss,0.6260256947124332,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,5,events_hit,11,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,5,false_alarm_episodes,6,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,10,pr_auc,0.7452587536888639,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,10,bss,0.6110529912214575,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,10,events_hit,11,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,10,false_alarm_episodes,11,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,15,pr_auc,0.7003119240552175,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,15,bss,0.5302575616758012,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,15,events_hit,11,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,ecmwf_s2s,454 origins; 11 events; IFS cy48r1,15,false_alarm_episodes,12,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,5,pr_auc,0.23703759923345258,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,5,bss,0.01773790846342682,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,5,events_hit,5,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,5,false_alarm_episodes,17,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,10,pr_auc,0.2119347110940938,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,10,bss,-0.04017230687147788,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,10,events_hit,5,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,10,false_alarm_episodes,22,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,15,pr_auc,0.27146460182864235,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,15,bss,0.03075102667630858,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,15,events_hit,8,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,three_seed_equal_mean,454 origins; 11 events; IFS cy48r1,15,false_alarm_episodes,21,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,5,pr_auc,0.15346705250511616,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,5,bss,-0.05260221249079411,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,5,events_hit,2,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,5,false_alarm_episodes,9,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,10,pr_auc,0.25776729145296495,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,10,bss,0.0628206701829056,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,10,events_hit,4,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,10,false_alarm_episodes,16,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,15,pr_auc,0.2794243256494532,common-origin point estimate,ssw_paper1_revision_p0_results.json
+a,physical_logistic,454 origins; 11 events; IFS cy48r1,15,bss,0.07471697773550934,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,15,events_hit,8,common-origin point estimate,ssw_paper1_revision_p0_results.json
+b,physical_logistic,454 origins; 11 events; IFS cy48r1,15,false_alarm_episodes,21,common-origin point estimate,ssw_paper1_revision_p0_results.json
+c,Label-free pretraining,"A/B/C, seed 42",5,dpr,-0.07687596969057287,STOP,v52_paired21_seed42_pooled_results.json
+c,Label-free pretraining,"A/B/C, seed 42",5,dbss,-0.21328182620176606,STOP,v52_paired21_seed42_pooled_results.json
+c,Label-free pretraining,"A/B/C, seed 42",5,dhit,1,STOP,v52_paired21_seed42_pooled_results.json
+c,Label-free pretraining,"A/B/C, seed 42",5,dfa,0,STOP,v52_paired21_seed42_pooled_results.json
+c,Nested Platt,"A/B/C, seed 42",5,dpr,-0.04930113809644676,STOP,v53_p4_nested_calibration_results.json
+c,Nested Platt,"A/B/C, seed 42",5,dbss,0.042491021003381424,STOP,v53_p4_nested_calibration_results.json
+c,Nested Platt,"A/B/C, seed 42",5,dhit,-2,STOP,v53_p4_nested_calibration_results.json
+c,Nested Platt,"A/B/C, seed 42",5,dfa,0,STOP,v53_p4_nested_calibration_results.json
+c,1960–78 labels,"2022–25, 3 seeds",5,dpr,-0.08385253364252804,STOP,ssw_paper1_revision_p0_results.json;forward_training_climatology_reference
+c,1960–78 labels,"2022–25, 3 seeds",5,dbss,-0.06375902648276377,STOP,ssw_paper1_revision_p0_results.json;forward_training_climatology_reference
+c,1960–78 labels,"2022–25, 3 seeds",5,dhit,-1,STOP,ssw_paper1_revision_p0_results.json;forward_training_climatology_reference
+c,1960–78 labels,"2022–25, 3 seeds",5,dfa,1,STOP,ssw_paper1_revision_p0_results.json;forward_training_climatology_reference
+c,Out-of-fold XGBoost blend,"B+C, seed 42",5,dpr,-0.039918083748747224,STOP,v58_oof_latent_xgb_results_corrected.json
+c,Out-of-fold XGBoost blend,"B+C, seed 42",5,dbss,0.04175974739922417,STOP,v58_oof_latent_xgb_results_corrected.json
+c,Out-of-fold XGBoost blend,"B+C, seed 42",5,dhit,0,STOP,v58_oof_latent_xgb_results_corrected.json
+c,Out-of-fold XGBoost blend,"B+C, seed 42",5,dfa,0,STOP,v58_oof_latent_xgb_results_corrected.json
+c,ECMWF trajectory hazard,"C fold, 4 events",5,dpr,0.17666666666666675,PILOT,v64_s2s_committor_c_pilot.json
+c,ECMWF trajectory hazard,"C fold, 4 events",5,dbss,0.10035566152024256,PILOT,v64_s2s_committor_c_pilot.json
+c,ECMWF trajectory hazard,"C fold, 4 events",5,dhit,-1,PILOT,v64_s2s_committor_c_pilot.json
+c,ECMWF trajectory hazard,"C fold, 4 events",5,dfa,-1,PILOT,v64_s2s_committor_c_pilot.json
+c,Natural-frequency hazard,"A/B/C, 3 seeds",5,dpr,-0.07040653093340932,STOP,v65_natural_hazard_results.json
+c,Natural-frequency hazard,"A/B/C, 3 seeds",5,dbss,0.027098083222371172,STOP,v65_natural_hazard_results.json
+c,Natural-frequency hazard,"A/B/C, 3 seeds",5,dhit,-2,STOP,v65_natural_hazard_results.json
+c,Natural-frequency hazard,"A/B/C, 3 seeds",5,dfa,-16,STOP,v65_natural_hazard_results.json
+d,2021 three-seed mean,exact day -5 origin,5,probability,0.000734345696400851,fixed threshold 0.20,ssw_paper1_revision_v4_event_trajectories.csv
+d,2021 three-seed mean,exact day -5 origin,10,probability,0.026402482762932777,fixed threshold 0.20,ssw_paper1_revision_v4_event_trajectories.csv
+d,2021 three-seed mean,exact day -5 origin,15,probability,0.08443692326545715,fixed threshold 0.20,ssw_paper1_revision_v4_event_trajectories.csv
+d,2021 natural-frequency hazard,frozen A/B/C three-seed evaluation,5,first_alarm_lead_days,2.0,case recovered but pooled event hits decreased,v65_natural_hazard_results.json
+d,2021 natural-frequency hazard,frozen A/B/C three-seed evaluation,10,first_alarm_lead_days,4.0,case recovered but pooled event hits decreased,v65_natural_hazard_results.json
+d,2021 natural-frequency hazard,frozen A/B/C three-seed evaluation,15,first_alarm_lead_days,9.0,case recovered but pooled event hits decreased,v65_natural_hazard_results.json
+d,2021,14 complete trajectories,,euclidean_distance,3.6710433914383103,rank 9/14,ssw_paper1_revision_v4_results.json
+d,2021,14 complete trajectories,,mahalanobis_distance,3.1245537705342556,rank 6/14,ssw_paper1_revision_v4_results.json
