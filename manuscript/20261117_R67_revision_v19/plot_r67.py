@@ -47,7 +47,7 @@ for model,label,c in arms[:2]:
     ax.plot([int(score(model,'pooled',d)['false_alarm_episodes_total']) for d in [5,10,15]],
             [int(score(model,'pooled',d)['events_hit']) for d in [5,10,15]],'-o',color=c,label=label)
     for d in [5,10,15]:
-        offset=(3,4) if model=='balanced_mean' or d!=15 else (3,-13)
+        offset=(3,4) if model=='balanced_mean' or d==5 else (-19,7) if d==10 else (3,-13)
         ax.annotate(str(d),(int(score(model,'pooled',d)['false_alarm_episodes_total']),int(score(model,'pooled',d)['events_hit'])),xytext=offset,textcoords='offset points',fontsize=8)
 ax.set(xlabel='False-alarm episodes',ylabel='SSW events detected (of 16)',ylim=(0,18));ax.text(.02,.96,'(f)',transform=ax.transAxes,va='top');ax.legend(fontsize=8,loc='lower right',frameon=False)
 export(fig,'figureS5_controlled_sampling')
